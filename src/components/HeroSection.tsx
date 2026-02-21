@@ -26,7 +26,7 @@ export default function HeroSection() {
                     <motion.span
                         variants={{
                             hidden: { opacity: 0, y: 20 },
-                            visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                            visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
                         }}
                         className="text-accent font-semibold tracking-[0.42em] text-[10px] md:text-[11px] uppercase inline-flex items-center gap-3 mb-2"
                     >
@@ -34,7 +34,7 @@ export default function HeroSection() {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-40"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-accent shadow-[0_0_0_6px_rgba(29,78,216,.10)]"></span>
                         </span>
-                        Arquitectura & Construcción de Precisión · Est. 2001
+                        SAVI CONSTRUCCIONES · SINALOA Y NOROESTE
                     </motion.span>
 
                     <motion.h1
@@ -42,21 +42,21 @@ export default function HeroSection() {
                             hidden: { opacity: 0, y: 30 },
                             visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } }
                         }}
-                        className="text-[clamp(3rem,6.5vw,6rem)] font-black leading-[0.85] tracking-[-0.04em] text-ink uppercase"
+                        className="text-[clamp(2.5rem,5.5vw,5.2rem)] font-black leading-[0.9] tracking-[-0.04em] text-ink uppercase"
                     >
-                        Creamos espacios.<br />
-                        <span className="opacity-90">Construimos</span> <span className="opacity-20 italic">Certeza.</span>
+                        Constructora Ejecutiva<br />
+                        <span className="opacity-90">para</span> <span className="opacity-20 italic">Iniciativa Privada.</span>
                     </motion.h1>
 
-                    <motion.p
+                    <motion.h2
                         variants={{
                             hidden: { opacity: 0, y: 20 },
                             visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
                         }}
-                        className="mt-2 max-w-2xl text-gray-700/80 text-[18px] md:text-[21px] font-light leading-[1.65] tracking-[-0.01em]"
+                        className="mt-6 max-w-2xl text-gray-700/80 text-[18px] md:text-[21px] font-light leading-[1.65] tracking-[-0.01em]"
                     >
-                        Donde la <strong className="font-semibold text-ink">visión arquitectónica</strong> se funde con el <strong className="font-semibold text-ink">rigor de la ingeniería</strong>. En SAVI CONSTRUCCIONES, transformamos conceptos complejos en realidades tangibles, protegiendo tu inversión desde la primera línea del diseño hasta la entrega llave en mano.
-                    </motion.p>
+                        Líderes con <strong className="font-semibold text-ink">más de 20 Gasolineras</strong> construidas. Desarrolladores llave en mano de <strong className="font-medium text-ink">Naves Industriales, Plazas Comerciales, Restaurantes, Oficinas, Obra Hidráulica</strong> y Casas Premium a nivel nacional.
+                    </motion.h2>
 
                     <motion.div
                         variants={{
@@ -88,6 +88,6 @@ export default function HeroSection() {
                     </motion.div>
                 </motion.div>
             </div>
-        </section>
+        </section >
     );
 }

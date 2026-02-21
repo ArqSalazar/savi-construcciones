@@ -50,8 +50,8 @@ export default function Contacto() {
                             }}
                             className="text-[clamp(3.5rem,8.5vw,7.5rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase"
                         >
-                            Evaluación<br />
-                            <span className="opacity-20 italic">Técnica.</span>
+                            Dictamen<br />
+                            <span className="opacity-20 italic">Técnico.</span>
                         </motion.h1>
 
                         <motion.p
