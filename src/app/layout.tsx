@@ -14,13 +14,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SAVI | Construcción de Gasolineras en Sinaloa y Sonora",
-  description: "Constructora líder en el Noroeste de México (Sinaloa, Sonora). Especialistas en estaciones de servicio (gasolineras), obra industrial y comercial premium. Método: Proyecto → Presupuesto → Obra → Entrega Documentada.",
-  keywords: ["constructora gasolineras sinaloa", "construccion estaciones de servicio sonora", "obra civil sinaloa", "savi construcciones los mochis", "infraestructura noroeste mexico"],
+  title: "Constructora de Gasolineras e Infraestructura Industrial | SAVI Construcciones",
+  description: "SAVI Construcciones: Expertos en gasolineras e infraestructura industrial en Sinaloa y el Noroeste. Garantizamos certeza operativa y proyectos llave en mano.",
+  keywords: ["constructora gasolineras sinaloa", "construccion estaciones de servicio sonora", "infraestructura industrial noroeste", "savi construcciones", "proyectos llave en mano sinaloa"],
   robots: "index,follow,max-image-preview:large",
   openGraph: {
-    title: "SAVI | Especialistas en Construcción de Gasolineras y Obra Privada",
-    description: "Líderes en construcción estratégica en Sinaloa y Sonora. Estaciones de servicio, naves industriales y desarrollos premium con entrega documentada.",
+    title: "SAVI Construcciones | Gasolineras e Industria en el Noroeste",
+    description: "Expertos en estaciones de servicio y proyectos llave en mano para la iniciativa privada. Certeza operativa y rigor técnico en cada obra.",
     url: "https://www.saviconstrucciones.com/",
     siteName: "SAVI Construcciones",
     locale: "es_MX",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "https://www.saviconstrucciones.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "SAVI Construcciones - Especialistas en Gasolineras y Obra Privada",
+        alt: "SAVI Construcciones - Infraestructura Industrial y Gasolineras",
       },
     ],
   },
