@@ -40,7 +40,7 @@ export default function Contacto() {
                             className="text-accent font-semibold tracking-[0.42em] text-[10px] md:text-[11px] uppercase inline-flex items-center gap-3 mb-2"
                         >
                             <span className="w-1.5 h-1.5 rounded-full bg-accent/80 shadow-[0_0_0_6px_rgba(29,78,216,.10)]"></span>
-                            Ingeniería & Presupuestos
+                            Confianza & Legado SAVI
                         </motion.span>
 
                         <motion.h1
@@ -50,8 +50,8 @@ export default function Contacto() {
                             }}
                             className="text-[clamp(3.5rem,8.5vw,7.5rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase"
                         >
-                            Evaluación<br />
-                            <span className="opacity-20 italic">Técnica.</span>
+                            Construye<br />
+                            <span className="opacity-20 italic">Tu Proyecto.</span>
                         </motion.h1>
 
                         <motion.p
@@ -61,7 +61,7 @@ export default function Contacto() {
                             }}
                             className="mt-4 max-w-2xl text-gray-700/80 text-[18px] md:text-[21px] font-light leading-[1.65] tracking-[-0.01em]"
                         >
-                            Inicia tu proyecto con certidumbre. Platícanos tu objetivo comercial, industrial o residencial, y nuestro equipo estructurará la ruta óptima en tiempos y viabilidad financiera.
+                            Inicia con la seguridad de un equipo que cuida tu patrimonio. Platícanos tu visión y estructuraremos una ruta técnica y financiera que garantice la certeza absoluta de tu inversión.
                         </motion.p>
                     </motion.div>
 
