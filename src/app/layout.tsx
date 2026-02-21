@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
 import Navbar from "@/components/Navbar";
@@ -8,19 +8,19 @@ import BlueprintBackground from "@/components/BlueprintBackground";
 import Preloader from "@/components/Preloader";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
 
-const inter = Inter({
-  variable: "--font-inter",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "SAVI Construcciones | Arquitectura & Ingeniería con Certeza",
-  description: "Especialistas en diseño y construcción de residencias premium, proyectos industriales y comerciales. Más de 20 años transformando visiones en realidades con rigor técnico y honestidad.",
-  keywords: ["constructora sinaloa", "arquitectura y construccion sonora", "casas premium", "naves industriales", "estaciones de servicio", "construccion residencial", "proyectos llave en mano", "savi construcciones"],
+  title: "SAVI Construcciones | Arquitectura & Ingeniería con Legado Familiar",
+  description: "Más de 20 años construyendo con honestidad y rigor técnico. Especialistas en residencias premium e infraestructura industrial que protege tu patrimonio y asegura tu inversión.",
+  keywords: ["constructora sinaloa", "arquitectura integral sonora", "casas premium", "naves industriales", "estaciones de servicio noroeste", "seguridad patrimonial", "legado familiar", "savi construcciones"],
   robots: "index,follow,max-image-preview:large",
   openGraph: {
-    title: "SAVI Construcciones | Arquitectura, Ingeniería & Construcción",
-    description: "Diseño integral y ejecución técnica de proyectos residenciales, comerciales e industriales. Construimos con transparencia y excelencia técnica.",
+    title: "SAVI Construcciones | Arquitectura, Ingeniería & Legado Familiar",
+    description: "Diseño integral y ejecución de alta gama. Protegemos tu inversión con transparencia y excelencia técnica en cada proyecto.",
     url: "https://www.saviconstrucciones.com/",
     siteName: "SAVI Construcciones",
     locale: "es_MX",
@@ -82,7 +82,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaScript) }}
         />
       </head>
-      <body className={`${inter.variable} font-sans antialiased text-ink bg-paper min-h-screen flex flex-col relative`}>
+      <body className={`${jakarta.variable} font-sans antialiased text-ink bg-paper min-h-screen flex flex-col relative`}>
         <Preloader />
         <LenisProvider>
           <BlueprintBackground />

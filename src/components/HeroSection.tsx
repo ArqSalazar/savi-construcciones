@@ -55,7 +55,7 @@ export default function HeroSection() {
                         }}
                         className="mt-2 max-w-2xl text-gray-700/80 text-[18px] md:text-[21px] font-light leading-[1.65] tracking-[-0.01em]"
                     >
-                        Donde la <strong className="font-semibold text-ink">visión arquitectónica</strong> se funde con el <strong className="font-semibold text-ink">rigor de la ingeniería</strong>. En SAVI CONSTRUCCIONES, transformamos conceptos complejos en realidades tangibles, protegiendo tu inversión desde la primera línea del diseño hasta la entrega llave en mano.
+                        Donde la <strong className="font-semibold text-ink">visión arquitectónica</strong> se encuentra con el <strong className="font-semibold text-ink">legado de la ingeniería</strong>. En SAVI CONSTRUCCIONES, protegemos tu patrimonio con la honestidad de una empresa familiar y la excelencia técnica de un socio estratégico.
                     </motion.p>
 
                     <motion.div
