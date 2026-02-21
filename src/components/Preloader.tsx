@@ -4,27 +4,15 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Preloader() {
-    const [isLoading, setIsLoading] = useState(() => {
-        if (typeof window !== "undefined") {
-            const hasVisited = sessionStorage.getItem("savi_has_visited");
-            if (hasVisited) return false;
-        }
-        return true;
-    });
-
-    const [isFirstVisit, setIsFirstVisit] = useState(() => {
-        if (typeof window !== "undefined") {
-            const hasVisited = sessionStorage.getItem("savi_has_visited");
-            if (!hasVisited) return true;
-        }
-        return false;
-    });
+    const [isLoading, setIsLoading] = useState(true);
+    const [isFirstVisit, setIsFirstVisit] = useState(false);
 
     useEffect(() => {
         // Only run preloader once per session
         const hasVisited = sessionStorage.getItem("savi_has_visited");
 
         if (!hasVisited) {
+            setIsFirstVisit(true);
             sessionStorage.setItem("savi_has_visited", "true");
 
             // Prevent scrolling while preloader is active
@@ -39,6 +27,8 @@ export default function Preloader() {
                 clearTimeout(timer);
                 document.body.style.overflow = "";
             };
+        } else {
+            setIsLoading(false);
         }
     }, []);
 

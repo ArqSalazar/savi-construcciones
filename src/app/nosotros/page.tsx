@@ -92,8 +92,8 @@ export default function Nosotros() {
                                 <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mt-2 text-center md:text-left">Años de Trayectoria</span>
                             </div>
                             <div className="flex flex-col items-center md:items-start">
-                                <span className="text-4xl md:text-5xl font-black text-ink tracking-tighter">20+</span>
-                                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mt-2 text-center md:text-left">Gasolineras Construidas</span>
+                                <span className="text-4xl md:text-5xl font-black text-ink tracking-tighter">45+</span>
+                                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mt-2 text-center md:text-left">Proyectos Críticos</span>
                             </div>
                             <div className="flex flex-col items-center md:items-start">
                                 <span className="text-4xl md:text-5xl font-black text-ink tracking-tighter">2</span>
@@ -114,9 +114,9 @@ export default function Nosotros() {
                                 className="glass p-9 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:bg-white/80 h-full flex flex-col border border-black/5 hover:border-black/10"
                             >
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400">Pilar I</div>
-                                <h2 className="mt-3 text-2xl font-black tracking-tight text-ink">Blindaje Presupuestal</h2>
+                                <div className="mt-3 text-2xl font-black tracking-tight text-ink">Honestidad Presupuestal</div>
                                 <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65]">
-                                    Cero sorpresa financiera. Entregamos presupuestos ciegos, cuantificaciones exactas y garantizamos que el costo pactado se respete rigurosamente desde la excavación hasta la entrega de llaves.
+                                    Eliminamos la incertidumbre financiera. Cada peso de tu inversión es gestionado con transparencia absoluta y trazabilidad total, garantizando que el capital se transforme en valor real y tangible.
                                 </p>
                             </motion.div>
 
@@ -128,9 +128,9 @@ export default function Nosotros() {
                                 className="glass p-9 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:bg-white/80 h-full flex flex-col border border-black/5 hover:border-black/10"
                             >
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400">Pilar II</div>
-                                <h2 className="mt-3 text-2xl font-black tracking-tight text-ink">Ejecución Fast-Track</h2>
+                                <div className="mt-3 text-2xl font-black tracking-tight text-ink">Sustento Técnico</div>
                                 <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65]">
-                                    El tiempo es rentabilidad. Diseñamos logísticas de construcción acelerada y coordinación simultánea de ingenierías (MEP) para adelantar la fecha de apertura de su proyecto comercial.
+                                    Arquitectura con cimientos de ingeniería. Sustentamos el diseño en soluciones estructurales de alta eficiencia que garantizan la integridad, seguridad y el legado permanente de cada obra.
                                 </p>
                             </motion.div>
 
@@ -142,9 +142,9 @@ export default function Nosotros() {
                                 className="glass p-9 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] border border-accent/20 hover:border-accent/40 bg-gradient-to-br from-white/70 to-blue-50/30 h-full flex flex-col"
                             >
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent">Pilar III</div>
-                                <h2 className="mt-3 text-2xl font-black tracking-tight text-ink">Responsabilidad Única</h2>
+                                <div className="mt-3 text-2xl font-black tracking-tight text-ink">Certeza Operativa</div>
                                 <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65]">
-                                    Sin dilución de culpas (Turnkey). Asumimos la gestión integral del activo: desde los permisos ASEA/CRE y licencias, hasta la última prueba de vida de instalaciones electromecánicas.
+                                    Control total sobre el tiempo. Nuestra logística avanzada en el Noroeste asegura el cumplimiento estricto de cronogramas, permitiendo que tu proyecto inicie su ciclo productivo sin retrasos.
                                 </p>
                             </motion.div>
                         </div>

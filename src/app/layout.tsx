@@ -14,13 +14,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Constructora Líder en Gasolineras e Iniciativa Privada | SAVI",
-  description: "Líderes en construcción de gasolineras (20+ estaciones construidas). Especialistas en naves industriales, casas premium, oficinas, restaurantes, plazas y obra hidráulica en México.",
-  keywords: ["constructora gasolineras", "construccion estaciones de servicio", "20+ gasolineras construidas", "constructora iniciativa privada", "edificación industrial sinaloa", "naves industriales sonora", "constructoras ejecutivas", "casas premium", "plazas comerciales", "oficinas", "restaurantes", "obra hidraulica", "edificios", "mexico", "noroeste"],
+  title: "Constructora de Gasolineras e Infraestructura Industrial | SAVI Construcciones",
+  description: "SAVI Construcciones: Expertos en gasolineras e infraestructura industrial en Sinaloa y el Noroeste. Garantizamos certeza operativa y proyectos llave en mano.",
+  keywords: ["constructora gasolineras sinaloa", "construccion estaciones de servicio sonora", "infraestructura industrial noroeste", "savi construcciones", "proyectos llave en mano sinaloa"],
   robots: "index,follow,max-image-preview:large",
   openGraph: {
-    title: "SAVI Construcciones | Líder en Gasolineras & Infraestructura Privada",
-    description: "Con más de 20 gasolineras construidas, somos el socio estratégico B2B en México. Desarrollador llave en mano de naves industriales, casas premium, oficinas, restaurantes, plazas comerciales y edificios.",
+    title: "SAVI Construcciones | Gasolineras e Industria en el Noroeste",
+    description: "Expertos en estaciones de servicio y proyectos llave en mano para la iniciativa privada. Certeza operativa y rigor técnico en cada obra.",
     url: "https://www.saviconstrucciones.com/",
     siteName: "SAVI Construcciones",
     locale: "es_MX",
@@ -61,16 +61,15 @@ export default function RootLayout({
       { "@type": "State", "name": "Nayarit" },
       { "@type": "State", "name": "Baja California Sur" }
     ],
-    "description": "Constructora ejecutiva líder en México. Con más de 20 estaciones de servicio construidas, somos la opción #1 en gasolineras. Desarrollamos para la Iniciativa Privada: casas premium, oficinas, restaurantes, plazas comerciales, obra hidráulica, naves industriales y edificios, garantizando certeza operativa llave en mano.",
+    "description": "Constructora líder en el noroeste de México especializada en la construcción de estaciones de servicio (gasolineras), obra industrial premium y desarrollos comerciales en Sinaloa y Sonora. Ofrecemos una gestión integral: proyecto ejecutivo, gestión de permisos, ejecución de obra civil y mecánica, y entrega documentada con trazabilidad total.",
     "hasOfferCatalog": {
-      "@context": "https://schema.org",
       "@type": "OfferCatalog",
-      "name": "Especialidades de Construcción B2B",
+      "name": "Servicios de Construcción Estratégica",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construcción de Gasolineras (Líderes con +20 Estaciones)", "description": "Líderes indiscutibles. Obra civil, permisos ASEA/CRE, integración mecánica y obra hidráulica especializada para estaciones de servicio a nivel nacional." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naves Industriales y Edificios", "description": "Plataformas logísticas, pisos industriales, edificios y urbanización de gran escala." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desarrollo Comercial (Plazas, Oficinas, Restaurantes)", "description": "Habilitación y edificación de plazas comerciales, corporativos, oficinas y restaurantes llave en mano." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residencial Premium", "description": "Ejecución de casas premium y residencias de autor con acabados arquitectónicos bajo control riguroso." } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construcción de Estaciones de Servicio (Gasolineras)", "description": "Proyecto integral, permisos y construcción de gasolineras en Sinaloa y Sonora." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Obra Industrial y Naves", "description": "Cimentaciones, estructuras y pavimentos industriales." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desarrollos Comerciales Premium", "description": "Oficinas, clínicas y retail con acabados de alta calidad." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residencial de Alta Gama", "description": "Construcción de residencias con método y transparencia total." } }
       ]
     }
   };

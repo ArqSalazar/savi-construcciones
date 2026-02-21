@@ -38,21 +38,21 @@ export default function Servicios() {
                                 hidden: { opacity: 0, y: 30 },
                                 visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } }
                             }}
-                            className="text-[clamp(2.5rem,6.5vw,5rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase"
+                            className="text-[clamp(3.5rem,8.5vw,7.5rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase"
                         >
-                            Servicios para<br />
-                            <span className="opacity-40 italic">Iniciativa Privada.</span>
+                            CONTROL<br />
+                            <span className="opacity-20 italic">ABSOLUTO.</span>
                         </motion.h1>
 
-                        <motion.h2
+                        <motion.p
                             variants={{
                                 hidden: { opacity: 0, y: 20 },
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
                             }}
                             className="mt-4 max-w-2xl text-gray-700/80 text-[18px] md:text-[21px] font-light leading-[1.65] tracking-[-0.01em]"
                         >
-                            Ejecución de capital intensivo con enfoque corporativo. Gestionamos la ingeniería, construcción y operación técnica garantizando cumplimiento estricto de plazos, presupuesto y normativas. Construimos certidumbre para su inversión.
-                        </motion.h2>
+                            Desde el diseño de tu próximo hogar hasta el desarrollo de infraestructura técnica compleja. Acompañamos cada etapa de tu proyecto con una visión humana y el rigor técnico de la ingeniería, garantizando transparencia absoluta y honestidad en cada proceso.
+                        </motion.p>
                     </motion.div>
 
                     <motion.div
@@ -107,20 +107,20 @@ export default function Servicios() {
                     <ScrollReveal>
                         <div className="flex items-end justify-between gap-6 flex-wrap">
                             <div>
-                                <h3 className="text-4xl md:text-[3.5rem] font-black tracking-[-0.03em] leading-none mb-4">¿Qué Edificamos?</h3>
+                                <h2 className="text-4xl md:text-[3.5rem] font-black tracking-[-0.03em] leading-none mb-4">¿Qué Edificamos?</h2>
                                 <p className="max-w-3xl text-gray-500 text-[18px] md:text-[20px] font-light leading-[1.65]">
-                                    Un portafolio robusto para líderes de la industria. Soluciones LLAVE EN MANO estructuradas para escalar tu negocio.
+                                    Cobertura técnica versátil: desde la comodidad del hogar hasta las exigencias logísticas empresariales.
                                 </p>
                             </div>
                             <div className="glass px-5 py-3 text-[10px] uppercase font-bold tracking-[0.35em] text-accent mb-2">
-                                División de Proyectos
+                                Ejecución Plural
                             </div>
                         </div>
 
                         <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
                             <article className="glass p-9 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:bg-white/80 border border-black/5 hover:border-black/10">
-                                <h3 className="text-2xl font-black tracking-tight text-ink">Residencial Premium</h3>
-                                <p className="mt-4 text-[15px] font-light text-gray-500 leading-relaxed">Trasladamos la disciplina de la gran infraestructura a tu hogar. Un mismo estándar corporativo aplicado a la edificación de casas premium, automatización y residencias de autor para asegurar que el diseño se respete hasta el último milímetro.</p>
+                                <h3 className="text-2xl font-black tracking-tight text-ink">Residencial de Alta Especificación</h3>
+                                <p className="mt-4 text-[15px] font-light text-gray-500 leading-relaxed">Trasladamos la disciplina de la gran infraestructura a tu hogar. Un mismo estándar de ejecución aplicado a residencias y remodelaciones para asegurar que el diseño se respete hasta el último detalle.</p>
                                 <ul className="mt-6 text-[14px] font-medium text-gray-700 leading-relaxed list-none space-y-2">
                                     <li className="flex items-center gap-2"><span className="text-accent">✓</span> Alcance técnico firmado (Cero sorpresas)</li>
                                     <li className="flex items-center gap-2"><span className="text-accent">✓</span> Presupuesto desglosado por partidas</li>
@@ -130,19 +130,19 @@ export default function Servicios() {
                             </article>
 
                             <article className="glass p-9 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:bg-white/80 border border-black/5 hover:border-black/10">
-                                <h2 className="text-2xl font-black tracking-tight text-ink">Proyectos Comerciales y Edificios</h2>
-                                <p className="mt-4 text-[15px] font-light text-gray-500 leading-relaxed">Especialistas en la edificación de espacios de alta dinámica: plazas comerciales, corporativos, oficinas, restaurantes y retail. Logística inteligente para asegurar la continuidad del negocio y apertura acelerada.</p>
+                                <h3 className="text-2xl font-black tracking-tight text-ink">Comercial & Corporativo</h3>
+                                <p className="mt-4 text-[15px] font-light text-gray-500 leading-relaxed">Especialistas en la habilitación de espacios de alta dinámica: oficinas corporativas, clínicas, restaurantes y unidades de retail. Implementamos logísticas de ejecución inteligente para asegurar la continuidad de tu negocio.</p>
                                 <ul className="mt-6 text-[14px] font-medium text-gray-700 leading-relaxed list-none space-y-2">
                                     <li className="flex items-center gap-2"><span className="text-accent">✓</span> Ejecución sin Interrupción Operativa</li>
-                                    <li className="flex items-center gap-2"><span className="text-accent">✓</span> Ingeniería MEP Especializada</li>
-                                    <li className="flex items-center gap-2"><span className="text-accent">✓</span> Fit-outs Rápidos y Acabados Arquitectónicos</li>
-                                    <li className="flex items-center gap-2"><span className="text-accent">✓</span> Cumplimiento Estricto de Cronogramas de Apertura</li>
+                                    <li className="flex items-center gap-2"><span className="text-accent">✓</span> Ingeniería de Instalaciones Especializadas (MEP)</li>
+                                    <li className="flex items-center gap-2"><span className="text-accent">✓</span> Gestión Integral de Fit-outs y Acabados</li>
+                                    <li className="flex items-center gap-2"><span className="text-accent">✓</span> Cumplimiento Estricto de Plazos de Apertura</li>
                                 </ul>
                             </article>
 
                             <article className="glass p-9 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:bg-white/80 border border-black/5 hover:border-black/10">
-                                <h2 className="text-2xl font-black tracking-tight text-ink">Naves Industriales y Obra Civil</h2>
-                                <p className="mt-4 text-[15px] font-light text-gray-500 leading-relaxed">Experiencia en macro-proyectos comerciales y privados: desde obra hidráulica, naves logísticas y urbanización hasta soporte técnico para el sector agrícola y minero. Maximizamos tu eficiencia operativa.</p>
+                                <h3 className="text-2xl font-black tracking-tight text-ink">Industrial & Infraestructura</h3>
+                                <p className="mt-4 text-[15px] font-light text-gray-500 leading-relaxed">Experiencia en proyectos de gran escala: desde naves logísticas y urbanización hasta soporte técnico para el sector minero. Maximizamos la eficiencia mediante planificación predictiva y control riguroso en sitio.</p>
                                 <ul className="mt-6 text-[14px] font-medium text-gray-700 leading-relaxed list-none space-y-2">
                                     <li className="flex items-center gap-2"><span className="text-accent">✓</span> Terracerías y Urbanización Mayor</li>
                                     <li className="flex items-center gap-2"><span className="text-accent">✓</span> Obra Civil y Soporte al Sector Minero</li>
@@ -157,7 +157,7 @@ export default function Servicios() {
                                 <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <div className="relative z-10">
                                     <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent mb-3">Infraestructura Crítica</div>
-                                    <h2 className="text-3xl font-black tracking-tight text-ink">Construcción de Estaciones de Servicio</h2>
+                                    <h3 className="text-3xl font-black tracking-tight text-ink">Estaciones de Servicio</h3>
                                     <div className="mt-4 text-[16px] text-gray-600 font-light leading-relaxed">
                                         Especialistas en la construcción y equipamiento de <strong className="font-medium text-ink">gasolineras</strong> y estaciones de servicio de alto rendimiento. Asumimos el control en modo <em className="italic">&quot;Turnkey&quot;</em> (Llave en Mano) para proyectos nuevos y programas de modernización de imagen.
                                     </div>
@@ -235,16 +235,16 @@ export default function Servicios() {
                                 </h3>
                                 <div className="space-y-8">
                                     <div>
-                                        <h4 className="font-bold text-[16px] text-ink mb-2">¿SAVI construye gasolineras llave en mano en México?</h4>
-                                        <p className="text-[14px] text-gray-500 font-light leading-relaxed">Sí. Ejecutamos proyectos integrales bajo la modalidad Llave en Mano para la iniciativa privada, desde el diseño y gestión normativa hasta la obra civil en todo el Noroeste y República Mexicana.</p>
+                                        <h4 className="font-bold text-[16px] text-ink mb-2">¿SAVI CONSTRUCCIONES realiza proyectos de gasolineras en todo México?</h4>
+                                        <p className="text-[14px] text-gray-500 font-light leading-relaxed">Sí. Contamos con absoluta movilidad nacional para ejecutar proyectos llave en mano (Turnkey), desde la gestión normativa ante ASEA/CRE hasta la ingeniería civil y mecánica en cualquier punto de la República.</p>
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-[16px] text-ink mb-2">¿Cuál es su enfoque principal para la Iniciativa Privada?</h4>
-                                        <p className="text-[14px] text-gray-500 font-light leading-relaxed">Proveer certeza operativa. Nuestra constructora ejecutiva funge como un brazo estratégico, blindando presupuestos y acelerando tiempos de entrega en infraestructura industrial, comercial y habitacional premium.</p>
+                                        <h4 className="font-bold text-[16px] text-ink mb-2">¿Cómo integran la arquitectura y la ingeniería en sus proyectos?</h4>
+                                        <p className="text-[14px] text-gray-500 font-light leading-relaxed">Operamos bajo un esquema de responsabilidad única. Fusionamos el diseño arquitectónico con el rigor técnico de la ingeniería desde la fase de anteproyecto, garantizando presupuestos honestos y obras sin vicios técnicos.</p>
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-[16px] text-ink mb-2">¿Tienen experiencia en naves industriales y desarrollo comercial?</h4>
-                                        <p className="text-[14px] text-gray-500 font-light leading-relaxed">Nuestra área de Proyectos Industriales y Comerciales está capacitada estructuralmente para habilitar grandes superficies, asegurando la continuidad y rentabilidad de su modelo de negocio.</p>
+                                        <h4 className="font-bold text-[16px] text-ink mb-2">¿Qué sectores de infraestructura y edificación atienden a nivel nacional?</h4>
+                                        <p className="text-[14px] text-gray-500 font-light leading-relaxed">Nuestra agilidad operativa nos permite atender proyectos Residenciales de alta gama, Naves Industriales, Infraestructura Minera, Restaurantes y Corporativos, adaptando la logística a las necesidades específicas de cada zona.</p>
                                     </div>
                                 </div>
                             </div>

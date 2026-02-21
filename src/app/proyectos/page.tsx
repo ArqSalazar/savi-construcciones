@@ -26,73 +26,73 @@ const itemVariants: Variants = {
 const PROJECTS = [
     {
         id: "01",
-        category: "Comercial · Distribución Híbrida",
-        title: "Gasolinera Flagship – Los Mochis, Sin.",
-        description: "Construcción llave en mano (obra civil y despachadores). Aceleramos la apertura operativa en un 12% vs. cronograma tradicional.",
+        category: "Comercial · Oficinas",
+        title: "Corporativo Valle",
+        description: "Remodelación en operación. Coordinación MEP de alta densidad bajo esquema fast-track sin interrupciones operativas.",
         span: "lg:col-span-2",
         placeholderPath: "/projects/comercial/corporativo-valle.webp"
     },
     {
         id: "02",
-        category: "Industrial · Distribución",
-        title: "Nave Logística – Navojoa, Son.",
-        description: "Pisos súper planos y andenes de alta resistencia. Habilitada para operación pesada 24/7 sin asentamientos.",
-        span: "lg:col-span-1",
-        placeholderPath: "/projects/industrial/nave-logistica.webp"
-    },
-    {
-        id: "03",
-        category: "Comercial · Oficinas",
-        title: "Corporativo Valle",
-        description: "Remodelación corporativa fast-track. Coordinación de instalaciones MEP sin interrupción de la operación existente.",
+        category: "Residencial · Premium",
+        title: "Casa Pedregal",
+        description: "Estructura de concreto aparente con claros monumentales. Tolerancia milimétrica en acabados.",
         span: "lg:col-span-1",
         placeholderPath: "/projects/residencial/casa-pedregal.webp"
     },
     {
+        id: "03",
+        category: "Industrial · Distribución",
+        title: "Nave Logística",
+        description: "Pisos súper planos y andenes de alta resistencia para operación 24/7.",
+        span: "lg:col-span-1",
+        placeholderPath: "/projects/industrial/nave-logistica.webp"
+    },
+    {
         id: "04",
         category: "Misión Crítica · Energía",
-        title: "Estación de Servicio Dual – Culiacán",
-        description: "Regulación ASEA/CRE cumplida al 100%. Sistemas de almacenamiento y contención ejecutados con cero desviaciones normativas.",
+        title: "Estación Flagship",
+        description: "Certeza normativa absoluta. Cumplimiento estricto para almacenamiento y manejo de fluidos peligrosos.",
         span: "lg:col-span-2",
         placeholderPath: "/projects/mision-critica/estacion-flagship.webp"
     },
     {
         id: "05",
         category: "Comercial · Retail",
-        title: "Plaza Comercial Norte",
-        description: "Ingeniería de valor aplicada: optimización de estructura metálica reduciendo el gramaje de acero sin sacrificar amplitud.",
+        title: "Plaza Norte",
+        description: "Optimización estructural que redujo el gramaje de acero en un 15% sin comprometer claros arquitectónicos.",
         span: "lg:col-span-1",
         placeholderPath: "/projects/comercial/plaza-norte.webp"
     },
     {
         id: "06",
-        category: "Residencial · Premium",
-        title: "Residencia Pedregal – Ahome",
-        description: "Ejecución de geometrías complejas en concreto aparente. Rigidez estructural combinada con acabados arquitectónicos de alta tolerancia.",
+        category: "Residencial · Vertical",
+        title: "Torre Hábitat",
+        description: "Control logístico masivo en espacio reducido. Cimentación profunda y entrega de 80 unidades.",
         span: "lg:col-span-1",
         placeholderPath: "/projects/residencial/torre-habitat.webp"
     },
     {
         id: "07",
         category: "Industrial · Especialidad",
-        title: "Planta de Envasado",
-        description: "Integración de cuartos fríos y área con certificación sanitaria (TIF). Aislamiento térmico y acabados epóxicos garantizados.",
+        title: "Planta Alimentaria",
+        description: "Control sanitario (TIF) y cuartos fríos. Aislamiento térmico garantizado.",
         span: "lg:col-span-1",
         placeholderPath: "/projects/industrial/planta-alimentaria.webp"
     },
     {
         id: "08",
-        category: "Salud · Certificada",
-        title: "Clínica Médica Especializada",
-        description: "Instalaciones de gases medicinales y quirófanos (Estándar Hospitalario C). Climatización presurizada perfecta.",
+        category: "Misión Crítica · Salud",
+        title: "Clínica Quirúrgica",
+        description: "Instalaciones de soporte vital, gases medicinales y quirófanos bajo estándar hospitalario C.",
         span: "lg:col-span-2",
         placeholderPath: "/projects/mision-critica/clinica-quirurgica.webp"
     },
     {
         id: "09",
-        category: "Comercial · Restaurantes",
-        title: "Restaurante Core Habit",
-        description: "Refuerzo estructural respetando fachada histórica. Fit-out completo entregado una semana antes del opening.",
+        category: "Comercial · Restauración",
+        title: "Intervención Patrimonial",
+        description: "Ingeniería inversa. Refuerzo estructural respetando íntegramente la fachada histórica protegida.",
         span: "lg:col-span-1",
         placeholderPath: "/projects/comercial/intervencion-patrimonial.webp"
     }
@@ -114,22 +114,22 @@ export default function Proyectos() {
                             className="text-accent font-semibold tracking-[0.42em] text-[10px] md:text-[11px] uppercase inline-flex items-center gap-3 mb-2"
                         >
                             <span className="w-1.5 h-1.5 rounded-full bg-accent/80 shadow-[0_0_0_6px_rgba(29,78,216,.10)]"></span>
-                            Casos de Éxito
+                            Proyectos Destacados
                         </motion.span>
 
                         <motion.h1
                             variants={itemVariants}
-                            className="text-[clamp(3rem,6vw,6rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase"
+                            className="text-[clamp(3.5rem,8vw,7rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase"
                         >
-                            Rentabilidad.<br />
-                            <span className="opacity-20 italic">Construida.</span>
+                            RESULTADOS.<br />
+                            <span className="opacity-20 italic">VISIBLES.</span>
                         </motion.h1>
 
                         <motion.p
                             variants={itemVariants}
                             className="max-w-3xl mt-4 text-gray-500 text-[19px] md:text-[22px] font-light leading-[1.65] tracking-tight"
                         >
-                            Más allá del m². Así es como nuestro brazo ejecutor materializó el diseño y aceleró el retorno de inversión de estos proyectos privados en el Norte del país.
+                            No vendemos renders ni promesas. Este es el registro de soluciones arquitectónicas e ingeniería ejecutada al más alto rigor técnico y normativo.
                         </motion.p>
                     </motion.div>
 
@@ -150,9 +150,9 @@ export default function Proyectos() {
                                         <span>Caso {project.id}</span>
                                         <span className="opacity-50 font-medium tracking-widest">{project.category}</span>
                                     </div>
-                                    <h2 className="mt-4 text-2xl lg:text-3xl font-black tracking-tight text-ink group-hover:text-accent transition-colors duration-300">
+                                    <div className="mt-4 text-2xl lg:text-3xl font-black tracking-tight text-ink group-hover:text-accent transition-colors duration-300">
                                         {project.title}
-                                    </h2>
+                                    </div>
                                     <p className="mt-4 text-gray-500 font-light leading-relaxed max-w-lg">
                                         {project.description}
                                     </p>
