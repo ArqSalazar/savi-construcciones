@@ -14,13 +14,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Constructora de Gasolineras e Infraestructura Industrial | SAVI Construcciones",
-  description: "SAVI Construcciones: Expertos en gasolineras e infraestructura industrial en Sinaloa y el Noroeste. Garantizamos certeza operativa y proyectos llave en mano.",
-  keywords: ["constructora gasolineras sinaloa", "construccion estaciones de servicio sonora", "infraestructura industrial noroeste", "savi construcciones", "proyectos llave en mano sinaloa"],
+  title: "SAVI Construcciones | Arquitectura & Ingeniería con Certeza",
+  description: "Especialistas en diseño y construcción de residencias premium, proyectos industriales y comerciales. Más de 20 años transformando visiones en realidades con rigor técnico y honestidad.",
+  keywords: ["constructora sinaloa", "arquitectura y construccion sonora", "casas premium", "naves industriales", "estaciones de servicio", "construccion residencial", "proyectos llave en mano", "savi construcciones"],
   robots: "index,follow,max-image-preview:large",
   openGraph: {
-    title: "SAVI Construcciones | Gasolineras e Industria en el Noroeste",
-    description: "Expertos en estaciones de servicio y proyectos llave en mano para la iniciativa privada. Certeza operativa y rigor técnico en cada obra.",
+    title: "SAVI Construcciones | Arquitectura, Ingeniería & Construcción",
+    description: "Diseño integral y ejecución técnica de proyectos residenciales, comerciales e industriales. Construimos con transparencia y excelencia técnica.",
     url: "https://www.saviconstrucciones.com/",
     siteName: "SAVI Construcciones",
     locale: "es_MX",

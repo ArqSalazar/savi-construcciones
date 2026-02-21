@@ -39,9 +39,9 @@ export default function Nosotros() {
                             }}
                             className="text-[clamp(3.5rem,8vw,7rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase"
                         >
-                            LEGALIDAD.<br />
-                            <span className="opacity-90">TÉCNICA.</span><br />
-                            <span className="opacity-20 italic">HONESTIDAD.</span>
+                            HISTORIA.<br />
+                            <span className="opacity-90">VISIÓN.</span><br />
+                            <span className="opacity-20 italic">COMPROMISO.</span>
                         </motion.h1>
 
                         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 mt-4 items-start">
@@ -114,9 +114,9 @@ export default function Nosotros() {
                                 className="glass p-9 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:bg-white/80 h-full flex flex-col border border-black/5 hover:border-black/10"
                             >
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400">Pilar I</div>
-                                <div className="mt-3 text-2xl font-black tracking-tight text-ink">Honestidad Presupuestal</div>
+                                <div className="mt-3 text-2xl font-black tracking-tight text-ink">Transparencia Total</div>
                                 <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65]">
-                                    Eliminamos la incertidumbre financiera. Cada peso de tu inversión es gestionado con transparencia absoluta y trazabilidad total, garantizando que el capital se transforme en valor real y tangible.
+                                    Cuidamos tu patrimonio como si fuera propio. Eliminamos la incertidumbre financiera mediante una comunicación clara y una gestión honesta de cada recurso, asegurando que tu inversión se traduzca en valor real.
                                 </p>
                             </motion.div>
 
@@ -128,9 +128,9 @@ export default function Nosotros() {
                                 className="glass p-9 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:bg-white/80 h-full flex flex-col border border-black/5 hover:border-black/10"
                             >
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400">Pilar II</div>
-                                <div className="mt-3 text-2xl font-black tracking-tight text-ink">Sustento Técnico</div>
+                                <div className="mt-3 text-2xl font-black tracking-tight text-ink">Ingeniería con Propósito</div>
                                 <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65]">
-                                    Arquitectura con cimientos de ingeniería. Sustentamos el diseño en soluciones estructurales de alta eficiencia que garantizan la integridad, seguridad y el legado permanente de cada obra.
+                                    Unimos la visión arquitectónica con un sustento técnico inquebrantable. Diseñamos espacios que no solo son bellos, sino seguros, eficientes y construidos para trascender generaciones.
                                 </p>
                             </motion.div>
 
@@ -142,9 +142,9 @@ export default function Nosotros() {
                                 className="glass p-9 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] border border-accent/20 hover:border-accent/40 bg-gradient-to-br from-white/70 to-blue-50/30 h-full flex flex-col"
                             >
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent">Pilar III</div>
-                                <div className="mt-3 text-2xl font-black tracking-tight text-ink">Certeza Operativa</div>
+                                <div className="mt-3 text-2xl font-black tracking-tight text-ink">Compromiso Real</div>
                                 <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65]">
-                                    Control total sobre el tiempo. Nuestra logística avanzada en el Noroeste asegura el cumplimiento estricto de cronogramas, permitiendo que tu proyecto inicie su ciclo productivo sin retrasos.
+                                    Respetamos tu tiempo y tus planes. Nuestra logística y experiencia en el Noroeste nos permiten cumplir con cronogramas estrictos, garantizando que puedas disfrutar de tu espacio o iniciar tu negocio en la fecha pactada.
                                 </p>
                             </motion.div>
                         </div>

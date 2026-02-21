@@ -40,10 +40,9 @@ export default function Servicios() {
                             }}
                             className="text-[clamp(3.5rem,8.5vw,7.5rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase"
                         >
-                            CONTROL<br />
-                            <span className="opacity-20 italic">ABSOLUTO.</span>
+                            DISEÑO &<br />
+                            <span className="opacity-20 italic">CONSTRUCCIÓN.</span>
                         </motion.h1>
-
                         <motion.p
                             variants={{
                                 hidden: { opacity: 0, y: 20 },
