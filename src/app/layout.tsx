@@ -82,7 +82,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaScript) }}
         />
       </head>
-      <body className={`${jakarta.variable} font-sans antialiased text-ink bg-paper min-h-screen flex flex-col relative`}>
+      <body
+        className={`${jakarta.variable} font-sans antialiased text-ink bg-paper min-h-screen flex flex-col relative`}
+        suppressHydrationWarning
+      >
         <Preloader />
         <LenisProvider>
           <BlueprintBackground />
