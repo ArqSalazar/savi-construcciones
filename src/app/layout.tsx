@@ -76,16 +76,14 @@ export default function RootLayout({
 
   return (
     <html lang="es-MX" suppressHydrationWarning>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaScript) }}
-        />
-      </head>
       <body
         className={`${jakarta.variable} font-sans antialiased text-ink bg-paper min-h-screen flex flex-col relative`}
         suppressHydrationWarning
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaScript) }}
+        />
         <Preloader />
         <LenisProvider>
           <BlueprintBackground />

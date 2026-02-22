@@ -9,6 +9,8 @@ export default function Preloader() {
 
     useEffect(() => {
         // Only run preloader once per session
+        if (typeof window === "undefined") return;
+
         const hasVisited = sessionStorage.getItem("savi_has_visited");
 
         if (!hasVisited) {
@@ -21,7 +23,7 @@ export default function Preloader() {
             const timer = setTimeout(() => {
                 setIsLoading(false);
                 document.body.style.overflow = "";
-            }, 3000); // 3 seconds total duration
+            }, 3000);
 
             return () => {
                 clearTimeout(timer);
