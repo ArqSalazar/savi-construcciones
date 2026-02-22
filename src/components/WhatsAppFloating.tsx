@@ -21,7 +21,7 @@ export default function WhatsAppFloating() {
     }, []);
 
     // Número de teléfono de SAVI (Reemplazar con el real)
-    const phoneNumber = "5215555555555";
+    const phoneNumber = "5216682228008";
     const defaultMessage = "Hola, he visitado su sitio web y me interesa evaluar la viabilidad de un proyecto estratégico con SAVI.";
     const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
 

@@ -150,7 +150,7 @@ export default function Contacto() {
                                     <div className="flex flex-col gap-3 border-b border-black/5 pb-5">
                                         <div className="text-[14px] text-gray-500 font-medium">Ejecutivo de Cuenta</div>
                                         <a
-                                            href="https://wa.me/5215555555555?text=Hola,%20quisiera%20evaluar%20un%20proyecto"
+                                            href="https://wa.me/5216682228008?text=Hola,%20quisiera%20evaluar%20un%20proyecto"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="inline-flex items-center justify-between w-full p-4 rounded-xl border border-black/5 bg-white/50 hover:bg-green-50/80 hover:border-green-500/30 transition-all duration-300 group"
