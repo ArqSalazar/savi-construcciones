@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Preloader() {
+    const [mounted, setMounted] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [isFirstVisit, setIsFirstVisit] = useState(false);
 
     useEffect(() => {
-        // Only run preloader once per session
-        if (typeof window === "undefined") return;
+        setMounted(true);
 
         const hasVisited = sessionStorage.getItem("savi_has_visited");
 
@@ -35,10 +35,8 @@ export default function Preloader() {
         }
     }, []);
 
-    // Careful with hydration: isFirstVisit is false on server.
-    // We only render on client once mounted and confirmed.
-    if (typeof window !== "undefined" && !isFirstVisit) return null;
-    if (typeof window === "undefined") return null;
+    // Render nothing during SSR or initial hydration bypass
+    if (!mounted || !isFirstVisit) return null;
 
     return (
         <AnimatePresence>

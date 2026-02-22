@@ -1,30 +1,46 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 
 export default function LenisProvider({ children }: { children: React.ReactNode }) {
+  const lenisRef = useRef<Lenis | null>(null);
+  const rafRef = useRef<number | null>(null);
+
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     // Check if user prefers reduced motion
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReducedMotion) return;
 
     const lenis = new Lenis({
-      duration: 1.1,
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
       smoothWheel: true,
-      // @ts-expect-error - lenis config not strictly typed
-      smoothTouch: false,
+      wheelMultiplier: 1,
+      touchMultiplier: 2,
     });
 
+    lenisRef.current = lenis;
+
     function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
+      if (lenisRef.current) {
+        lenisRef.current.raf(time);
+        rafRef.current = requestAnimationFrame(raf);
+      }
     }
 
-    requestAnimationFrame(raf);
+    rafRef.current = requestAnimationFrame(raf);
 
     return () => {
-      lenis.destroy();
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      if (lenisRef.current) {
+        lenisRef.current.destroy();
+        lenisRef.current = null;
+      }
     };
   }, []);
 

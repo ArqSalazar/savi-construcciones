@@ -84,8 +84,8 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaScript).replace(/</g, '\\u003c') }}
         />
+        <Preloader />
         <LenisProvider>
-          <Preloader />
           <BlueprintBackground />
           <Navbar />
           <main className="flex-1 flex flex-col pt-24 z-10 w-full relative">

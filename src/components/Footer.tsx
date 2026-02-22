@@ -1,10 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Footer() {
-    const [year] = useState(new Date().getFullYear());
+    const [year, setYear] = useState<number | string>("");
+
+    useEffect(() => {
+        setYear(new Date().getFullYear());
+    }, []);
 
     return (
         <div className="section-padding !py-10 relative z-10 w-full mt-auto">
