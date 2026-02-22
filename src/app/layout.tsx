@@ -49,7 +49,8 @@ export default function RootLayout({
     "name": "SAVI Construcciones",
     "url": "https://www.saviconstrucciones.com/",
     "image": "https://www.saviconstrucciones.com/og-image.jpg",
-    "telephone": "+52-XXX-XXX-XXXX",
+    "telephone": "+52-668-222-8008",
+    "email": "ventas@saviconstrucciones.com",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "MX",
