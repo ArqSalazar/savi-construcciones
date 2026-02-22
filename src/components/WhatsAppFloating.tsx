@@ -44,8 +44,7 @@ export default function WhatsAppFloating() {
                     {/* Tooltip Hover */}
                     <div className="absolute right-full mr-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                         <div className="glass px-4 py-2 text-[11px] uppercase tracking-widest font-bold whitespace-nowrap shadow-soft border border-black/5 flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
-                            Chat Directo
+                            Habla con un asesor ahora
                         </div>
                     </div>
 
