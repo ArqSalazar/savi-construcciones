@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja Membretada Oficial | SAVI Construcciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,700;0,800;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent: #0066FF;
+            --ink: #111111;
+            --gray: #666666;
+            --light-gray: #F5F5F7;
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-main);
+            color: var(--ink);
+            line-height: 1.6;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            background: white;
+        }
+
+        .page-container {
+            width: 210mm;
+            height: 297mm;
+            padding: 20mm 20mm;
+            box-sizing: border-box;
+            position: relative;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Fondo Estático Tenue (Concepto Blueprint/Glass de la Web) */
+        .background-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.035;
+            /* Ultra tenue para no interferir con la lectura */
+            pointer-events: none;
+        }
+
+        .grid-pattern {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(to right, var(--accent) 1px, transparent 1px),
+                linear-gradient(to bottom, var(--accent) 1px, transparent 1px);
+            background-size: 30mm 30mm;
+        }
+
+        .circle-gradient {
+            position: absolute;
+            top: -100mm;
+            right: -100mm;
+            width: 250mm;
+            height: 250mm;
+            background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+            opacity: 0.15;
+        }
+
+        /* Contenedor principal para elevar el contenido sobre el fondo */
+        .content-layer {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Membrete Minimalista */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25mm;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+            padding-bottom: 10mm;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: baseline;
+            gap: 8pt;
+        }
+
+        .logo-main {
+            font-size: 26pt;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+            font-style: italic;
+            color: var(--ink);
+            line-height: 1;
+        }
+
+        .dot {
+            color: var(--accent);
+            font-style: normal;
+        }
+
+        .logo-tag {
+            font-size: 10pt;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+            color: var(--gray);
+            border-left: 1px solid var(--gray);
+            padding-left: 10pt;
+            margin-left: 2pt;
+        }
+
+        .header-meta {
+            text-align: right;
+            font-size: 8pt;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--gray);
+        }
+
+        /* Cuerpo del documento (Vacío para uso libre) */
+        main {
+            flex-grow: 1;
+            position: relative;
+        }
+
+        /* Guía visual para el usuario (No se imprime si se desea, pero ayuda al diseño) */
+        .empty-state-guide {
+            border: 1px dashed rgba(0, 0, 0, 0.05);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            font-weight: 800;
+            font-size: 14pt;
+        }
+
+        /* Pie de Página Profesional */
+        footer {
+            margin-top: auto;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            padding-top: 12mm;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 20pt 40pt;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2pt;
+        }
+
+        .info-label {
+            font-size: 7pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--gray);
+        }
+
+        .info-value {
+            font-size: 9pt;
+            font-weight: 400;
+            color: var(--ink);
+        }
+
+        .value-accent {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .footer-branding {
+            text-align: right;
+        }
+
+        .web-url {
+            font-size: 10pt;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            color: var(--ink);
+            text-decoration: none;
+        }
+
+        .legal-tag {
+            font-size: 7pt;
+            color: var(--gray);
+            margin-top: 4pt;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* Visualización Web */
+        @media screen {
+            body {
+                background: #f8f8f9;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 0;
+            }
+
+            .page-container {
+                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+                margin-bottom: 40px;
+            }
+
+            .print-button {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background: var(--accent);
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 99px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                cursor: pointer;
+                box-shadow: 0 10px 20px rgba(0, 102, 255, 0.3);
+                z-index: 100;
+                font-size: 10px;
+            }
+        }
+
+        @media print {
+
+            .print-button,
+            .empty-state-guide {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="print-button" onclick="window.print()">Imprimir / Guardar PDF</button>
+
+    <div class="page-container">
+        <!-- Fondo Tenue (Inspirado en la Web) -->
+        <div class="background-overlay">
+            <div class="grid-pattern"></div>
+            <div class="circle-gradient"></div>
+        </div>
+
+        <div class="content-layer">
+            <header>
+                <div class="logo-group">
+                    <span class="logo-main">SAVI<span class="dot">.</span></span>
+                    <span class="logo-tag">Arquitectura & Construcción</span>
+                </div>
+                <div class="header-meta">
+                    Documento Corporativo / 2026
+                </div>
+            </header>
+
+            <main>
+                <div class="empty-state-guide">
+                    Espacio para contenido técnico / administrativo
+                </div>
+            </main>
+
+            <footer>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-label">Sede Corporativa</span>
+                        <span class="info-value">Cjon. Domingo Rubi 517, Los Mochis, Sin.</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Línea Directa</span>
+                        <span class="info-value value-accent">+52 668 815 5975</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Atención Inmediata</span>
+                        <span class="info-value">ventas@saviconstrucciones.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">WhatsApp Corporativo</span>
+                        <span class="info-value value-accent">+52 668 222 8008</span>
+                    </div>
+                </div>
+
+                <div class="footer-branding">
+                    <a href="https://www.saviconstrucciones.com" class="web-url">SAVICONSTRUCCIONES.COM</a>
+                    <div class="legal-tag">Ingeniería de Propósito / Legado Familiar</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

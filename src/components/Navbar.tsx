@@ -43,7 +43,7 @@ export default function Navbar() {
                             SAVI<span className="text-accent">.</span>
                         </div>
                         <div className="text-[7.5px] md:text-[10px] uppercase tracking-[0.25em] md:tracking-[0.4em] font-medium text-gray-500 group-hover:text-ink transition-colors duration-300 pt-1 md:pt-0.5">
-                            Construcciones
+                            Arquitectura & Construcción
                         </div>
                     </Link>
 

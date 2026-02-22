@@ -15,12 +15,12 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SAVI Construcciones | Arquitectura & Ingeniería con Legado Familiar",
+  title: "SAVI Construcciones | Arquitectura & Construcción",
   description: "Más de 20 años construyendo con honestidad y rigor técnico. Especialistas en residencias premium e infraestructura industrial que protege tu patrimonio y asegura tu inversión.",
   keywords: ["constructora sinaloa", "arquitectura integral sonora", "casas premium", "naves industriales", "estaciones de servicio noroeste", "seguridad patrimonial", "legado familiar", "savi construcciones"],
   robots: "index,follow,max-image-preview:large",
   openGraph: {
-    title: "SAVI Construcciones | Arquitectura, Ingeniería & Legado Familiar",
+    title: "SAVI Construcciones | Arquitectura & Construcción",
     description: "Diseño integral y ejecución de alta gama. Protegemos tu inversión con transparencia y excelencia técnica en cada proyecto.",
     url: "https://www.saviconstrucciones.com/",
     siteName: "SAVI Construcciones",

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja Membretada | SAVI Construcciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent: #0066FF;
+            /* Ajustar al azul exacto de la web si es necesario */
+            --ink: #111111;
+            --gray: #666666;
+            --light-gray: #E5E5E5;
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-main);
+            color: var(--ink);
+            line-height: 1.6;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .page-container {
+            width: 210mm;
+            height: 297mm;
+            padding: 25mm 20mm;
+            box-sizing: border-box;
+            position: relative;
+            background: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Línea de acento lateral ultra-fina (Apple Style) */
+        .side-accent {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--accent);
+            opacity: 0.9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40mm;
+        }
+
+        .brand-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text {
+            font-size: 24pt;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 4pt;
+            color: var(--ink);
+        }
+
+        .slogan {
+            font-size: 8.5pt;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+            color: var(--gray);
+            margin-left: 2pt;
+        }
+
+        .doc-meta {
+            text-align: right;
+            font-size: 9pt;
+            color: var(--gray);
+            font-weight: 400;
+        }
+
+        .doc-meta b {
+            color: var(--ink);
+            font-weight: 700;
+        }
+
+        /* Área de Contenido */
+        main {
+            flex-grow: 1;
+            padding: 0 5mm;
+        }
+
+        .subject {
+            font-size: 11pt;
+            font-weight: 700;
+            margin-bottom: 30pt;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .content-placeholder {
+            font-size: 11pt;
+            color: var(--ink);
+            text-align: justify;
+        }
+
+        .signature-area {
+            margin-top: 60pt;
+        }
+
+        .signature-line {
+            width: 60mm;
+            border-bottom: 0.5pt solid var(--ink);
+            margin-bottom: 8pt;
+        }
+
+        .signature-name {
+            font-size: 10pt;
+            font-weight: 700;
+        }
+
+        .signature-role {
+            font-size: 9pt;
+            color: var(--gray);
+            font-style: italic;
+        }
+
+        /* Footer Ejecutivo */
+        footer {
+            border-top: 0.5pt solid var(--light-gray);
+            padding-top: 15pt;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 20pt;
+            align-items: end;
+        }
+
+        .footer-col {
+            font-size: 7.5pt;
+            line-height: 1.4;
+            color: var(--gray);
+        }
+
+        .footer-col b {
+            color: var(--ink);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: block;
+            margin-bottom: 3pt;
+        }
+
+        .footer-highlight {
+            color: var(--accent);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* Estilo para visualización en pantalla */
+        @media screen {
+            body {
+                background: #f0f0f0;
+                display: flex;
+                justify-content: center;
+                padding: 40px 0;
+            }
+
+            .page-container {
+                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+                border-radius: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="side-accent"></div>
+
+        <header>
+            <div class="brand-container">
+                <div class="logo-text">SAVI</div>
+                <div class="slogan">Arquitectura & Ingeniería</div>
+            </div>
+            <div class="doc-meta">
+                Lugar y Fecha: <b>Los Mochis, Sin. a __ de ________ de 2026</b><br>
+                Referencia: <b>SAVI-DOC-2026-001</b>
+            </div>
+        </header>
+
+        <main>
+            <div class="subject">Asunto: Especificación de Requerimientos Técnicos</div>
+
+            <div class="content-placeholder">
+                <p>Estimado Cliente / Colaborador,</p>
+                <p>Por medio de la presente, SAVI Construcciones hace oficial el presente documento. Este formato ha
+                    sido diseñado siguiendo los estándares de excelencia y rigor técnico que definen nuestra operación
+                    en todo el Noroeste de México.</p>
+                <p>Utilice este espacio para desarrollar el cuerpo del documento. Mantenga siempre la limpieza visual y
+                    el uso de párrafos cortos para asegurar una legibilidad de alto nivel, alineada a nuestra cultura de
+                    Transparencia Operativa.</p>
+            </div>
+
+            <div class="signature-area">
+                <div class="signature-line"></div>
+                <div class="signature-name">Dirección Corporativa</div>
+                <div class="signature-role">SAVI Construcciones | Legado Familiar</div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-col">
+                <b>Sede Corporativa</b>
+                Cjon. Domingo Rubi 517, La Cuchilla,<br>
+                81250 Los Mochis, Sinaloa, México.<br>
+                Central: <span class="footer-highlight">+52 668 815 5975</span>
+            </div>
+            <div class="footer-col">
+                <b>Enlace Directo</b>
+                WhatsApp: <span class="footer-highlight">+52 668 222 8008</span><br>
+                Email: <a href="mailto:ventas@saviconstrucciones.com"
+                    class="footer-highlight">ventas@saviconstrucciones.com</a>
+            </div>
+            <div class="footer-col" style="text-align: right;">
+                <b>Identidad Digital</b>
+                www.saviconstrucciones.com<br>
+                <i>Ingeniería de Propósito</i>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
