@@ -1,11 +1,9 @@
 "use client";
-// Global Refresh: 2026-02-21 19:20 - Recursos Sync
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState } => "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-// Global Layout Refresh: 2026-02-21 19:20
 
 const NAV_LINKS = [
     { name: "Servicios", href: "/servicios" },
