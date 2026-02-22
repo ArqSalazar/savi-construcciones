@@ -153,22 +153,29 @@ export default function Contacto() {
 
                                             <div className="mt-6">
                                                 <label className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-500 mb-2 block">Tipología del Proyecto</label>
-                                                <select
-                                                    name="tipo"
-                                                    required
-                                                    className="w-full rounded-[1rem] border border-black/10 bg-white/70 px-5 py-3.5 text-[15px] font-medium text-ink focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent/30 transition-all appearance-none cursor-pointer"
-                                                >
-                                                    <option value="" disabled selected>Seleccione Especialidad</option>
-                                                    <option value="Estación de Servicio">Estación de Servicio (Gasolinera)</option>
-                                                    <option value="Nave Industrial">Nave Industrial / Bodega</option>
-                                                    <option value="Residencia">Residencia de Alta Gama</option>
-                                                    <option value="Comercial">Desarrollo Comercial / Oficial</option>
-                                                    <option value="Otro">Otro Proyecto de Ingeniería</option>
-                                                </select>
+                                                <div className="relative group/select">
+                                                    <select
+                                                        name="tipo"
+                                                        required
+                                                        className="w-full rounded-[1rem] border border-black/10 bg-white/70 px-5 py-3.5 text-[15px] font-medium text-ink focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent/30 transition-all appearance-none cursor-pointer pr-12"
+                                                    >
+                                                        <option value="" disabled selected>Seleccione Especialidad</option>
+                                                        <option value="Estación de Servicio">Estación de Servicio (Gasolinera)</option>
+                                                        <option value="Nave Industrial">Nave Industrial / Bodega</option>
+                                                        <option value="Residencia">Residencia de Alta Gama</option>
+                                                        <option value="Comercial">Desarrollo Comercial / Oficial</option>
+                                                        <option value="Otro">Otro Proyecto de Ingeniería</option>
+                                                    </select>
+                                                    <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 group-hover/select:text-accent transition-colors">
+                                                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
                                             </div>
 
                                             <div className="mt-6">
-                                                <label className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-500 mb-2 block">Ccontexto & Estatus</label>
+                                                <label className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-500 mb-2 block">Contexto & Estatus</label>
                                                 <textarea
                                                     required
                                                     name="mensaje"
@@ -219,7 +226,7 @@ export default function Contacto() {
                         {/* Aside Contact Info */}
                         <aside className="glass p-9 flex flex-col justify-between transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] border border-black/5 bg-white/40">
                             <div>
-                                <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-500 mb-6 font-bold italic">Canales de Enlace</div>
+                                <div className="text-[10px] uppercase tracking-[0.35em] text-gray-500 mb-6 font-bold italic">Canales de Enlace</div>
                                 <div className="grid gap-5">
                                     <div className="flex flex-col gap-3 border-b border-black/5 pb-5">
                                         <div className="text-[13px] text-gray-500 font-medium tracking-tight">Estrategia de Ventas (WhatsApp)</div>
