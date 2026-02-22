@@ -172,20 +172,56 @@ export default function Contacto() {
                                             ingenieria@saviconstrucciones.com
                                         </a>
                                     </div>
-                                    <div className="flex items-start justify-between gap-4 border-b border-black/5 pb-4">
-                                        <div className="text-[14px] text-gray-500 font-medium py-1">Despliegue Físico</div>
-                                        <div className="text-right flex flex-col gap-3">
-                                            <div>
-                                                <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent mb-1">HUB Central</div>
-                                                <span className="text-[15px] font-bold text-ink">Los Mochis, Sinaloa · MX</span>
+                                    <div className="flex flex-col gap-5 border-b border-black/5 pb-6">
+                                        <div className="text-[14px] text-gray-500 font-medium">Sedes Corporativas</div>
+                                        <div className="grid gap-6">
+                                            {/* Los Mochis */}
+                                            <div className="group/loc">
+                                                <div className="flex items-center justify-between mb-2">
+                                                    <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent">Matriz Los Mochis</div>
+                                                    <a
+                                                        href="https://www.google.com/maps/search/?api=1&query=Cjon.+Domingo+Rubi+517,+La+Cuchilla,+81250+Los+Mochis,+Sin."
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="text-[10px] uppercase font-bold tracking-widest text-gray-400 hover:text-accent transition-colors"
+                                                    >
+                                                        Mapa
+                                                    </a>
+                                                </div>
+                                                <div className="text-[14px] text-ink font-medium leading-relaxed mb-3">
+                                                    Cjon. Domingo Rubi 517, La Cuchilla,<br />
+                                                    81250 Los Mochis, Sin.
+                                                </div>
+                                                <div className="flex flex-col gap-2">
+                                                    <a href="tel:6688155975" className="text-[13px] text-gray-600 hover:text-accent flex items-center gap-2 transition-colors">
+                                                        <span className="opacity-50">T.</span> <span className="font-bold">668 815 5975</span>
+                                                    </a>
+                                                    <a href="tel:6682228008" className="text-[13px] text-gray-600 hover:text-accent flex items-center gap-2 transition-colors">
+                                                        <span className="opacity-50">C.</span> <span className="font-bold">668 222 8008</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent mb-1">Sucursal</div>
-                                                <span className="text-[15px] font-bold text-ink">Navojoa, Sonora · MX</span>
-                                            </div>
-                                            <div>
-                                                <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent mb-1">Operaciones</div>
-                                                <span className="text-[15px] font-bold text-ink">Noroeste de México</span>
+
+                                            {/* Navojoa */}
+                                            <div className="group/loc">
+                                                <div className="flex items-center justify-between mb-2">
+                                                    <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent">Sucursal Navojoa</div>
+                                                    <a
+                                                        href="https://www.google.com/maps/search/?api=1&query=C.+Sociedad+Mutualista+1312,+Deportiva,+85860+Navojoa,+Son."
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="text-[10px] uppercase font-bold tracking-widest text-gray-400 hover:text-accent transition-colors"
+                                                    >
+                                                        Mapa
+                                                    </a>
+                                                </div>
+                                                <div className="text-[14px] text-ink font-medium leading-relaxed mb-3">
+                                                    C. Sociedad Mutualista 1312, Deportiva,<br />
+                                                    85860 Navojoa, Son.
+                                                </div>
+                                                <a href="tel:6424273489" className="text-[13px] text-gray-600 hover:text-accent flex items-center gap-2 transition-colors">
+                                                    <span className="opacity-50">T.</span> <span className="font-bold">642 427 3489</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

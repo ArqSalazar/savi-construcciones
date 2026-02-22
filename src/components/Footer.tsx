@@ -20,9 +20,9 @@ export default function Footer() {
                             </div>
                         </Link>
                         <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-black/10"></div>
-                        <div className="text-xs sm:text-sm text-gray-500 font-medium tracking-tight">
-                            <span className="text-accent underline decoration-accent/20">Matriz Los Mochis / Navojoa</span>
-                        </div>
+                        <Link href="/contacto" className="text-xs sm:text-sm text-gray-500 font-medium tracking-tight hover:text-accent transition-colors">
+                            <span className="text-accent underline decoration-accent/20 italic">Sedes:</span> Los Mochis / Navojoa
+                        </Link>
                     </div>
                 </div>
 
