@@ -43,8 +43,8 @@ export default function WhatsAppFloating() {
                 >
                     {/* Tooltip Hover */}
                     <div className="absolute right-full mr-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                        <div className="glass px-4 py-2 text-[11px] uppercase tracking-widest font-bold whitespace-nowrap shadow-soft border border-black/5 flex items-center gap-2">
-                            Habla con un asesor ahora
+                        <div className="glass px-4 py-2 text-[10px] uppercase tracking-[0.25em] font-bold whitespace-nowrap shadow-soft border border-black/5 text-ink/80">
+                            Atención Inmediata
                         </div>
                     </div>
 
