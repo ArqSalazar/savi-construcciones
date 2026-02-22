@@ -20,7 +20,7 @@ export default function Footer() {
                                 SAVI<span className="text-accent">.</span>
                             </div>
                             <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-500 pt-0.5">
-                                Arquitectura & Construcción
+                                Construcciones
                             </div>
                         </Link>
                         <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-black/10"></div>

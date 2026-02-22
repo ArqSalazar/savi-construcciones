@@ -44,7 +44,7 @@ export default function Contacto() {
                             className="text-accent font-semibold tracking-[0.42em] text-[10px] md:text-[11px] uppercase inline-flex items-center gap-3 mb-2"
                         >
                             <span className="w-1.5 h-1.5 rounded-full bg-accent/80 shadow-[0_0_0_6px_rgba(29,78,216,.10)]"></span>
-                            Consultoría Estratégica & Legado SAVI
+                            Consultoría & Ingeniería de Alta Gama
                         </motion.span>
 
                         <motion.h1

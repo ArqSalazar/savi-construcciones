@@ -50,7 +50,7 @@ function AnimatedGrid() {
             <meshBasicMaterial
                 color={0x1d4ed8}
                 transparent={true}
-                opacity={0.15}
+                opacity={0.08}
                 wireframe={true}
                 fog={true}
             />

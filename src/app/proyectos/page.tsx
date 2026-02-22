@@ -101,7 +101,7 @@ const PROJECTS = [
 export default function Proyectos() {
     return (
         <div className="flex flex-col min-h-screen">
-            <section className="flex flex-col justify-center section-padding pb-24 pt-32 min-h-[70vh]">
+            <section className="flex flex-col justify-center section-padding pb-16 min-h-[60vh]">
                 <div className="w-full max-w-[1400px] mx-auto">
                     <motion.div
                         initial="hidden"

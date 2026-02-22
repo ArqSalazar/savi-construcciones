@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja Membretada | SAVI Construcciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent: #1D4ED8;
+            --ink: #0B0F14;
+            --gray: #6B7280;
+            --light-gray: #9CA3AF;
+            --line: #E5E7EB;
+            --font: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font);
+            color: var(--ink);
+            background: white;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 18mm 20mm 16mm;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            overflow: hidden;
+        }
+
+        /* Fondo grid blueprint ultra tenue */
+        .bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .bg-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(to right, var(--accent) 0.5px, transparent 0.5px),
+                linear-gradient(to bottom, var(--accent) 0.5px, transparent 0.5px);
+            background-size: 28mm 28mm;
+            opacity: 0.03;
+        }
+
+        .bg-glow {
+            position: absolute;
+            top: -80mm;
+            right: -80mm;
+            width: 220mm;
+            height: 220mm;
+            background: radial-gradient(circle, var(--accent) 0%, transparent 65%);
+            opacity: 0.04;
+        }
+
+        /* Contenido principal */
+        .content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            flex: 1;
+        }
+
+        /* ── HEADER ── */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 8mm;
+            border-bottom: 2.5px solid var(--accent);
+            margin-bottom: 14mm;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 14pt;
+        }
+
+        .logo-wordmark {
+            font-size: 28pt;
+            font-weight: 800;
+            font-style: italic;
+            letter-spacing: -0.04em;
+            color: var(--ink);
+            line-height: 1;
+        }
+
+        .logo-wordmark .dot {
+            color: var(--accent);
+            font-style: normal;
+        }
+
+        .logo-divider {
+            width: 1px;
+            height: 28pt;
+            background: var(--light-gray);
+            flex-shrink: 0;
+        }
+
+        .logo-descriptor {
+            font-size: 8.5pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .header-meta {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 3pt;
+        }
+
+        .header-city {
+            font-size: 8.5pt;
+            font-weight: 400;
+            color: var(--light-gray);
+            letter-spacing: 0.05em;
+        }
+
+        .header-date {
+            font-size: 8.5pt;
+            font-weight: 400;
+            color: var(--light-gray);
+            letter-spacing: 0.05em;
+        }
+
+        .header-est {
+            font-size: 7pt;
+            font-weight: 600;
+            letter-spacing: 0.4em;
+            color: var(--accent);
+            margin-top: 2pt;
+            opacity: 0.7;
+        }
+
+        /* ── MAIN CONTENT AREA ── */
+        main {
+            flex: 1;
+            min-height: 160mm;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            margin-top: auto;
+            padding-top: 8mm;
+            border-top: 1px solid var(--line);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0 20pt;
+            margin-bottom: 6mm;
+        }
+
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            gap: 5pt;
+        }
+
+        .footer-col-label {
+            font-size: 6.5pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--accent);
+            margin-bottom: 1pt;
+        }
+
+        .footer-col-line {
+            font-size: 7.5pt;
+            font-weight: 400;
+            color: var(--light-gray);
+            line-height: 1.5;
+        }
+
+        .footer-col-line.strong {
+            font-weight: 600;
+            color: var(--gray);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 5mm;
+            border-top: 1px solid var(--line);
+        }
+
+        .footer-web {
+            font-size: 7.5pt;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink);
+            text-decoration: none;
+        }
+
+        .footer-page {
+            font-size: 7pt;
+            color: var(--light-gray);
+            letter-spacing: 0.08em;
+        }
+
+        .footer-accent-bar {
+            height: 3px;
+            background: var(--accent);
+            margin-top: 5mm;
+            border-radius: 0;
+        }
+
+        /* ── SCREEN ONLY ── */
+        @media screen {
+            body {
+                background: #F1F3F6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 48px 20px;
+                min-height: 100vh;
+            }
+
+            .page {
+                box-shadow:
+                    0 2px 4px rgba(0, 0, 0, 0.04),
+                    0 20px 60px rgba(0, 0, 0, 0.10);
+            }
+
+            .print-btn {
+                position: fixed;
+                bottom: 28px;
+                right: 28px;
+                background: var(--accent);
+                color: white;
+                border: none;
+                padding: 12px 22px;
+                border-radius: 99px;
+                font-family: var(--font);
+                font-size: 9pt;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                cursor: pointer;
+                box-shadow: 0 8px 24px rgba(29, 78, 216, 0.35);
+                z-index: 100;
+                transition: transform 0.15s, box-shadow 0.15s;
+            }
+
+            .print-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 12px 32px rgba(29, 78, 216, 0.45);
+            }
+
+            .content-placeholder {
+                border: 1px dashed rgba(0, 0, 0, 0.06);
+                height: 100%;
+                min-height: 100mm;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgba(0, 0, 0, 0.08);
+                text-transform: uppercase;
+                letter-spacing: 0.35em;
+                font-weight: 800;
+                font-size: 9pt;
+            }
+        }
+
+        @media print {
+
+            .print-btn,
+            .content-placeholder {
+                display: none;
+            }
+
+            body {
+                background: white;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="print-btn" onclick="window.print()">Imprimir / PDF</button>
+
+    <div class="page">
+        <div class="bg">
+            <div class="bg-grid"></div>
+            <div class="bg-glow"></div>
+        </div>
+
+        <div class="content">
+
+            <!-- HEADER -->
+            <header>
+                <div class="logo-group">
+                    <span class="logo-wordmark">SAVI<span class="dot">.</span></span>
+                    <div class="logo-divider"></div>
+                    <div class="logo-descriptor">
+                        Arquitectura &amp;<br>Construcción
+                    </div>
+                </div>
+
+                <div class="header-meta">
+                    <span class="header-city">Los Mochis, Sinaloa</span>
+                    <span class="header-date" id="fecha-auto"></span>
+                    <span class="header-est">E S T .&nbsp;&nbsp;2 0 0 1</span>
+                </div>
+            </header>
+
+            <!-- MAIN -->
+            <main>
+                <div class="content-placeholder">
+                    Espacio para contenido técnico / administrativo
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <footer>
+                <div class="footer-grid">
+
+                    <div class="footer-col">
+                        <span class="footer-col-label">Sede Corporativa</span>
+                        <span class="footer-col-line strong">Los Mochis, Sinaloa</span>
+                        <span class="footer-col-line">Cjon. Domingo Rubi 517</span>
+                        <span class="footer-col-line">+52 668 815 5975</span>
+                        <span class="footer-col-line">668 222 8008</span>
+                    </div>
+
+                    <div class="footer-col">
+                        <span class="footer-col-label">Sucursal Navojoa</span>
+                        <span class="footer-col-line strong">Navojoa, Sonora</span>
+                        <span class="footer-col-line">C. Sociedad Mutualista 1312</span>
+                        <span class="footer-col-line">+52 642 427 3489</span>
+                    </div>
+
+                    <div class="footer-col">
+                        <span class="footer-col-label">Contacto</span>
+                        <span class="footer-col-line">ingenieria@saviconstrucciones.com</span>
+                        <span class="footer-col-line">saviconstrucciones.com</span>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <a href="https://saviconstrucciones.com" class="footer-web">saviconstrucciones.com</a>
+                    <span class="footer-page" id="page-num">Página 1</span>
+                </div>
+
+                <div class="footer-accent-bar"></div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+        // Fecha automática en español
+        const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+            'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        const hoy = new Date();
+        document.getElementById('fecha-auto').textContent =
+            meses[hoy.getMonth()] + ' ' + hoy.getFullYear();
+    </script>
+
+</body>
+
+</html>

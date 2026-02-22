@@ -85,23 +85,23 @@ export default function Nosotros() {
                                 hidden: { opacity: 0, y: 30 },
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.5 } }
                             }}
-                            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-y border-black/5"
+                            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 py-14 border-y border-black/5"
                         >
-                            <div className="flex flex-col items-center md:items-start">
-                                <span className="text-4xl md:text-5xl font-black text-ink tracking-tighter">23+</span>
-                                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mt-2 text-center md:text-left">Años de Trayectoria</span>
+                            <div className="flex flex-col items-center md:items-start group">
+                                <span className="text-5xl md:text-6xl font-black text-ink tracking-[-0.05em] group-hover:text-accent transition-colors duration-500">23+</span>
+                                <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-gray-400 mt-3 text-center md:text-left">Años de Trayectoria</span>
                             </div>
-                            <div className="flex flex-col items-center md:items-start">
-                                <span className="text-4xl md:text-5xl font-black text-ink tracking-tighter">45+</span>
-                                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mt-2 text-center md:text-left">Proyectos Críticos</span>
+                            <div className="flex flex-col items-center md:items-start group">
+                                <span className="text-5xl md:text-6xl font-black text-ink tracking-[-0.05em] group-hover:text-accent transition-colors duration-500">45+</span>
+                                <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-gray-400 mt-3 text-center md:text-left">Proyectos Críticos</span>
                             </div>
-                            <div className="flex flex-col items-center md:items-start">
-                                <span className="text-4xl md:text-5xl font-black text-ink tracking-tighter">2</span>
-                                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mt-2 text-center md:text-left">Centros de Operación</span>
+                            <div className="flex flex-col items-center md:items-start group">
+                                <span className="text-5xl md:text-6xl font-black text-ink tracking-[-0.05em] group-hover:text-accent transition-colors duration-500">2</span>
+                                <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-gray-400 mt-3 text-center md:text-left">Centros Operativos</span>
                             </div>
-                            <div className="flex flex-col items-center md:items-start">
-                                <span className="text-4xl md:text-5xl font-black text-ink tracking-tighter">100%</span>
-                                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mt-2 text-center md:text-left">Certeza Contractual</span>
+                            <div className="flex flex-col items-center md:items-start group">
+                                <span className="text-5xl md:text-6xl font-black text-accent tracking-[-0.05em]">100%</span>
+                                <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-gray-400 mt-3 text-center md:text-left">Certeza Contractual</span>
                             </div>
                         </motion.div>
 

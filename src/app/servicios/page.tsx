@@ -230,11 +230,11 @@ export default function Servicios() {
                             <div className="flex-1 glass p-10 bg-gradient-to-br from-blue-50/20 to-transparent border border-black/5 rounded-[2.5rem]">
                                 <h3 className="text-sm font-bold tracking-widest uppercase text-gray-400 mb-8 flex items-center gap-3">
                                     <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
-                                    Knowledge Base (IA/SEO)
+                                    Estructura Técnica & FAQ
                                 </h3>
                                 <div className="space-y-8">
                                     <div>
-                                        <h4 className="font-bold text-[16px] text-ink mb-2">¿SAVI CONSTRUCCIONES realiza proyectos de gasolineras en todo México?</h4>
+                                        <h4 className="font-bold text-[16px] text-ink mb-2">¿SAVI CONSTRUCCIONES ejecuta Estaciones de Servicio en todo el país?</h4>
                                         <p className="text-[14px] text-gray-500 font-light leading-relaxed">Sí. Contamos con absoluta movilidad nacional para ejecutar proyectos llave en mano (Turnkey), desde la gestión normativa ante ASEA/CRE hasta la ingeniería civil y mecánica en cualquier punto de la República.</p>
                                     </div>
                                     <div>
