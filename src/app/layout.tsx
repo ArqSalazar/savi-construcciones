@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+// Deployment Sync: 2026-02-21 v1.0.5 - Emergency Asset Refresh
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
