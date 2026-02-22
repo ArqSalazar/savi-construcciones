@@ -65,8 +65,8 @@ export default function Guia() {
                             }}
                             className="text-[clamp(3.5rem,8.5vw,7.5rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase"
                         >
-                            GUÍA<br />
-                            <span className="opacity-20 italic">ESTRATÉGICA.</span>
+                            RECURSOS<br />
+                            <span className="opacity-20 italic">ESTRATÉGICOS.</span>
                         </motion.h1>
 
                         <motion.p
@@ -76,7 +76,7 @@ export default function Guia() {
                             }}
                             className="mt-4 max-w-2xl text-gray-700/80 text-[18px] md:text-[21px] font-light leading-[1.65] tracking-[-0.01em]"
                         >
-                            Documentación técnica y estratégica diseñada para aportar claridad, seguridad y valor real a tu proceso de construcción e inversión patrimonial.
+                            Documentación técnica y herramientas diseñadas para aportar claridad, seguridad y valor real a tu proceso de construcción e inversión patrimonial.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -109,7 +109,7 @@ export default function Guia() {
                                     <div className="mt-8 pt-6 border-t border-black/5 flex items-center justify-between">
                                         <span className="text-[11px] font-medium text-gray-400">{article.date}</span>
                                         <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-accent group-hover:translate-x-1 transition-transform duration-300">
-                                            Leer Guía <span className="text-lg">→</span>
+                                            Leer Artículo <span className="text-lg">→</span>
                                         </div>
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@ export default function Guia() {
                                 SAVI<span className="text-accent">.</span> <span className="opacity-50 text-sm uppercase tracking-[0.3em] font-bold ml-2">Cultura de Ingeniería</span>
                             </h3>
                             <p className="text-[16px] text-gray-600 font-light leading-relaxed">
-                                Nuestra guía mensual no es solo un blog; es un compromiso con la transparencia. Creemos que un cliente informado es un aliado estratégico. Aquí compartiremos nuestra experiencia acumulada en más de 20 años de obra, desde la optimización de procesos hasta la prevención de riesgos patrimoniales.
+                                Nuestra sección de recursos no es solo un blog; es un compromiso con la transparencia. Creemos que un cliente informado es un aliado estratégico. Aquí compartiremos nuestra experiencia acumulada en más de 20 años de obra, desde la optimización de procesos hasta la prevención de riesgos patrimoniales.
                             </p>
                         </div>
                     </div>
