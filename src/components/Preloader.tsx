@@ -18,6 +18,7 @@ export default function Preloader() {
             sessionStorage.setItem("savi_has_visited", "true");
 
             // Prevent scrolling while preloader is active
+            // Note: If using Lenis, we might need a more specific lock
             document.body.style.overflow = "hidden";
 
             const timer = setTimeout(() => {
@@ -34,8 +35,10 @@ export default function Preloader() {
         }
     }, []);
 
-    // If it's not the first visit, don't render anything
-    if (!isFirstVisit) return null;
+    // Careful with hydration: isFirstVisit is false on server.
+    // We only render on client once mounted and confirmed.
+    if (typeof window !== "undefined" && !isFirstVisit) return null;
+    if (typeof window === "undefined") return null;
 
     return (
         <AnimatePresence>
