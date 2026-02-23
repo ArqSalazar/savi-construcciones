@@ -1,71 +1,86 @@
 # Proyecto: SAVI Control Comercial 🚀
-**Estrategia de Inteligencia de Negocios y Omnicanalidad**
+**Arquitectura Soberana de Inteligencia Comercial & Operativa**
 
-Este documento define la arquitectura técnica y comercial para la gestión de leads de **SAVI Construcciones**. El enfoque es el de una **Torre de Control Visual** que mide, registra y optimiza la respuesta comercial sin costos mensuales de licencias.
+Este documento define la estructura técnica y estratégica para la gestión de leads de **SAVI Construcciones**. Se prioriza una **arquitectura soberana** con dependencia mínima de servicios externos, diseñada para escalar junto con el flujo operativo de la empresa.
 
 ---
 
 ## 🎯 Objetivo General
-Implementar un sistema de **Inteligencia Comercial** que centralice la detección de prospectos, mida los tiempos de respuesta del equipo y genere métricas de conversión, manteniendo una estética "Apple Premium" y un costo operativo de **$0 MXN**.
+Implementar un sistema de **Inteligencia Comercial** centralizado que registre, mida y optimice el ciclo de vida del prospecto mediante una arquitectura de datos propia, garantizando estabilidad técnica y un costo operativo de **$0 MXN**.
 
 ---
 
-## 🏗️ 1. Arquitectura: "Universal Interaction Feed"
-En lugar de intentar reemplazar las plataformas de Meta (WhatsApp/IG), SAVI Control actúa como un **Registrador Central de Interacciones**.
+## 🏗️ 1. Arquitectura: "Interaction Ledger"
+SAVI Control no es una bandeja de entrada; es un **Registro Maestro de Eventos (Ledger)**. Toda interacción, manual o automática, genera un asiento contable en la base de datos para garantizar trazabilidad absoluta.
 
-### Eventos Rastreables:
-*   **Web Leads:** Formularios de contacto y recursos.
-*   **WhatsApp Clicks:** Activación del botón de contacto (rastreo de inicio de chat).
-*   **Social Clicks:** Derivación desde botones de Instagram o Messenger.
-*   **Email:** Registro de recepción vía Hostinger.
-*   **Entrada Manual:** Registro de recomendaciones o llamadas directas.
-
----
-
-## 📊 2. Inteligencia Comercial & Trazabilidad
-
-### A. Semáforo de Respuesta (SLA - Service Level Agreement)
-El sistema mide el tiempo transcurrido desde la detección del lead hasta la acción del asesor:
-*   🟢 **Excelente:** < 5 min.
-*   🟡 **En Riesgo:** 5 – 15 min.
-*   🔴 **Crítico:** > 15 min (Dispara alerta de abandono vía Telegram).
-
-### B. Deep-Linking & Respuestas Dinámicas
-El Dashboard no intenta controlar el chat, sino que **dirige** al asesor.
-*   **Acción:** Al dar clic en "Responder", el sistema abre la pestaña nativa exacta (wa.me o Business Suite) con una **Plantilla Dinámica** pre-copiada.
-*   **Variables:** `Hola {{nombre}}, soy {{asesor}} de SAVI. Recibimos tu interés en {{proyecto}}...`
+### Captura de Eventos Calificados:
+*   **Web Ingest:** Registro directo desde formularios vía Next.js API Routes.
+*   **Interaction Logging:** Historial de clics en puntos de contacto (WA, IG, Messenger).
+*   **Manual Entry:** Cargas directas de prospección "boca en boca" o llamadas.
+*   **Template Tracking:** Registro de qué guion de respuesta se utilizó, por quién y en qué canal, para medir la efectividad del mensaje.
 
 ---
 
-## 🛠️ 3. Stack Tecnológico ($0 Cost)
+## 📊 2. Inteligencia Comercial & Pipeline
+
+### A. Pipeline Comercial (Estatus Real)
+El sistema gestiona el prospecto a través de etapas claras de conversión:
+1.  **Nuevo:** Registro inicial sin atención.
+2.  **Contactado:** Primera respuesta registrada.
+3.  **Calificado:** Interés técnico validado por ventas.
+4.  **Cotización Enviada:** Propuesta económica en manos del cliente.
+5.  **Negociación:** Ajustes técnicos/financieros.
+6.  **Garantizado (Cerrado Ganado):** Proyecto firmado.
+7.  **Descartado (Cerrado Perdido):** Con análisis de causa raíz.
+
+### B. Semáforo SLA (Service Level Agreement)
+Medición de velocidad basada en el **Primer Evento de Interacción Registrada**:
+*   🟢 **Élite:** < 5 min. (Máxima probabilidad de cierre).
+*   🟡 **Estándar:** 5 – 15 min.
+*   🔴 **Crítico:** > 15 min. (Notificación de abandono a Dirección).
+
+---
+
+## 🛠️ 3. Stack Tecnológico Soberano
 
 | Componente | Tecnología | Rol |
 | :--- | :--- | :--- |
-| **Arquitectura** | **Next.js (App Router)** | Interfaz Apple Style & Lógica de ruteo. |
-| **Cerebro / DB** | **Supabase** | Motor de base de datos y autenticación de roles. |
-| **Puenting** | **Make.com / Web3Forms** | Transporte de datos y detección de eventos. |
-| **Notificaciones** | **Telegram Bot** | Alertas instantáneas (Pager corporativo). |
+| **Core UI** | **Next.js (App Router)** | Interfaz & Densidad Operativa. |
+| **Middle & API** | **Next.js API Routes** | Lógica de negocio y procesamiento de eventos. |
+| **Persistencia** | **Supabase (PostgreSQL)** | Base de datos relacional y gestión de archivos. |
+| **Auth** | **Supabase Auth** | Control de roles (Admins / Ventas). |
+| **Alertas** | **Telegram Bot API** | Pager instantáneo directo desde el servidor SAVI. |
 
 ---
 
 ## 🛤️ 4. Roadmap de Implementación
 
-### Fase 1: Torre de Control ($0)
-*   Panel privado con Login (Roles: 1 Admin, 2 Ventas).
-*   Registro de todos los canales de entrada.
-*   Medición de Tiempos de Respuesta.
-*   Plantillas Inteligentes y Deep Links.
-*   Métricas de fuente de leads (¿De dónde vienen?).
+### Fase 0: Fundacional (Estrategia)
+*   Modelado de datos en PostgreSQL.
+*   Definición oficial de flujos comerciales y SLAs.
+*   Diseño de KPIs de conversión.
 
-### Fase 2: Integración Avanzada
-*   Conexión vía Webhooks para registro automático de DMs.
-*   Integración con WhatsApp Cloud API (solo si el volumen lo justifica).
-
----
-
-## 🎨 Directriz Estética
-Es requisito innegociable **mantener la lógica visual de saviconstrucciones.com** (estética Apple Premium, transparencias `glass`, minimalismo técnico). El sistema debe sentirse como una herramienta diseñada por un estudio de ingeniería de élite, no como un software genérico de oficina.
+### Fase 1: SAVI Hub Operativo ($0)
+*   Dashboard de control con densidad de información profesional.
+*   Interaction Ledger & Pipeline funcional.
+*   Deep-Linking inteligente & Plantillas dinámicas registrables.
+*   Métricas de desempeño y ranking de efectividad.
 
 ---
 
-**SAVI Control Comercial: Donde la arquitectura de sistemas se une a la arquitectura de construcción.**
+## 📈 5. Métricas de Conversión (KPIs Directivos)
+El sistema no solo mide velocidad, mide **rendimiento financiero**:
+*   **Leads Totales vs. Calificados.**
+*   **Valor Potencial del Pipeline:** Suma de cotizaciones activas.
+*   **Tasa de Cierre:** Proyectos ganados vs. totales.
+*   **Lead Scoring:** Calificación automática por tipo de proyecto (Industrial > Residencial).
+*   **Horarios Críticos:** Mapa de calor de cuándo entran más leads.
+
+---
+
+## 🎨 Directriz Estética & UX
+El diseño se basa en la estética **Apple Premium**, pero priorizando la **Densidad Operativa**. Se evitan espacios en blanco excesivos que dificulten la lectura de datos complejos. El objetivo es que el asesor vea el panorama completo de su cartera de clientes sin clics innecesarios.
+
+---
+
+**SAVI Control Comercial: Arquitectura de software para líderes en ingeniería.**
