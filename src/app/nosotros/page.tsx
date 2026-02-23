@@ -56,7 +56,7 @@ export default function Nosotros() {
                                     Fundada en 2001, <strong className="font-semibold text-ink">SAVI CONSTRUCCIONES</strong> ha evolucionado de una visión familiar a una infraestructura corporativa de alto alcance. No solo edificamos estructuras; garantizamos la <strong className="font-medium text-ink">supervivencia de tu inversión</strong> mediante un rigor técnico que define cada etapa de nuestro proceso.
                                 </p>
                                 <p className="mt-6 text-gray-500 text-[17px] font-light leading-relaxed">
-                                    Operamos bajo un principio innegociable: el respeto al patrimonio ajeno. Nuestra trayectoria en Sinaloa y Sonora es el resultado de más de dos décadas de cumplimiento legal y transparencia absoluta.
+                                    Operamos bajo un principio innegociable: el respeto al patrimonio ajeno. Desde la concepción de los primeros planos arquitectónicos y gestión de permisos, hasta el control total de la ingeniería de campo con transparencia absoluta.
                                 </p>
                             </motion.div>
 

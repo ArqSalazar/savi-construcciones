@@ -34,7 +34,7 @@ export default function HeroSection() {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-40"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-accent shadow-[0_0_0_6px_rgba(29,78,216,.10)]"></span>
                         </span>
-                        Arquitectura & Construcción de Precisión · Est. 2001
+                        Construcciones de Precisión · Est. 2001
                     </motion.span>
 
                     <motion.h1
@@ -68,7 +68,7 @@ export default function HeroSection() {
                         <span className="text-[9px] md:text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400">Alcance Total</span>
                         <div className="hidden sm:block w-[1px] h-4 bg-gray-200 mx-2"></div>
                         <span className="text-[12px] sm:text-sm font-semibold tracking-tight text-gray-800">
-                            Residencial · Comercial · Industrial · Obra Civil
+                            Arquitectura Ejecutiva · Ingeniería Especializada · Construcción Llave en Mano
                         </span>
                     </motion.div>
 

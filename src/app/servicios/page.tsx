@@ -79,7 +79,7 @@ export default function Servicios() {
                             <div>
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400">Certidumbre</div>
                                 <div className="mt-2 text-lg font-bold tracking-tight text-ink">Visión 360°</div>
-                                <p className="mt-2 text-[14px] text-gray-500 leading-relaxed">Gestión integral desde el diseño hasta la entrega. Un solo equipo responsable de coordinar presupuesto, arquitectura y ejecución técnica.</p>
+                                <p className="mt-2 text-[14px] text-gray-500 leading-relaxed">Gestión integral desde el diseño hasta la entrega. Un solo equipo responsable de coordinar ingeniería de valor, diseño arquitectónico y ejecución técnica.</p>
                             </div>
                             <div>
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400">Comunicación</div>

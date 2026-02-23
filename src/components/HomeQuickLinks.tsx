@@ -17,7 +17,7 @@ export default function HomeQuickLinks() {
                                 Estructura tu Proyecto
                             </div>
                             <p className="mt-2 text-gray-500 font-light text-[15px] max-w-lg leading-relaxed">
-                                Explora nuestras áreas de especialidad técnica o contáctanos para definir alcances y viabilidad de inicio.
+                                ¿Aún no tienes planos o necesitas auditar tu ingeniería? Contáctanos para diseñar desde cero su visión o definir la viabilidad técnica y financiera de su obra.
                             </p>
                         </div>
                         <div className="flex w-full md:w-auto mt-6 md:mt-0">
