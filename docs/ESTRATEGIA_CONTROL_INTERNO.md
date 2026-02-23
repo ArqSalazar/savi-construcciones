@@ -56,4 +56,5 @@ Utilizaremos tecnología de vanguardia B2B (Business to Business) diseñada para
 
 ---
 
-**Nota Técnica:** Este proyecto se ejecuta sobre la rama de desarrollo del sitio actual, manteniendo la estética Apple Premium pero añadiendo la lógica de backend necesaria para una empresa de ingeniería de clase mundial.
+**Nota Técnica & Estética:** 
+Este proyecto se ejecuta sobre la infraestructura del sitio actual. Es requisito innegociable **mantener la lógica visual de saviconstrucciones.com** (estética Apple Premium, uso de transparencias `glass`, tipografía Inter/Outfit y minimalismo corporativo) dentro del Dashboard interno. El usuario debe sentir que el CRM es una extensión natural y profesional de la marca SAVI.
