@@ -13,9 +13,9 @@ export default function HomeCards() {
                             <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 group-hover:text-accent transition-colors duration-300">
                                 Certidumbre Técnica
                             </div>
-                            <div className="mt-3 text-xl font-bold tracking-tight text-ink">
+                            <h3 className="mt-3 text-xl font-bold tracking-tight text-ink">
                                 Ingeniería Presupuestal
-                            </div>
+                            </h3>
                             <div className="mt-4 text-gray-500 text-sm leading-[1.65] mt-auto">
                                 Blindamos tu capital. Aplicamos <strong className="font-medium text-ink">análisis de costos milimétricos</strong> para eliminar sorpresas financieras y garantizar la viabilidad desde el primer trazo.
                             </div>
@@ -26,9 +26,9 @@ export default function HomeCards() {
                             <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 group-hover:text-accent transition-colors duration-300">
                                 Integridad
                             </div>
-                            <div className="mt-3 text-xl font-bold tracking-tight text-ink">
+                            <h3 className="mt-3 text-xl font-bold tracking-tight text-ink">
                                 Ejecución Estructural
-                            </div>
+                            </h3>
                             <div className="mt-4 text-gray-500 text-sm leading-[1.65] mt-auto">
                                 Cimientos inquebrantables. Fusionamos <strong className="font-medium text-ink">supervisión de campo</strong> con estrictos protocolos para asegurar que la obra terminada proteja la vida humana y tu inversión.
                             </div>
@@ -39,9 +39,9 @@ export default function HomeCards() {
                             <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 group-hover:text-accent transition-colors duration-300">
                                 Ética Profesional
                             </div>
-                            <div className="mt-3 text-xl font-bold tracking-tight text-ink">
+                            <h3 className="mt-3 text-xl font-bold tracking-tight text-ink">
                                 Transparencia Operativa
-                            </div>
+                            </h3>
                             <div className="mt-4 text-gray-500 text-sm leading-[1.65] mt-auto">
                                 Paz mental absoluta. Mantienes el control financiero mediante un <strong className="font-medium text-ink">sistema de reporte cerrado</strong> que audita cada peso de avance y suministro.
                             </div>
@@ -54,9 +54,9 @@ export default function HomeCards() {
                             <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 flex items-center">
                                 Identidad & Hábitat
                             </div>
-                            <div className="mt-3 text-2xl font-black tracking-tight text-ink">
-                                Arquitectura Residencial
-                            </div>
+                            <h2 className="mt-3 text-2xl font-black tracking-tight text-ink">
+                                Proyectos de Alta Gama
+                            </h2>
                             <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65] mt-auto">
                                 Elevamos tu patrimonio. Traducimos tu estilo de vida en hogares que garantizan no solo confort y diseño, sino alta <strong className="font-medium text-ink">plusvalía garantizada</strong> con el paso del tiempo.
                             </p>
@@ -67,9 +67,9 @@ export default function HomeCards() {
                             <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 flex items-center">
                                 Sectores Productivos
                             </div>
-                            <div className="mt-3 text-2xl font-black tracking-tight text-ink">
+                            <h2 className="mt-3 text-2xl font-black tracking-tight text-ink">
                                 Comercial & Industrial
-                            </div>
+                            </h2>
                             <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65] mt-auto">
                                 Minimiza tu costo de oportunidad. Cerramos ciclos constructivos con una <strong className="font-medium text-ink">logística acelerada</strong> orientada a detonar la apertura e inicio de facturación de tu empresa sin demoras.
                             </p>
@@ -80,9 +80,9 @@ export default function HomeCards() {
                             <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent flex items-center">
                                 Misión Crítica
                             </div>
-                            <div className="mt-3 text-2xl font-black tracking-tight text-ink">
+                            <h2 className="mt-3 text-2xl font-black tracking-tight text-ink">
                                 Infraestructura Técnica
-                            </div>
+                            </h2>
                             <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65] mt-auto">
                                 Dominio normativo total. Aseguramos el cumplimiento innegociable de regulaciones en proyectos de riesgo como <strong className="font-semibold text-ink">Estaciones de Servicio</strong>, protegiendo tus licencias y concesiones mercantiles.
                             </p>

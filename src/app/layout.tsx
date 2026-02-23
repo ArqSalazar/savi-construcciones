@@ -15,15 +15,15 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SAVI Construcciones | Arquitectura & Construcción",
+  title: "SAVI. Construcciones",
   description: "Más de 20 años construyendo con honestidad y rigor técnico. Especialistas en residencias premium e infraestructura industrial que protege tu patrimonio y asegura tu inversión.",
   keywords: ["constructora sinaloa", "arquitectura integral sonora", "casas premium", "naves industriales", "estaciones de servicio noroeste", "seguridad patrimonial", "legado familiar", "savi construcciones"],
   robots: "index,follow,max-image-preview:large",
   openGraph: {
-    title: "SAVI Construcciones | Arquitectura & Construcción",
+    title: "SAVI. Construcciones",
     description: "Diseño integral y ejecución de alta gama. Protegemos tu inversión con transparencia y excelencia técnica en cada proyecto.",
     url: "https://www.saviconstrucciones.com/",
-    siteName: "SAVI Construcciones",
+    siteName: "SAVI. Construcciones",
     locale: "es_MX",
     type: "website",
     images: [
@@ -46,7 +46,7 @@ export default function RootLayout({
   const schemaScript = {
     "@context": "https://schema.org",
     "@type": "GeneralContractor",
-    "name": "SAVI Construcciones",
+    "name": "SAVI. Construcciones",
     "url": "https://www.saviconstrucciones.com/",
     "image": "https://www.saviconstrucciones.com/og-image.jpg",
     "telephone": "+52 668 222 8008",
@@ -60,8 +60,8 @@ export default function RootLayout({
     "areaServed": [
       { "@type": "State", "name": "Sinaloa" },
       { "@type": "State", "name": "Sonora" },
-      { "@type": "State", "name": "Nayarit" },
-      { "@type": "State", "name": "Baja California Sur" }
+      { "@type": "Region", "name": "Noroeste de México" },
+      { "@type": "Country", "name": "Mexico" }
     ],
     "description": "Constructora líder en el noroeste de México especializada en la construcción de estaciones de servicio (gasolineras), obra industrial premium y desarrollos comerciales en Sinaloa y Sonora. Ofrecemos una gestión integral: proyecto ejecutivo, gestión de permisos, ejecución de obra civil y mecánica, y entrega documentada con trazabilidad total.",
     "hasOfferCatalog": {

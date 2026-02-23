@@ -11,6 +11,7 @@ const ARTICLES = [
         category: "Residencial",
         date: "Marzo 2026",
         readTime: "5 min",
+        slug: "pasos-criticos-construccion-residencial",
     },
     {
         title: "Certeza Financiera: ¿Cómo evitar sobrecostos en Naves Industriales?",
@@ -18,6 +19,7 @@ const ARTICLES = [
         category: "Industrial",
         date: "Febrero 2026",
         readTime: "8 min",
+        slug: "certeza-financiera-naves-industriales",
     },
     {
         title: "El valor de la Estructura: Ingeniería que protege tu Patrimonio.",
@@ -25,6 +27,7 @@ const ARTICLES = [
         category: "Ingeniería",
         date: "Enero 2026",
         readTime: "6 min",
+        slug: "valor-ingenieria-oculta-obras",
     }
 ];
 
@@ -87,8 +90,8 @@ export default function Guia() {
                 <div className="w-full max-w-[1400px] mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {ARTICLES.map((article, idx) => (
-                            <ScrollReveal key={idx} delay={0.1 * idx}>
-                                <div className="group glass p-8 h-full flex flex-col transition-all duration-500 hover:shadow-soft2 hover:-translate-y-2 border border-black/5">
+                            <ScrollReveal key={article.slug} delay={0.1 * idx}>
+                                <Link href={`/recursos/${article.slug}`} className="group glass p-8 h-full flex flex-col transition-all duration-500 hover:shadow-soft2 hover:-translate-y-2 border border-black/5 block">
                                     <div className="flex items-center justify-between mb-6">
                                         <span className="text-[10px] uppercase font-bold tracking-[0.2em] px-3 py-1 rounded-full bg-accent/5 text-accent border border-accent/10">
                                             {article.category}
@@ -112,7 +115,7 @@ export default function Guia() {
                                             Leer Artículo <span className="text-lg">→</span>
                                         </div>
                                     </div>
-                                </div>
+                                </Link>
                             </ScrollReveal>
                         ))}
                     </div>
