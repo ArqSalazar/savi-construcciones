@@ -7,16 +7,40 @@ import { FormEvent, useState } from "react";
 
 export default function Contacto() {
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleLead = (e: FormEvent<HTMLFormElement>) => {
+    const handleLead = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const formData = new FormData(e.currentTarget);
-        const data = Object.fromEntries(formData.entries());
-        console.log("Lead SAVI:", data);
+        setIsSubmitting(true);
+        const formArgs = e.currentTarget;
+        const formData = new FormData(formArgs);
 
-        // Simulación de envío exitoso
-        setIsSubmitted(true);
-        (e.target as HTMLFormElement).reset();
+        // Configuración de Web3Forms API
+        formData.append("access_key", "f3ced7a1-4811-42b7-8cb5-772388f0dbea");
+        formData.append("subject", `[SAVI Web] Nuevo prospecto: ${formData.get("nombre")} - ${formData.get("tipo")}`);
+        formData.append("from_name", "SAVI Construcciones Web");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                setIsSubmitted(true);
+                formArgs.reset();
+            } else {
+                console.error("Error sending form:", data);
+                alert("Hubo un error al procesar la solicitud. Por favor, intenta por WhatsApp o correo.");
+            }
+        } catch (error) {
+            console.error("Error enviando el formulario:", error);
+            alert("Ocurrió un error de red. Por favor, verifica tu conexión e intenta de nuevo.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -184,8 +208,22 @@ export default function Contacto() {
                                                 />
                                             </div>
 
-                                            <button type="submit" className="btn-apple mt-8 w-full py-[1.15rem] shadow-lg shadow-accent/15">
-                                                Enviar Solicitud de Evaluación
+                                            <button
+                                                type="submit"
+                                                disabled={isSubmitting}
+                                                className={`btn-apple mt-8 w-full py-[1.15rem] shadow-lg shadow-accent/15 transition-all flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                            >
+                                                {isSubmitting ? (
+                                                    <>
+                                                        <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+                                                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                                        </svg>
+                                                        Procesando Evaluación...
+                                                    </>
+                                                ) : (
+                                                    "Enviar Solicitud de Evaluación"
+                                                )}
                                             </button>
                                             <div className="mt-6 flex items-center justify-center gap-2 text-gray-400">
                                                 <svg className="w-3.5 h-3.5 fill-gray-400" viewBox="0 0 24 24">
@@ -266,7 +304,7 @@ export default function Contacto() {
 
                                     {/* Arquitectura & Proyectos */}
                                     <div className="flex flex-col gap-2 pt-2">
-                                        <div className="text-[11px] text-gray-400 font-bold uppercase tracking-widest">Arquitectura, Ingeniería & Proyectos</div>
+                                        <div className="text-[11px] text-gray-400 font-bold uppercase tracking-widest">Ingeniería & Proyectos</div>
                                         <a className="text-[15px] font-bold text-ink hover:text-accent transition-colors flex items-center gap-2" href="mailto:proyectos@saviconstrucciones.com">
                                             <div className="w-1 h-1 rounded-full bg-accent"></div>
                                             proyectos@saviconstrucciones.com
