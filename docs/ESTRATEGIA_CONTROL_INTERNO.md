@@ -1,86 +1,89 @@
 # Proyecto: SAVI Control Comercial 🚀
-**Arquitectura Soberana de Inteligencia Comercial & Operativa**
+**Arquitectura Soberana de Inteligencia Comercial & Operativa v2.1**
 
-Este documento define la estructura técnica y estratégica para la gestión de leads de **SAVI Construcciones**. Se prioriza una **arquitectura soberana** con dependencia mínima de servicios externos, diseñada para escalar junto con el flujo operativo de la empresa.
+Este documento define la estructura técnica y estratégica para la gestión de leads y control comercial de **SAVI Construcciones**. Se basa en una **arquitectura soberana** con dependencia mínima de servicios externos, diseñada bajo estándares corporativos para escalar junto con el crecimiento de la empresa.
 
 ---
 
 ## 🎯 Objetivo General
-Implementar un sistema de **Inteligencia Comercial** centralizado que registre, mida y optimice el ciclo de vida del prospecto mediante una arquitectura de datos propia, garantizando estabilidad técnica y un costo operativo de **$0 MXN**.
+Implementar un ecosistema de **Inteligencia Comercial** centralizado que registre, mida y optimice el ciclo de vida del prospecto. Se busca garantizar la soberanía de datos, estabilidad técnica y un costo operativo de **$0 MXN**, con capacidad de migración futura a infraestructura propia (Docker/VPS) sin rediseño estructural.
 
 ---
 
-## 🏗️ 1. Arquitectura: "Interaction Ledger"
-SAVI Control no es una bandeja de entrada; es un **Registro Maestro de Eventos (Ledger)**. Toda interacción, manual o automática, genera un asiento contable en la base de datos para garantizar trazabilidad absoluta.
+## 🏗️ 1. Arquitectura de Datos: "Interaction Ledger"
+SAVI Control se rige por un **Registro Maestro de Eventos**, diferenciando claramente dos entidades fundamentales:
 
-### Captura de Eventos Calificados:
+*   **Lead (Prospecto):** La entidad principal que representa al cliente potencial (Nombre, Empresa, Contacto, Tipo de Proyecto).
+*   **Evento (Actividad):** Cada acción atómica registrada en el historial del Lead. Toda interacción (clic en chat, cambio de etapa, envío de plantilla, nota manual) genera un asiento en el Ledger para trazabilidad absoluta.
+
+### Captura de Interacciones:
 *   **Web Ingest:** Registro directo desde formularios vía Next.js API Routes.
-*   **Interaction Logging:** Historial de clics en puntos de contacto (WA, IG, Messenger).
-*   **Manual Entry:** Cargas directas de prospección "boca en boca" o llamadas.
-*   **Template Tracking:** Registro de qué guion de respuesta se utilizó, por quién y en qué canal, para medir la efectividad del mensaje.
+*   **Interaction Logging:** Rastreo de clics en puntos de contacto (WA, IG, Messenger).
+*   **Template Tracking:** Registro de auditoría sobre qué guion se utilizó, por quién, cuándo y en qué canal, permitiendo identificar los "scripts" de mayor conversión.
 
 ---
 
-## 📊 2. Inteligencia Comercial & Pipeline
+## 📊 2. Estrategia Comercial & Seguimiento
 
-### A. Pipeline Comercial (Estatus Real)
-El sistema gestiona el prospecto a través de etapas claras de conversión:
-1.  **Nuevo:** Registro inicial sin atención.
-2.  **Contactado:** Primera respuesta registrada.
-3.  **Calificado:** Interés técnico validado por ventas.
-4.  **Cotización Enviada:** Propuesta económica en manos del cliente.
-5.  **Negociación:** Ajustes técnicos/financieros.
-6.  **Garantizado (Cerrado Ganado):** Proyecto firmado.
-7.  **Descartado (Cerrado Perdido):** Con análisis de causa raíz.
+### A. Pipeline Comercial (Estados de Negocio)
+El flujo de valor se gestiona mediante etapas que reflejan el estatus real de la oportunidad física:
+1.  **Nuevo:** Registro entrante sin contacto inicial.
+2.  **Contactado:** Interacción de apertura activa.
+3.  **Calificado:** Interés técnico y capacidad financiera validados.
+4.  **Cotización Enviada:** Propuesta formal entregada al cliente.
+5.  **Negociación:** Fase de ajustes técnicos y cierre comercial.
+6.  **Postergado / Follow-up:** Prospectos que requieren seguimiento a mediano plazo (evita saturar "Negociación").
+7.  **No Contactable:** Datos falsos o nula respuesta tras protocolos de contacto.
+8.  **Garantizado (Ganado):** Proyecto adjudicado y firmado con éxito.
+9.  **Descartado (Perdido):** Requiere tipificación de **Razón de Pérdida** (Precio, Tiempo, Alcance, Competencia).
 
-### B. Semáforo SLA (Service Level Agreement)
-Medición de velocidad basada en el **Primer Evento de Interacción Registrada**:
-*   🟢 **Élite:** < 5 min. (Máxima probabilidad de cierre).
-*   🟡 **Estándar:** 5 – 15 min.
-*   🔴 **Crítico:** > 15 min. (Notificación de abandono a Dirección).
-
----
-
-## 🛠️ 3. Stack Tecnológico Soberano
-
-| Componente | Tecnología | Rol |
-| :--- | :--- | :--- |
-| **Core UI** | **Next.js (App Router)** | Interfaz & Densidad Operativa. |
-| **Middle & API** | **Next.js API Routes** | Lógica de negocio y procesamiento de eventos. |
-| **Persistencia** | **Supabase (PostgreSQL)** | Base de datos relacional y gestión de archivos. |
-| **Auth** | **Supabase Auth** | Control de roles (Admins / Ventas). |
-| **Alertas** | **Telegram Bot API** | Pager instantáneo directo desde el servidor SAVI. |
+### B. SLA (Service Level Agreement) de Doble Vía
+Se establecen métricas de rendimiento para asegurar que la "maquinaria" SAVI no se detenga:
+*   **SLA de Primera Respuesta:** Mide el tiempo desde la ingesta del Lead hasta el primer evento de interacción.
+    *   🟢 < 5 min | 🟡 5–15 min | 🔴 > 15 min. (Dispara alerta a Dirección).
+*   **SLA de Avance de Pipeline:** Mide el tiempo de permanencia en cada etapa (ej. máximo 5 días en "Calificado" sin pasar a "Cotización").
 
 ---
 
-## 🛤️ 4. Roadmap de Implementación
+## 🛠️ 3. Stack Tecnológico & Gobernanza
 
-### Fase 0: Fundacional (Estrategia)
-*   Modelado de datos en PostgreSQL.
-*   Definición oficial de flujos comerciales y SLAs.
-*   Diseño de KPIs de conversión.
+### Soberanía Técnica
+*   **Frontend/API:** Next.js (App Router).
+*   **DB/Persistencia:** Supabase (PostgreSQL) + Storage para archivos técnicos ligeros.
+*   **Auth & Roles:** Supabase Auth (Admin / Ventas / Auditoría).
+*   **Alertas:** Telegram Bot API (Canal cifrado y soberano de notificaciones).
 
-### Fase 1: SAVI Hub Operativo ($0)
-*   Dashboard de control con densidad de información profesional.
-*   Interaction Ledger & Pipeline funcional.
-*   Deep-Linking inteligente & Plantillas dinámicas registrables.
-*   Métricas de desempeño y ranking de efectividad.
-
----
-
-## 📈 5. Métricas de Conversión (KPIs Directivos)
-El sistema no solo mide velocidad, mide **rendimiento financiero**:
-*   **Leads Totales vs. Calificados.**
-*   **Valor Potencial del Pipeline:** Suma de cotizaciones activas.
-*   **Tasa de Cierre:** Proyectos ganados vs. totales.
-*   **Lead Scoring:** Calificación automática por tipo de proyecto (Industrial > Residencial).
-*   **Horarios Críticos:** Mapa de calor de cuándo entran más leads.
+### Seguridad & Gobernanza de Datos
+*   **Control de Accesos:** Permisos granulares basados en roles (RBAC).
+*   **Bitácora de Auditoría:** Registro inalterable de quién modificó qué campo y cuándo.
+*   **Protección de Histórico:** Bloqueo de edición de eventos pasados para integridad de métricas.
 
 ---
 
-## 🎨 Directriz Estética & UX
-El diseño se basa en la estética **Apple Premium**, pero priorizando la **Densidad Operativa**. Se evitan espacios en blanco excesivos que dificulten la lectura de datos complejos. El objetivo es que el asesor vea el panorama completo de su cartera de clientes sin clics innecesarios.
+## 📈 4. KPIs Directivos (Inteligencia de Negocio)
+El sistema genera reportes automáticos para la toma de decisiones estratégicas:
+*   **Métricas de Conversión:** Leads totales vs. Calificados vs. Ganados.
+*   **Valor del Pipeline:** Suma monetaria de cotizaciones activas (Pronóstico de ingresos).
+*   **Tiempo Promedio de Cierre:** Vida media del lead desde ingreso hasta firma.
+*   **CAC (Costo de Adquisición):** Medición de efectividad por canal (IG, Google, Referidos).
+*   **Análisis de Descarte:** Reporte de razones por las cuales se pierden proyectos.
 
 ---
 
-**SAVI Control Comercial: Arquitectura de software para líderes en ingeniería.**
+## 🎨 5. UX: Densidad Operativa & Eficiencia
+El diseño Apple Premium se adapta a un entorno de **productividad intensa**:
+*   **Layout:** Vista de tabla maestra con **Panel Lateral (Slide-over)** para gestión del Lead sin perder el contexto.
+*   **Eficiencia de Clic:** Máximo 1–2 clics para realizar cualquier acción común (Llamar, WhatsApp, Cambiar Estatus).
+*   **Filtros Globales:** Filtros rápidos por Tipo de Proyecto (Industrial, Residencial, Gasolinera) y Nivel de Urgencia.
+
+---
+
+## 🚀 6. Visión de Escalabilidad
+Esta arquitectura comercial es el motor inicial para la evolución hacia un **ERP Ligero SAVI**, permitiendo integraciones futuras con:
+*   **Módulo de Costos e Ingeniería.**
+*   **Control de Obra y Seguimiento de campo.**
+*   **Portal de Cliente:** Donde el cliente final consulta sus estados de cuenta y avances.
+
+---
+
+**SAVI Control Comercial: Ingeniería aplicada al crecimiento empresarial.**
