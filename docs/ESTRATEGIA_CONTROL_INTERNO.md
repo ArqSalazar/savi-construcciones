@@ -1,60 +1,71 @@
-# Proyecto: Centro de Control Interno SAVI (CRM & Automatización)
+# Proyecto: SAVI Control Comercial 🚀
+**Estrategia de Inteligencia de Negocios y Omnicanalidad**
 
-Este documento define la estrategia, arquitectura y objetivos para la creación del ecosistema digital de gestión operativa de **SAVI Construcciones**. El objetivo es institucionalizar la captura, seguimiento y cierre de proyectos con un costo operativo de **$0 MXN mensuales**.
+Este documento define la arquitectura técnica y comercial para la gestión de leads de **SAVI Construcciones**. El enfoque es el de una **Torre de Control Visual** que mide, registra y optimiza la respuesta comercial sin costos mensuales de licencias.
 
 ---
 
 ## 🎯 Objetivo General
-Transformar la presencia digital de SAVI de una "página web informativa" a un **Centro de Operaciones Inteligente** que garantice que ningún prospecto (Lead) se pierda, centralizando la comunicación y midiendo la eficiencia del equipo comercial.
+Implementar un sistema de **Inteligencia Comercial** que centralice la detección de prospectos, mida los tiempos de respuesta del equipo y genere métricas de conversión, manteniendo una estética "Apple Premium" y un costo operativo de **$0 MXN**.
 
 ---
 
-## 🏗️ 1. ¿Qué crearemos? (Definición del Producto)
+## 🏗️ 1. Arquitectura: "Universal Interaction Feed"
+En lugar de intentar reemplazar las plataformas de Meta (WhatsApp/IG), SAVI Control actúa como un **Registrador Central de Interacciones**.
 
-### A. Dashboard Interno (`interno.saviconstrucciones.com`)
-Un panel administrativo privado con acceso restringido para Dirección y Ventas que servirá como:
-*   **Gestor de Prospectos (CRM):** Tabla maestra con todos los leads entrantes.
-*   **Semáforo de Estatus:** Control visual de atención (Nuevo 🔴, En Proceso 🟡, Atendido 🟢).
-*   **Consola de Acción:** Botones directos para disparar chats de WhatsApp, correos y Messenger sin buscar contactos manualmente.
-
-### B. Sistema de Notificaciones "Pager"
-Un canal de alertas ultra-rápidas mediante un **Telegram Bot** que notificará al instante los datos críticos de cada nuevo interesado.
-
----
-
-## 🛠️ 2. ¿Cómo lo lograremos? (Arquitectura Técnica $0)
-
-Utilizaremos tecnología de vanguardia B2B (Business to Business) diseñada para alta eficiencia sin rentas mensuales:
-
-| Componente | Tecnología | Rol en el Proyecto | Costo |
-| :--- | :--- | :--- | :--- |
-| **Frontend** | **Next.js + Vercel** | Interfaz del Dashboard (maquetado premium). | $0 |
-| **Base de Datos** | **Supabase** | Almacenamiento seguro de clientes e historial de obra. | $0 |
-| **Automatización** | **Make.com** | El "secretario" que detecta mensajes y los guarda. | $0 |
-| **Alertas** | **Telegram Bot** | Notificaciones instantáneas al celular del equipo. | $0 |
-| **Gestión** | **Hostinger Mail** | Respaldo documental de todas las solicitudes. | $0 |
+### Eventos Rastreables:
+*   **Web Leads:** Formularios de contacto y recursos.
+*   **WhatsApp Clicks:** Activación del botón de contacto (rastreo de inicio de chat).
+*   **Social Clicks:** Derivación desde botones de Instagram o Messenger.
+*   **Email:** Registro de recepción vía Hostinger.
+*   **Entrada Manual:** Registro de recomendaciones o llamadas directas.
 
 ---
 
-## 🚀 3. ¿Qué lograremos? (Impacto en SAVI)
+## 📊 2. Inteligencia Comercial & Trazabilidad
 
-1.  **Control Total de Ventas:** Historial completo de quién nos contactó, cuándo y por qué medio.
-2.  **Trazabilidad Operativa:** Capacidad de auditar si un asesor ya contactó al cliente o si la solicitud sigue pendiente.
-3.  **Omnicanalidad Real:** Centralizar en un solo botón la respuesta vía WhatsApp Web, Messenger o Correo, reduciendo tiempos de respuesta de horas a minutos.
-4.  **Cero Fuga de Capital:** Evitar que prospectos de alta gama (Naves Industriales / Residencias) se pierdan por falta de seguimiento.
-5.  **Cero Gasto Fijo:** Un sistema robusto nivel "Empresa Grande" funcionando con infraestructura gratuita de por vida.
+### A. Semáforo de Respuesta (SLA - Service Level Agreement)
+El sistema mide el tiempo transcurrido desde la detección del lead hasta la acción del asesor:
+*   🟢 **Excelente:** < 5 min.
+*   🟡 **En Riesgo:** 5 – 15 min.
+*   🔴 **Crítico:** > 15 min (Dispara alerta de abandono vía Telegram).
 
----
-
-## 🔄 Flujo de Trabajo (User Journey)
-
-1.  **Captura:** El cliente llena el formulario en la web o da clic al WhatsApp del footer.
-2.  **Ingesta:** **Make.com** detecta la acción y registra al cliente en la base de datos de **Supabase**.
-3.  **Alerta:** El **Telegram Bot** notifica al equipo: *"🚨 Nuevo Lead: [Nombre] - [Proyecto]"*.
-4.  **Atención:** El responsable entra al **Dashboard**, ve el estatus en **Rojo 🔴**, da clic al botón **[Contactar WhatsApp]** (se pone el estatus en **Amarillo 🟡**) y cierra la cita.
-5.  **Cierre:** Se marca como **Atendido 🟢** y se archiva en el histórico para análisis mensual.
+### B. Deep-Linking & Respuestas Dinámicas
+El Dashboard no intenta controlar el chat, sino que **dirige** al asesor.
+*   **Acción:** Al dar clic en "Responder", el sistema abre la pestaña nativa exacta (wa.me o Business Suite) con una **Plantilla Dinámica** pre-copiada.
+*   **Variables:** `Hola {{nombre}}, soy {{asesor}} de SAVI. Recibimos tu interés en {{proyecto}}...`
 
 ---
 
-**Nota Técnica & Estética:** 
-Este proyecto se ejecuta sobre la infraestructura del sitio actual. Es requisito innegociable **mantener la lógica visual de saviconstrucciones.com** (estética Apple Premium, uso de transparencias `glass`, tipografía Inter/Outfit y minimalismo corporativo) dentro del Dashboard interno. El usuario debe sentir que el CRM es una extensión natural y profesional de la marca SAVI.
+## 🛠️ 3. Stack Tecnológico ($0 Cost)
+
+| Componente | Tecnología | Rol |
+| :--- | :--- | :--- |
+| **Arquitectura** | **Next.js (App Router)** | Interfaz Apple Style & Lógica de ruteo. |
+| **Cerebro / DB** | **Supabase** | Motor de base de datos y autenticación de roles. |
+| **Puenting** | **Make.com / Web3Forms** | Transporte de datos y detección de eventos. |
+| **Notificaciones** | **Telegram Bot** | Alertas instantáneas (Pager corporativo). |
+
+---
+
+## 🛤️ 4. Roadmap de Implementación
+
+### Fase 1: Torre de Control ($0)
+*   Panel privado con Login (Roles: 1 Admin, 2 Ventas).
+*   Registro de todos los canales de entrada.
+*   Medición de Tiempos de Respuesta.
+*   Plantillas Inteligentes y Deep Links.
+*   Métricas de fuente de leads (¿De dónde vienen?).
+
+### Fase 2: Integración Avanzada
+*   Conexión vía Webhooks para registro automático de DMs.
+*   Integración con WhatsApp Cloud API (solo si el volumen lo justifica).
+
+---
+
+## 🎨 Directriz Estética
+Es requisito innegociable **mantener la lógica visual de saviconstrucciones.com** (estética Apple Premium, transparencias `glass`, minimalismo técnico). El sistema debe sentirse como una herramienta diseñada por un estudio de ingeniería de élite, no como un software genérico de oficina.
+
+---
+
+**SAVI Control Comercial: Donde la arquitectura de sistemas se une a la arquitectura de construcción.**
