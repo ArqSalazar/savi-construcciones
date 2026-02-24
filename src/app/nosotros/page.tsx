@@ -29,7 +29,7 @@ export default function Nosotros() {
                             className="text-accent font-semibold tracking-[0.42em] text-[10px] md:text-[11px] uppercase inline-flex items-center gap-3 mb-2"
                         >
                             <span className="w-1.5 h-1.5 rounded-full bg-accent/80 shadow-[0_0_0_6px_rgba(29,78,216,.10)]"></span>
-                            Trayectoria & Legado SAVI
+                            Trayectoria & Legado SAVI Construcciones
                         </motion.span>
 
                         <motion.h1

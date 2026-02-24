@@ -15,48 +15,78 @@ export default function ArticlePage() {
                     >
                         <div className="flex items-center gap-4">
                             <span className="text-[10px] uppercase font-bold tracking-[0.2em] px-3 py-1 rounded-full bg-accent/5 text-accent border border-accent/10">
-                                Residencial
+                                Especial Residencial
                             </span>
-                            <span className="text-[11px] font-medium text-gray-400">Marzo 2026</span>
+                            <span className="text-[11px] font-medium text-gray-400">LECTURA DE 3 MIN</span>
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-ink">
-                            Pasos Críticos antes de iniciar una Construcción Residencial
+                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-ink uppercase">
+                            Evita Pesadillas: <br />
+                            <span className="text-accent italic">3 Pasos de Oro</span> <br />
+                            antes de construir.
                         </h1>
 
-                        <p className="text-xl text-gray-600 font-light leading-relaxed">
-                            Una hoja de ruta técnica para asegurar que tu inversión patrimonial inicie con bases sólidas y sin riesgos legales o técnicos.
+                        <p className="text-xl md:text-2xl text-gray-600 font-light leading-relaxed border-l-4 border-accent pl-6 py-2">
+                            No construyas sobre arena (literalmente). Lo que nadie te dice sobre el terreno y cómo blindar tu inversión. 🛡️
                         </p>
                     </motion.div>
                 </div>
             </section>
 
-            <section className="section-padding py-10">
-                <div className="w-full max-w-[800px] mx-auto prose prose-lg prose-blue">
-                    <div className="glass p-8 md:p-12 border border-black/5">
-                        <h2 className="text-2xl font-bold text-ink mb-4">1. Topografía y Mecánica de Suelos</h2>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                            El error más costoso en la construcción residencial premium ocurre antes de verter el primer centímetro cúbico de concreto. Asumir la resistencia del terreno sin un estudio de mecánica de suelos (geotecnia) riguroso compromete la integridad estructural. En SAVI, obligamos a que el cálculo estructural esté estrictamente diseñado sobre la capacidad de carga real del polígono.
-                        </p>
+            <section className="section-padding py-10 !pt-0">
+                <div className="w-full max-w-[800px] mx-auto">
+                    <div className="glass p-8 md:p-12 border border-black/5 flex flex-col gap-12">
 
-                        <h2 className="text-2xl font-bold text-ink mb-4">2. Arquitectura Ejecutiva vs. Arquitectura Conceptual</h2>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                            Un "render" o diseño conceptual no es apto para construir. Se requiere un Proyecto Ejecutivo Integral que incluya: planos estructurales, instalaciones hidrosanitarias, eléctricas, HVAC (climatización) y detalles constructivos milimétricos. Sin esto, la obra dependerá de la improvisación en campo, lo cual siempre eleva los costos exponencialmente.
-                        </p>
+                        {/* Point 1 */}
+                        <div className="flex flex-col gap-4">
+                            <span className="text-5xl">🧪</span>
+                            <h2 className="text-2xl md:text-3xl font-bold text-ink tracking-tight uppercase">
+                                1. Topografía y Mecánica de Suelos
+                            </h2>
+                            <p className="text-gray-600 text-[17px] leading-relaxed">
+                                El error más costoso en la construcción residencial premium ocurre antes de verter el primer centímetro cúbico de concreto. Asumir la resistencia del terreno sin un estudio de mecánica de suelos (geotecnia) riguroso compromete la integridad estructural.
+                                <br /><br />
+                                💡 <strong>La clave SAVI:</strong> En <strong>SAVI Construcciones</strong>, obligamos a que el cálculo estructural esté estrictamente diseñado sobre la capacidad de carga real del polígono. No adivinamos, medimos.
+                            </p>
+                        </div>
 
-                        <h2 className="text-2xl font-bold text-ink mb-4">3. Gestión Normativa y Permisología</h2>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                            Iniciar una obra sin las licencias de construcción aprobadas (Director Responsable de Obra, uso de suelo, impactos ambientales o de tráfico si aplica) pone en riesgo el capital mediante multas, suspensiones o clausuras definitivas. La gestión legal y administrativa es el escudo protector de tu inyección de capital inicial.
-                        </p>
+                        {/* Point 2 */}
+                        <div className="flex flex-col gap-4">
+                            <span className="text-5xl">📐</span>
+                            <h2 className="text-2xl md:text-3xl font-bold text-ink tracking-tight uppercase">
+                                2. Render vs. Realidad (Evita el "ahí vemos")
+                            </h2>
+                            <p className="text-gray-600 text-[17px] leading-relaxed">
+                                Un render bonito es solo un dibujo. Para construir necesitas un <strong>Proyecto Ejecutivo</strong>. Es el manual de instrucciones exacto de tu casa: tuberías, cables, vigas y hasta el último tornillo.
+                                <br /><br />
+                                Sin planos ejecutivos, la obra se vuelve una improvisación constante que drena tu cartera. El orden es: Ingeniería primero, acabados después.
+                            </p>
+                        </div>
 
-                        <h2 className="text-2xl font-bold text-ink mb-4">Conclusión Técnica</h2>
-                        <p className="text-gray-600 mb-8 leading-relaxed">
-                            Delegar la fase de pre-construcción a una empresa con rigor estructural como SAVI garantiza que el diseño sea técnica y económicamente viable. No dejamos margen a la incertidumbre.
-                        </p>
+                        {/* Point 3 */}
+                        <div className="flex flex-col gap-4">
+                            <span className="text-5xl">⚖️</span>
+                            <h2 className="text-2xl md:text-3xl font-bold text-ink tracking-tight uppercase">
+                                3. Blindaje Legal (Duerma tranquilo)
+                            </h2>
+                            <p className="text-gray-600 text-[17px] leading-relaxed">
+                                Una clausura puede detener tu sueño por meses o años. Permisos, licencias y el DRO (Director Responsable de Obra) no son "trámites", son tu escudo legal.
+                                <br /><br />
+                                💡 <strong>ProTip:</strong> Asegúrate de que quien construya sea una empresa legalmente constituida que proteja tu capital ante cualquier inspección.
+                            </p>
+                        </div>
 
-                        <div className="flex justify-center mt-12">
-                            <Link href="/contacto" className="btn-apple">
-                                Agendar Evaluación de Proyecto Residencial
+                        <div className="mt-6 p-8 bg-accent/5 rounded-2xl border border-accent/10">
+                            <p className="text-accent font-bold uppercase tracking-widest text-xs mb-4">Conclusión SAVI Construcciones</p>
+                            <h3 className="text-xl font-bold text-ink mb-2 italic">"Construir bien sale más barato que reparar siempre."</h3>
+                            <p className="text-gray-500 font-light">
+                                La pre-construcción es donde se gana o se pierde el dinero. Dedícale tiempo a estos 3 pasos y disfruta ver cómo tu patrimonio crece sobre bases sólidas.
+                            </p>
+                        </div>
+
+                        <div className="flex justify-center mt-6">
+                            <Link href="/contacto" className="btn-apple !px-12 !py-6 text-lg">
+                                Quiero iniciar mi proyecto con certeza →
                             </Link>
                         </div>
                     </div>
@@ -65,3 +95,4 @@ export default function ArticlePage() {
         </div>
     );
 }
+

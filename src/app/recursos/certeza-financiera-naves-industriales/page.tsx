@@ -15,53 +15,96 @@ export default function ArticlePage() {
                     >
                         <div className="flex items-center gap-4">
                             <span className="text-[10px] uppercase font-bold tracking-[0.2em] px-3 py-1 rounded-full bg-accent/5 text-accent border border-accent/10">
-                                Industrial
+                                División Industrial
                             </span>
-                            <span className="text-[11px] font-medium text-gray-400">Febrero 2026</span>
+                            <span className="text-[11px] font-medium text-gray-400">LECTURA DE 4 MIN</span>
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-ink">
-                            Certeza Financiera: ¿Cómo evitar sobrecostos en Naves Industriales?
+                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-ink uppercase">
+                            Adiós a los <span className="text-accent italic">Sobrecostos</span>: <br />
+                            El Secreto de las <br />
+                            Naves Exitosas.
                         </h1>
 
-                        <p className="text-xl text-gray-600 font-light leading-relaxed">
-                            Análisis estratégico sobre la planeación presupuestal y el control de obra en proyectos de gran escala.
+                        <p className="text-xl md:text-2xl text-gray-600 font-light leading-relaxed border-l-4 border-accent pl-6 py-2">
+                            ¿Sabías que un milímetro de error puede costar millones? Descubre cómo controlamos cada centavo en proyectos de gran escala. 🏗️💰
                         </p>
                     </motion.div>
                 </div>
             </section>
 
-            <section className="section-padding py-10">
-                <div className="w-full max-w-[800px] mx-auto prose prose-lg prose-blue">
-                    <div className="glass p-8 md:p-12 border border-black/5">
-                        <h2 className="text-2xl font-bold text-ink mb-4">La Problemática de la Fluctuación Volumétrica</h2>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                            Los desarrollos industriales enfrentan una alta volatilidad presupuestal si no se establece un Catálogo de Conceptos "Cerrado" o meticulosamente valorado. Un error milimétrico en el espesor del pavimento de concreto en una nave de 10,000 metros cuadrados o un cálculo deficitario en la tonelada de acero (marco rígido), puede representar desviaciones financieras catastróficas.
-                        </p>
+            <section className="section-padding py-10 !pt-0">
+                <div className="w-full max-w-[800px] mx-auto">
+                    <div className="glass p-8 md:p-12 border border-black/5 flex flex-col gap-12">
 
-                        <h2 className="text-2xl font-bold text-ink mb-4">1. Pisos (Slab) Súper Planos: Medición de Tolerancia F-Min</h2>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                            Cualquier nave logística de clase mundial necesita pisos certificados. La rectificación láser no es opcional, es el diferencial entre operar montacargas trilaterales a máxima velocidad o tener incidencias en la cadena de suministro por fisuras o hundimientos. Invertir en ingeniería de nivelación desde el colado evita reparaciones millonarias ex-post.
-                        </p>
+                        {/* Point 1 */}
+                        <div className="flex flex-col gap-4">
+                            <div className="flex items-center gap-4">
+                                <span className="text-5xl">📏</span>
+                                <span className="text-accent font-black text-6xl opacity-10">01</span>
+                            </div>
+                            <h2 className="text-2xl md:text-3xl font-bold text-ink tracking-tight uppercase">
+                                El Piso: Donde el dinero se "hunde"
+                            </h2>
+                            <p className="text-gray-600 text-[17px] leading-relaxed">
+                                En una nave de 10,000m², un error de espesor de solo 1cm en el concreto significa <strong>100 metros cúbicos de desperdicio</strong>. Multiplica eso por los precios actuales... 😱.
+                                <br /><br />
+                                Usamos tecnología láser para asegurar que el piso sea "Súper Plano", permitiendo que tus montacargas vuelen sin vibraciones y tu inversión no se agriete.
+                            </p>
+                        </div>
 
-                        <h2 className="text-2xl font-bold text-ink mb-4">2. Estructura e Ingeniería de Valor (Value Engineering)</h2>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                            En SAVI, practicamos la ingeniería de valor. Esto implica revisar el cálculo estructural para optimizar el peso del acero por metro cuadrado sin sacrificar el factor de seguridad estructural frente al viento, sismo y carga de techumbres. Un esqueleto pesado no siempre es el más seguro, un esqueleto inteligente reduce costos y tiempo.
-                        </p>
+                        {/* Point 2 */}
+                        <div className="flex flex-col gap-4">
+                            <div className="flex items-center gap-4">
+                                <span className="text-5xl">🏗️</span>
+                                <span className="text-accent font-black text-6xl opacity-10">02</span>
+                            </div>
+                            <h2 className="text-2xl md:text-3xl font-bold text-ink tracking-tight uppercase">
+                                Ingeniería de Valor (Ahorro Inteligente)
+                            </h2>
+                            <p className="text-gray-600 text-[17px] leading-relaxed">
+                                ¿Poner más acero hace la nave más segura? <strong>FALSO</strong>. Poner el acero donde se necesita es lo inteligente.
+                                <br /><br />
+                                En SAVI Construcciones rediseñamos estructuras para optimizar el peso sin sacrificar ni un gramo de seguridad. Menos peso = menos costo = entrega más rápida.
+                            </p>
+                        </div>
 
-                        <h2 className="text-2xl font-bold text-ink mb-4">3. Logística Fast-Track y Flujo de Inversión</h2>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                            El ROI (Retorno de Inversión) del cliente industrial comienza el día 1 de operación. Retrasar una semana la entrega de un cross-dock disminuye directamente los ingresos previstos. La metodología fast-track entrelaza diseño de la superestructura fabricada en taller de la mano con las terracerías simultáneas en sitio.
-                        </p>
+                        {/* Point 3 */}
+                        <div className="flex flex-col gap-4">
+                            <div className="flex items-center gap-4">
+                                <span className="text-5xl">⚡</span>
+                                <span className="text-accent font-black text-6xl opacity-10">03</span>
+                            </div>
+                            <h2 className="text-2xl md:text-3xl font-bold text-ink tracking-tight uppercase">
+                                Metodología Fast-Track
+                            </h2>
+                            <p className="text-gray-600 text-[17px] leading-relaxed">
+                                El tiempo es dinero, especialmente cuando esperas el ROI de una nave logística. Mientras excavamos en sitio, ya estamos fabricando la estructura en taller.
+                                <br /><br />
+                                Este solape de procesos reduce el tiempo de entrega hasta en un 30%. Si no estás operando, estás perdiendo.
+                            </p>
+                        </div>
 
-                        <h2 className="text-2xl font-bold text-ink mb-4">Auditoria Continua en Campo</h2>
-                        <p className="text-gray-600 mb-8 leading-relaxed">
-                            Un presupuesto cerrado depende estrictamente de que las mediciones en obra (estimaciones) coincidan con el avance proyectado en primavera. SAVI aplica métricas de valor ganado para asegurar a nuestros clientes industriales total apego al flujo de la inversión.
-                        </p>
+                        <div className="mt-6 p-10 bg-ink text-white rounded-3xl overflow-hidden relative">
+                            <div className="absolute top-0 right-0 p-8 opacity-10 text-9xl">💰</div>
+                            <p className="text-accent font-bold uppercase tracking-widest text-xs mb-4">Métrica de Oro</p>
+                            <h3 className="text-2xl md:text-3xl font-bold mb-4">"Lo que no se mide, no se controla."</h3>
+                            <p className="text-gray-400 font-light text-lg">
+                                Aplicamos auditorías continuas en campo para asegurar que cada peso que inviertes esté exactamente donde dice el plano. Certeza total.
+                            </p>
+                        </div>
 
-                        <div className="flex justify-center mt-12">
-                            <Link href="/contacto" className="btn-apple">
-                                Cotizar Obra Industrial
+                        <div className="mt-6 p-8 bg-accent/5 rounded-2xl border border-accent/10">
+                            <p className="text-accent font-bold uppercase tracking-widest text-xs mb-4">Conclusión SAVI Construcciones</p>
+                            <h3 className="text-xl font-bold text-ink mb-2 italic">"La rentabilidad de tu nave se construye desde el cimiento."</h3>
+                            <p className="text-gray-500 font-light">
+                                Minimizar riesgos no es suerte, es ingeniería. Deja tu proyecto en manos de expertos que cuiden tu ROI tanto como tú.
+                            </p>
+                        </div>
+
+                        <div className="flex justify-center mt-6">
+                            <Link href="/contacto" className="btn-apple !bg-accent !text-white !px-12 !py-6 text-lg">
+                                Optimizar mi Presupuesto Industrial →
                             </Link>
                         </div>
                     </div>

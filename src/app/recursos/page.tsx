@@ -6,27 +6,27 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const ARTICLES = [
     {
-        title: "Pasos Críticos antes de iniciar una Construcción Residencial",
-        description: "Una hoja de ruta técnica para asegurar que tu inversión patrimonial inicie con bases sólidas y sin riesgos legales o técnicos.",
+        title: "Evita Pesadillas: 3 Pasos de Oro antes de Construir tu Casa",
+        description: "Lo que nadie te dice sobre el terreno y los planos. Una guía rápida para blindar tu patrimonio desde el primer día.",
         category: "Residencial",
         date: "Marzo 2026",
-        readTime: "5 min",
+        readTime: "3 min",
         slug: "pasos-criticos-construccion-residencial",
     },
     {
-        title: "Certeza Financiera: ¿Cómo evitar sobrecostos en Naves Industriales?",
-        description: "Análisis estratégico sobre la planeación presupuestal y el control de obra en proyectos de gran escala.",
+        title: "Adiós a los Sobrecostos: El Secreto de las Naves Industriales Exitosas",
+        description: "¿Sabías que un milímetro de error puede costar millones? Descubre cómo controlamos cada centavo en proyectos de gran escala.",
         category: "Industrial",
         date: "Febrero 2026",
-        readTime: "8 min",
+        readTime: "4 min",
         slug: "certeza-financiera-naves-industriales",
     },
     {
-        title: "El valor de la Estructura: Ingeniería que protege tu Patrimonio.",
-        description: "Por qué el rigor técnico en la fase oculta de la obra es la mejor garantía de longevidad para tu edificio.",
+        title: "La Ingeniería 'Invisible': Lo que hace que tu Obra dure 100 años",
+        description: "Tu edificio se ve bien por fuera, pero ¿qué hay de los huesos? Aprende por qué la estructura es tu mejor seguro de vida.",
         category: "Ingeniería",
         date: "Enero 2026",
-        readTime: "6 min",
+        readTime: "3 min",
         slug: "valor-ingenieria-oculta-obras",
     }
 ];
@@ -124,10 +124,10 @@ export default function Guia() {
                     <div className="mt-24 glass p-10 bg-gradient-to-br from-blue-50/30 to-white/30 border border-accent/5">
                         <div className="max-w-3xl">
                             <h3 className="text-xl font-black italic tracking-tighter text-ink mb-4">
-                                SAVI<span className="text-accent">.</span> <span className="opacity-50 text-sm uppercase tracking-[0.3em] font-bold ml-2">Cultura de Ingeniería</span>
+                                SAVI <span className="text-accent">CONSTRUCCIONES.</span> <span className="opacity-50 text-sm uppercase tracking-[0.3em] font-bold ml-2">Cultura de Ingeniería</span>
                             </h3>
                             <p className="text-[16px] text-gray-600 font-light leading-relaxed">
-                                Nuestra sección de recursos no es solo un blog; es un compromiso con la transparencia. Creemos que un cliente informado es un aliado estratégico. Aquí compartiremos nuestra experiencia acumulada en más de 20 años de obra, desde la optimización de procesos hasta la prevención de riesgos patrimoniales.
+                                Nuestra sección de recursos no es solo un blog; es un compromiso con la transparencia. Creemos que un cliente informado es un aliado estratégico. Aquí compartiremos nuestra experiencia acumulada en más de 20 años de obra con SAVI Construcciones, desde la optimización de procesos hasta la prevención de riesgos patrimoniales.
                             </p>
                         </div>
                     </div>
