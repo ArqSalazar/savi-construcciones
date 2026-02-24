@@ -85,7 +85,7 @@ export default function ArticlePage() {
                                     En SAVI Construcciones entendemos que el éxito de una residencia no se mide solo en su estética, sino en la paz mental de saber que ha sido construida bajo los estándares técnicos más rigurosos.
                                 </p>
                                 <div className="mt-12">
-                                    <Link href="/contacto" className="btn-apple !px-12 !py-6 text-lg">
+                                    <Link href="/contacto" className="btn-apple !px-10 !py-4 text-sm font-bold uppercase tracking-widest">
                                         Iniciar evaluación técnica
                                     </Link>
                                 </div>

@@ -85,7 +85,7 @@ export default function EngineeringArticle() {
                                     En SAVI Construcciones no solo edificamos estructuras; fabricamos activos inmobiliarios seguros y eficientes. La ingeniería es, y siempre será, nuestro pilar fundamental.
                                 </p>
                                 <div className="mt-12">
-                                    <Link href="/contacto" className="btn-apple !px-12 !py-6 text-lg">
+                                    <Link href="/contacto" className="btn-apple !px-10 !py-4 text-sm font-bold uppercase tracking-widest">
                                         Agendar consulta técnica
                                     </Link>
                                 </div>

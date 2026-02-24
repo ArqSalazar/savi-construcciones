@@ -85,7 +85,7 @@ export default function IndustrialArticle() {
                                     Minimizar riesgos financieros no es una cuestión de suerte, sino de ingeniería aplicada con rigor. En SAVI Construcciones, gestionamos su proyecto para asegurar que cada peso invertido genere valor operativo inmediato.
                                 </p>
                                 <div className="mt-12">
-                                    <Link href="/contacto" className="btn-apple !px-12 !py-6 text-lg">
+                                    <Link href="/contacto" className="btn-apple !px-10 !py-4 text-sm font-bold uppercase tracking-widest">
                                         Solicitar consultoría industrial
                                     </Link>
                                 </div>
