@@ -6,24 +6,24 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const ARTICLES = [
     {
-        title: "Evita Pesadillas: 3 Pasos de Oro antes de Construir tu Casa",
-        description: "Lo que nadie te dice sobre el terreno y los planos. Una guía rápida para blindar tu patrimonio desde el primer día.",
+        title: "Pasos fundamentales para tu patrimonio residencial",
+        description: "Una guía esencial sobre los elementos críticos que aseguran la rentabilidad y seguridad de tu inversión antes de iniciar la obra.",
         category: "Residencial",
         date: "Marzo 2026",
         readTime: "3 min",
         slug: "pasos-criticos-construccion-residencial",
     },
     {
-        title: "Adiós a los Sobrecostos: El Secreto de las Naves Industriales Exitosas",
-        description: "¿Sabías que un milímetro de error puede costar millones? Descubre cómo controlamos cada centavo en proyectos de gran escala.",
+        title: "Optimización financiera en infraestructura industrial",
+        description: "Cómo la precisión técnica y el control de obra eliminan los sobrecostos inesperados en proyectos de gran escala.",
         category: "Industrial",
         date: "Febrero 2026",
         readTime: "4 min",
         slug: "certeza-financiera-naves-industriales",
     },
     {
-        title: "La Ingeniería 'Invisible': Lo que hace que tu Obra dure 100 años",
-        description: "Tu edificio se ve bien por fuera, pero ¿qué hay de los huesos? Aprende por qué la estructura es tu mejor seguro de vida.",
+        title: "Ingeniería de estructura y valor patrimonial",
+        description: "El impacto de la ingeniería de precisión en la durabilidad y valor de mercado de un edificio profesional.",
         category: "Ingeniería",
         date: "Enero 2026",
         readTime: "3 min",

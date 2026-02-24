@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function ArticlePage() {
+export default function EngineeringArticle() {
     return (
         <div className="flex flex-col min-h-screen">
             <section className="flex flex-col justify-center section-padding pt-32 pb-16">
@@ -11,23 +11,23 @@ export default function ArticlePage() {
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="flex flex-col gap-6"
+                        className="flex flex-col gap-8"
                     >
                         <div className="flex items-center gap-4">
                             <span className="text-[10px] uppercase font-bold tracking-[0.2em] px-3 py-1 rounded-full bg-accent/5 text-accent border border-accent/10">
-                                Cultura de Ingeniería
+                                Ingeniería y Valor
                             </span>
                             <span className="text-[11px] font-medium text-gray-400">LECTURA DE 3 MIN</span>
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-ink uppercase">
-                            Ingeniería <br />
-                            <span className="text-accent italic">"Invisible"</span>: <br />
-                            Los huesos del éxito.
+                            Ingeniería:<br />
+                            La Garantía del<br />
+                            Activo Inmobiliario.
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-gray-600 font-light leading-relaxed border-l-4 border-accent pl-6 py-2">
-                            Tu edificio se ve bien por fuera, pero ¿qué hay de los huesos? Aprende por qué la estructura es tu mejor seguro de vida. 🦴🏙️
+                        <p className="text-xl md:text-2xl text-gray-600 font-light leading-relaxed border-l border-accent/30 pl-8">
+                            Un edificio es, ante todo, una solución de ingeniería. La estructura es el componente que determina la longevidad y la plusvalía real de su patrimonio.
                         </p>
                     </motion.div>
                 </div>
@@ -35,57 +35,57 @@ export default function ArticlePage() {
 
             <section className="section-padding py-10 !pt-0">
                 <div className="w-full max-w-[800px] mx-auto">
-                    <div className="glass p-8 md:p-12 border border-black/5 flex flex-col gap-12">
+                    <div className="flex flex-col gap-16">
 
                         {/* Point 1 */}
-                        <div className="flex flex-col gap-4">
-                            <span className="text-5xl">🌑</span>
+                        <div className="flex flex-col gap-6">
                             <h2 className="text-2xl md:text-3xl font-bold text-ink tracking-tight uppercase">
-                                Lo que no se ve, importa más
+                                1. Estructura como Activo Financiero
                             </h2>
-                            <p className="text-gray-600 text-[17px] leading-relaxed">
-                                Los acabados de lujo venden casas, pero la <strong>Ingeniería Oculta</strong> (cimentación, acero, ductos) es lo que las mantiene en pie.
-                                <br /><br />
-                                ¿Sabías que un mal cálculo estructural puede devaluar tu propiedad un 30% en solo 5 años por grietas "inexplicables"? En SAVI Construcciones, invertimos en longevidad.
+                            <p className="text-gray-600 text-[17px] leading-relaxed font-light">
+                                Mientras que los acabados estéticos se devalúan con el tiempo, una estructura diseñada con rigor técnico preserva la integridad del inmueble y su valor de mercado. Un mal cálculo estructural puede devaluar una propiedad significativamente debido a fallos técnicos prematuros.
+                            </p>
+                            <p className="text-gray-600 text-[17px] leading-relaxed font-light">
+                                En SAVI Construcciones, invertimos en longevidad mediante procesos de cálculo avanzados que aseguran que su obra trascienda generaciones.
                             </p>
                         </div>
 
                         {/* Point 2 */}
-                        <div className="flex flex-col gap-4">
-                            <span className="text-5xl">🌪️</span>
+                        <div className="flex flex-col gap-6">
                             <h2 className="text-2xl md:text-3xl font-bold text-ink tracking-tight uppercase">
-                                Blindaje contra la naturaleza
+                                2. Rigor Técnico y Normatividad
                             </h2>
-                            <p className="text-gray-600 text-[17px] leading-relaxed">
-                                En el Noroeste de México, los huracanes and sismos no avisan. Una columna no es solo "concreto con varilla"; es una pieza de ingeniería calculada para torsión and esfuerzos extremos.
-                                <br /><br />
-                                💡 <strong>Curiosidad:</strong> Ahorrar en acero en la estructura es como ahorrar en paracaídas. Solo te das cuenta del error cuando ya es tarde.
+                            <p className="text-gray-600 text-[17px] leading-relaxed font-light">
+                                El cumplimiento estricto de las normativas estructurales nacionales e internacionales no es una opción, sino una obligación ética y técnica. El diseño basado en reglamentos actualizados garantiza la seguridad de los usuarios frente a fenómenos naturales imprevistos.
                             </p>
+                            <div className="p-6 bg-gray-50 border-l-2 border-accent">
+                                <p className="text-sm text-gray-600 font-medium italic">
+                                    Nuestra dirección técnica se apega estrictamente a la normativa estructural más rigurosa de México, proporcionando un respaldo sólido a cada proyecto ejecutado.
+                                </p>
+                            </div>
                         </div>
 
                         {/* Point 3 */}
-                        <div className="flex flex-col gap-4">
-                            <span className="text-5xl">🛡️</span>
+                        <div className="flex flex-col gap-6">
                             <h2 className="text-2xl md:text-3xl font-bold text-ink tracking-tight uppercase">
-                                Estaciones de Servicio: Tolerancia 0
+                                3. Eficiencia en el Uso de Materiales
                             </h2>
-                            <p className="text-gray-600 text-[17px] leading-relaxed">
-                                En el sector Oil & Gas, la precisión es vital. Una fuga no es un "detalle", es una catástrofe. Aplicamos protocolos industriales de hermeticidad and descarga estática que trascienden la albañilería tradicional. Somos cirujanos de la construcción.
+                            <p className="text-gray-600 text-[17px] leading-relaxed font-light">
+                                La ingeniería moderna permite optimizar el consumo de concreto y acero a través de simulaciones precisas. Esto no solo reduce los costos de construcción, sino que impacta positivamente en la sostenibilidad y huella ambiental del edificio.
                             </p>
                         </div>
 
-                        <div className="mt-6 p-8 bg-accent/5 rounded-2xl border border-accent/10">
-                            <p className="text-accent font-bold uppercase tracking-widest text-xs mb-4">Conclusión SAVI Construcciones</p>
-                            <h3 className="text-xl font-bold text-ink mb-2 italic">"Tu patrimonio merece ingeniería de verdad."</h3>
-                            <p className="text-gray-500 font-light">
-                                En SAVI Construcciones no solo construimos edificios; fabricamos seguridad a largo plazo. Nuestra dirección técnica se apega estrictamente a la normativa estructural más rigurosa de México.
+                        <div className="mt-8 p-10 glass border border-black/5 rounded-3xl">
+                            <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-accent block mb-4">Conclusión</span>
+                            <h3 className="text-2xl font-bold text-ink mb-4 italic tracking-tight">Seguridad a largo plazo.</h3>
+                            <p className="text-gray-500 font-light text-[16px] leading-relaxed">
+                                En SAVI Construcciones no solo edificamos estructuras; fabricamos activos inmobiliarios seguros y eficientes. La ingeniería es, y siempre será, nuestro pilar fundamental.
                             </p>
-                        </div>
-
-                        <div className="flex justify-center mt-6">
-                            <Link href="/contacto" className="btn-apple !px-12 !py-6 text-lg">
-                                Consultar con un Experto Técnico →
-                            </Link>
+                            <div className="mt-10">
+                                <Link href="/contacto" className="btn-apple !px-12 !py-6 text-lg">
+                                    Agendar consulta técnica
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,4 +93,3 @@ export default function ArticlePage() {
         </div>
     );
 }
-
