@@ -13,8 +13,8 @@ export default function HeroSection() {
                     variants={{
                         visible: {
                             transition: {
-                                staggerChildren: 0.15,
-                                delayChildren: 0.2,
+                                staggerChildren: 0.08,
+                                delayChildren: 0,
                             }
                         }
                     }}
@@ -40,12 +40,12 @@ export default function HeroSection() {
                     <motion.h1
                         variants={{
                             hidden: { opacity: 0, y: 30 },
-                            visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } }
+                            visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } }
                         }}
                         className="text-[clamp(3rem,6.5vw,6rem)] font-black leading-[0.85] tracking-[-0.04em] text-ink uppercase"
                     >
                         Creamos espacios.<br />
-                        <span className="opacity-90">Construimos</span> <span className="opacity-20 italic">Certeza.</span>
+                        <span className="opacity-90">Construimos</span> <span className="opacity-40 italic">Certeza.</span>
                     </motion.h1>
 
                     <motion.p

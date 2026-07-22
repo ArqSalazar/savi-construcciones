@@ -38,7 +38,7 @@ export default function WhatsAppFloating() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                    className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[90] flex items-center justify-center group"
+                    className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[90] flex items-center justify-center group pb-[env(safe-area-inset-bottom)]"
                     aria-label="Contactar por WhatsApp"
                 >
                     {/* Tooltip Hover */}

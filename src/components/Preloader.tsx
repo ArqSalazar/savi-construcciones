@@ -24,7 +24,7 @@ export default function Preloader() {
             const timer = setTimeout(() => {
                 setIsLoading(false);
                 document.body.style.overflow = "";
-            }, 3000);
+            }, 2000);
 
             return () => {
                 clearTimeout(timer);
@@ -70,7 +70,7 @@ export default function Preloader() {
                         <motion.div
                             initial={{ width: 0, opacity: 0 }}
                             animate={{ width: "auto", opacity: 1 }}
-                            transition={{ delay: 1.2, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                            transition={{ delay: 0.7, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                             className="overflow-hidden whitespace-nowrap flex items-end mb-[2px] md:mb-[4px] lg:mb-[6px] ml-1 md:ml-2"
                         >
                             <span className="text-[12px] md:text-[14px] lg:text-[16px] uppercase tracking-[0.35em] text-gray-400 font-bold block pt-2 md:pt-4">

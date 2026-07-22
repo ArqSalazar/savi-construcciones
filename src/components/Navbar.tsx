@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -14,14 +15,9 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
-    const [mounted, setMounted] = useState(false);
+    const pathname = usePathname();
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    useEffect(() => {
-        const timer = setTimeout(() => setMounted(true), 0);
-        return () => clearTimeout(timer);
-    }, []);
 
     // Close menu when resizing to desktop
     useEffect(() => {
@@ -31,8 +27,6 @@ export default function Navbar() {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-
-    if (!mounted) return null;
 
     return (
         <>
@@ -52,31 +46,38 @@ export default function Navbar() {
                         className="hidden lg:flex items-center space-x-1 relative shrink-0"
                         onMouseLeave={() => setHoveredIndex(null)}
                     >
-                        {NAV_LINKS.map((link, idx) => (
-                            <Link
-                                key={link.href}
-                                href={link.href}
-                                className={`relative px-4 xl:px-5 py-2 text-[10px] xl:text-[11px] font-bold uppercase tracking-[0.28em] transition-colors duration-300 z-10 ${hoveredIndex === idx ? "text-accent" : "text-ink opacity-55 hover:opacity-100"
-                                    }`}
-                                onMouseEnter={() => setHoveredIndex(idx)}
-                            >
-                                <span className="relative z-10">{link.name}</span>
-                                {hoveredIndex === idx && (
-                                    <motion.div
-                                        layoutId="nav-hover-pill"
-                                        className="absolute inset-0 bg-accent/[0.06] rounded-full -z-0"
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        exit={{ opacity: 0 }}
-                                        transition={{
-                                            type: "spring",
-                                            stiffness: 400,
-                                            damping: 30
-                                        }}
-                                    />
-                                )}
-                            </Link>
-                        ))}
+                        {NAV_LINKS.map((link, idx) => {
+                            const isActive = pathname === link.href;
+                            return (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    aria-current={isActive ? "page" : undefined}
+                                    className={`relative px-4 xl:px-5 py-2 text-[10px] xl:text-[11px] font-bold uppercase tracking-[0.28em] transition-colors duration-300 z-10 ${hoveredIndex === idx || isActive ? "text-accent" : "text-ink opacity-55 hover:opacity-100"
+                                        }`}
+                                    onMouseEnter={() => setHoveredIndex(idx)}
+                                >
+                                    <span className="relative z-10">{link.name}</span>
+                                    {hoveredIndex === idx && (
+                                        <motion.div
+                                            layoutId="nav-hover-pill"
+                                            className="absolute inset-0 bg-accent/[0.06] rounded-full -z-0"
+                                            initial={{ opacity: 0 }}
+                                            animate={{ opacity: 1 }}
+                                            exit={{ opacity: 0 }}
+                                            transition={{
+                                                type: "spring",
+                                                stiffness: 400,
+                                                damping: 30
+                                            }}
+                                        />
+                                    )}
+                                    {isActive && hoveredIndex !== idx && (
+                                        <span className="absolute left-1/2 -translate-x-1/2 bottom-0.5 w-1 h-1 rounded-full bg-accent" />
+                                    )}
+                                </Link>
+                            );
+                        })}
                     </div>
 
                     <div className="flex items-center gap-2 md:gap-3 shrink-0">

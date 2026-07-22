@@ -25,6 +25,7 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
     });
 
     lenisRef.current = lenis;
+    (window as unknown as { __lenis: Lenis }).__lenis = lenis;
 
     function raf(time: number) {
       if (lenisRef.current) {
@@ -41,6 +42,7 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
         lenisRef.current.destroy();
         lenisRef.current = null;
       }
+      delete (window as unknown as { __lenis?: Lenis }).__lenis;
     };
   }, []);
 

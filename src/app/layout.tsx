@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// Deployment Sync: 2026-02-21 v1.0.5 - Emergency Asset Refresh
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
@@ -8,32 +7,34 @@ import Footer from "@/components/Footer";
 import BlueprintBackground from "@/components/BlueprintBackground";
 import Preloader from "@/components/Preloader";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
+import BackToTop from "@/components/BackToTop";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
   subsets: ["latin"],
 });
 
+const BASE_URL = "https://www.saviconstrucciones.com";
+
 export const metadata: Metadata = {
-  title: "SAVI. Construcciones",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: "SAVI. Construcciones",
+    template: "%s | SAVI Construcciones",
+  },
   description: "Más de 20 años construyendo con honestidad y rigor técnico. Especialistas en residencias premium e infraestructura industrial que protege tu patrimonio y asegura tu inversión.",
   keywords: ["constructora sinaloa", "arquitectura integral sonora", "casas premium", "naves industriales", "estaciones de servicio noroeste", "seguridad patrimonial", "legado familiar", "savi construcciones"],
   robots: "index,follow,max-image-preview:large",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "SAVI. Construcciones",
     description: "Diseño integral y ejecución de alta gama. Protegemos tu inversión con transparencia y excelencia técnica en cada proyecto.",
-    url: "https://www.saviconstrucciones.com/",
+    url: "/",
     siteName: "SAVI. Construcciones",
     locale: "es_MX",
     type: "website",
-    images: [
-      {
-        url: "https://www.saviconstrucciones.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "SAVI Construcciones - Infraestructura Industrial y Gasolineras",
-      },
-    ],
   },
 };
 
@@ -42,13 +43,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Schema JSON-LD exactly like original HTML
   const schemaScript = {
     "@context": "https://schema.org",
     "@type": "GeneralContractor",
     "name": "SAVI. Construcciones",
     "url": "https://www.saviconstrucciones.com/",
-    "image": "https://www.saviconstrucciones.com/og-image.jpg",
+    "image": "https://www.saviconstrucciones.com/opengraph-image",
     "telephone": "+52 668 222 8008",
     "email": "ventas@saviconstrucciones.com",
     "address": {
@@ -95,6 +95,7 @@ export default function RootLayout({
           </main>
           <Footer />
           <WhatsAppFloating />
+          <BackToTop />
         </LenisProvider>
       </body>
     </html>

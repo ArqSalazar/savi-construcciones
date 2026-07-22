@@ -13,11 +13,11 @@ export default function ScrollReveal({
 }) {
     return (
         <motion.div
-            initial={{ opacity: 0.12, filter: "blur(6px)", y: 26 }}
+            initial={{ opacity: 0.2, filter: "blur(4px)", y: 18 }}
             whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
             viewport={{ once: true, margin: "-10% 0px -10% 0px" }}
             transition={{
-                duration: 1.05,
+                duration: 0.8,
                 ease: [0.16, 1, 0.3, 1], // Custom ease similar to the original CSS
                 delay: delay,
             }}
