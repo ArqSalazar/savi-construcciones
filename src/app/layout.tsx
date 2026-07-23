@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
@@ -88,6 +89,18 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaScript).replace(/</g, '\\u003c') }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JGSEPQ655N"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JGSEPQ655N');
+          `}
+        </Script>
         <Preloader />
         <LenisProvider>
           <BlueprintBackground />
