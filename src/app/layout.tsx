@@ -9,6 +9,7 @@ import Preloader from "@/components/Preloader";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
 import BackToTop from "@/components/BackToTop";
 import NoiseOverlay from "@/components/NoiseOverlay";
+import ScrollRuler from "@/components/ScrollRuler";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -98,6 +99,7 @@ export default function RootLayout({
           <Footer />
           <WhatsAppFloating />
           <BackToTop />
+          <ScrollRuler />
         </LenisProvider>
       </body>
     </html>

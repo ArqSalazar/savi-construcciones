@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
 import Magnetic from "@/components/Magnetic";
+import DimensionDivider from "@/components/DimensionDivider";
 
 export default function Servicios() {
     return (
@@ -103,6 +104,8 @@ export default function Servicios() {
                     </div>
                 </div>
             </section>
+
+            <DimensionDivider />
 
             <section className="flex items-center section-padding min-h-[60vh]">
                 <div className="w-full">

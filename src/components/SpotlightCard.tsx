@@ -73,6 +73,17 @@ export default function SpotlightCard({
                         "radial-gradient(130px circle at var(--spot-x, 50%) var(--spot-y, 50%), black, transparent 80%)",
                 }}
             />
+            {/* Registration marks, like the crop marks on an architectural sheet */}
+            <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 z-20 transition-opacity duration-300"
+                style={{ opacity: "var(--spot-opacity, 0)" }}
+            >
+                <span className="absolute top-3 left-3 w-2.5 h-2.5 border-t border-l border-accent/40" />
+                <span className="absolute top-3 right-3 w-2.5 h-2.5 border-t border-r border-accent/40" />
+                <span className="absolute bottom-3 left-3 w-2.5 h-2.5 border-b border-l border-accent/40" />
+                <span className="absolute bottom-3 right-3 w-2.5 h-2.5 border-b border-r border-accent/40" />
+            </div>
             <div className="relative z-10 h-full">{children}</div>
         </div>
     );
