@@ -14,12 +14,12 @@ export default function HomeCards() {
                             <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 group-hover:text-accent transition-colors duration-300">
                                 Certidumbre Técnica
                             </div>
-                            <h3 className="mt-3 text-xl font-bold tracking-tight text-ink">
+                            <h3 className="mt-3 text-2xl font-black tracking-tight text-ink">
                                 Ingeniería Presupuestal
                             </h3>
-                            <div className="mt-4 text-gray-500 text-sm leading-[1.65] mt-auto">
+                            <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65] mt-auto">
                                 Blindamos tu capital. Aplicamos <strong className="font-medium text-ink">análisis de costos milimétricos</strong> para eliminar sorpresas financieras y garantizar la viabilidad desde el primer trazo.
-                            </div>
+                            </p>
                         </SpotlightCard>
 
                         {/* Card 2: Gestión */}
@@ -27,12 +27,12 @@ export default function HomeCards() {
                             <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 group-hover:text-accent transition-colors duration-300">
                                 Integridad
                             </div>
-                            <h3 className="mt-3 text-xl font-bold tracking-tight text-ink">
+                            <h3 className="mt-3 text-2xl font-black tracking-tight text-ink">
                                 Ejecución Estructural
                             </h3>
-                            <div className="mt-4 text-gray-500 text-sm leading-[1.65] mt-auto">
+                            <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65] mt-auto">
                                 Cimientos inquebrantables. Fusionamos <strong className="font-medium text-ink">supervisión de campo</strong> con estrictos protocolos para asegurar que la obra terminada proteja la vida humana y tu inversión.
-                            </div>
+                            </p>
                         </SpotlightCard>
 
                         {/* Card 3: Confianza */}
@@ -40,12 +40,12 @@ export default function HomeCards() {
                             <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 group-hover:text-accent transition-colors duration-300">
                                 Ética Profesional
                             </div>
-                            <h3 className="mt-3 text-xl font-bold tracking-tight text-ink">
+                            <h3 className="mt-3 text-2xl font-black tracking-tight text-ink">
                                 Transparencia Operativa
                             </h3>
-                            <div className="mt-4 text-gray-500 text-sm leading-[1.65] mt-auto">
+                            <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65] mt-auto">
                                 Paz mental absoluta. Mantienes el control financiero mediante un <strong className="font-medium text-ink">sistema de reporte cerrado</strong> que audita cada peso de avance y suministro.
-                            </div>
+                            </p>
                         </SpotlightCard>
                     </div>
 

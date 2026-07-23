@@ -41,7 +41,7 @@ export default function NavesClient() {
                             Infraestructura Industrial · Sonora
                         </motion.span>
 
-                        <h1 className="text-[clamp(3rem,7.5vw,6.5rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase">
+                        <h1 className="text-[clamp(3.5rem,8.5vw,7.5rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase">
                             Naves Industriales<br />
                             <span className="opacity-40 italic">en Sonora.</span>
                         </h1>
@@ -85,22 +85,22 @@ export default function NavesClient() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="glass p-9 border border-black/5">
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 mb-3">Estructura</div>
-                                <h3 className="text-xl font-bold tracking-tight text-ink mb-3">Cimentaciones de Especialidad</h3>
-                                <p className="text-gray-500 text-[15px] leading-relaxed">
+                                <h3 className="text-2xl font-black tracking-tight text-ink mb-3">Cimentaciones de Especialidad</h3>
+                                <p className="text-gray-500 text-[15px] font-light leading-relaxed">
                                     Rediseñamos estructuras para optimizar el peso sin sacrificar seguridad, evitando tanto el sobrediseño como las fisuras por tránsito de carga pesada.
                                 </p>
                             </div>
                             <div className="glass p-9 border border-black/5">
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 mb-3">Operación</div>
-                                <h3 className="text-xl font-bold tracking-tight text-ink mb-3">Pisos Súper Planos</h3>
-                                <p className="text-gray-500 text-[15px] leading-relaxed">
+                                <h3 className="text-2xl font-black tracking-tight text-ink mb-3">Pisos Súper Planos</h3>
+                                <p className="text-gray-500 text-[15px] font-light leading-relaxed">
                                     Nivelación de alta precisión para operación de montacargas 24/7, reduciendo vibración, desgaste de maquinaria y tiempos muertos.
                                 </p>
                             </div>
                             <div className="glass p-9 border border-accent/20 bg-gradient-to-br from-white/70 to-blue-50/30">
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent mb-3">Control</div>
-                                <h3 className="text-xl font-bold tracking-tight text-ink mb-3">Trazabilidad Total</h3>
-                                <p className="text-gray-500 text-[15px] leading-relaxed">
+                                <h3 className="text-2xl font-black tracking-tight text-ink mb-3">Trazabilidad Total</h3>
+                                <p className="text-gray-500 text-[15px] font-light leading-relaxed">
                                     Control de suministro y mano de obra calificada para cumplir cronogramas — cada día de retraso es lucro cesante en operación industrial.
                                 </p>
                             </div>
@@ -143,7 +143,7 @@ export default function NavesClient() {
                             {FAQS.map((item) => (
                                 <div key={item.q} className="glass p-8 border border-black/5">
                                     <h3 className="font-bold text-[17px] text-ink mb-3">{item.q}</h3>
-                                    <p className="text-gray-500 text-[15px] leading-relaxed">{item.a}</p>
+                                    <p className="text-gray-500 text-[15px] font-light leading-relaxed">{item.a}</p>
                                 </div>
                             ))}
                         </div>

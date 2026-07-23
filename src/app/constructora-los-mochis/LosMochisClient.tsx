@@ -41,7 +41,7 @@ export default function LosMochisClient() {
                             Matriz Corporativa · Sinaloa
                         </motion.span>
 
-                        <h1 className="text-[clamp(3rem,7.5vw,6.5rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase">
+                        <h1 className="text-[clamp(3.5rem,8.5vw,7.5rem)] font-black leading-[1.05] tracking-[-0.02em] text-ink uppercase">
                             Constructora en<br />
                             <span className="opacity-40 italic">Los Mochis.</span>
                         </h1>
@@ -109,22 +109,22 @@ export default function LosMochisClient() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="glass p-9 border border-black/5">
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 mb-3">Presencia Real</div>
-                                <h3 className="text-xl font-bold tracking-tight text-ink mb-3">Oficina en La Cuchilla</h3>
-                                <p className="text-gray-500 text-[15px] leading-relaxed">
+                                <h3 className="text-2xl font-black tracking-tight text-ink mb-3">Oficina en La Cuchilla</h3>
+                                <p className="text-gray-500 text-[15px] font-light leading-relaxed">
                                     Nuestra matriz corporativa está en Cjon. Domingo Rubi 517, La Cuchilla, 81250 Los Mochis, Sin. Puedes visitarnos antes de firmar cualquier contrato.
                                 </p>
                             </div>
                             <div className="glass p-9 border border-black/5">
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 mb-3">Conocimiento Local</div>
-                                <h3 className="text-xl font-bold tracking-tight text-ink mb-3">Suelo y Clima Costero</h3>
-                                <p className="text-gray-500 text-[15px] leading-relaxed">
+                                <h3 className="text-2xl font-black tracking-tight text-ink mb-3">Suelo y Clima Costero</h3>
+                                <p className="text-gray-500 text-[15px] font-light leading-relaxed">
                                     Diseñamos cimentaciones considerando las condiciones reales del Valle del Fuerte y la costa de Sinaloa, no tablas genéricas de un manual nacional.
                                 </p>
                             </div>
                             <div className="glass p-9 border border-accent/20 bg-gradient-to-br from-white/70 to-blue-50/30">
                                 <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-accent mb-3">Respuesta Rápida</div>
-                                <h3 className="text-xl font-bold tracking-tight text-ink mb-3">Sin Tiempos de Traslado</h3>
-                                <p className="text-gray-500 text-[15px] leading-relaxed">
+                                <h3 className="text-2xl font-black tracking-tight text-ink mb-3">Sin Tiempos de Traslado</h3>
+                                <p className="text-gray-500 text-[15px] font-light leading-relaxed">
                                     Al estar en Los Mochis, la supervisión de obra y la atención a imprevistos no dependen de vuelos ni logística de otra ciudad.
                                 </p>
                             </div>
@@ -143,7 +143,7 @@ export default function LosMochisClient() {
                             {FAQS.map((item) => (
                                 <div key={item.q} className="glass p-8 border border-black/5">
                                     <h3 className="font-bold text-[17px] text-ink mb-3">{item.q}</h3>
-                                    <p className="text-gray-500 text-[15px] leading-relaxed">{item.a}</p>
+                                    <p className="text-gray-500 text-[15px] font-light leading-relaxed">{item.a}</p>
                                 </div>
                             ))}
                         </div>
