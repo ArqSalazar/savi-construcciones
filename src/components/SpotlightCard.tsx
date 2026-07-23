@@ -54,7 +54,7 @@ export default function SpotlightCard({
                     opacity: "var(--spot-opacity, 0)",
                     borderRadius: "inherit",
                     background:
-                        "radial-gradient(320px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(29,78,216,0.08), transparent 70%)",
+                        "radial-gradient(260px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(29,78,216,0.05), transparent 70%)",
                 }}
             />
             {/* Wireframe reveal: a fine grid that only becomes visible near the cursor, echoing the blueprint background */}
@@ -65,12 +65,12 @@ export default function SpotlightCard({
                     opacity: "var(--spot-opacity, 0)",
                     borderRadius: "inherit",
                     backgroundImage:
-                        "linear-gradient(rgba(29,78,216,0.55) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.55) 1px, transparent 1px)",
-                    backgroundSize: "22px 22px",
+                        "linear-gradient(rgba(29,78,216,0.22) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.22) 1px, transparent 1px)",
+                    backgroundSize: "24px 24px",
                     maskImage:
-                        "radial-gradient(200px circle at var(--spot-x, 50%) var(--spot-y, 50%), black, transparent 75%)",
+                        "radial-gradient(130px circle at var(--spot-x, 50%) var(--spot-y, 50%), black, transparent 80%)",
                     WebkitMaskImage:
-                        "radial-gradient(200px circle at var(--spot-x, 50%) var(--spot-y, 50%), black, transparent 75%)",
+                        "radial-gradient(130px circle at var(--spot-x, 50%) var(--spot-y, 50%), black, transparent 80%)",
                 }}
             />
             <div className="relative z-10 h-full">{children}</div>
