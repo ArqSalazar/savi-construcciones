@@ -56,6 +56,11 @@ export default function Contacto() {
         formData.append("access_key", "f3ced7a1-4811-42b7-8cb5-772388f0dbea");
         formData.append("subject", `[SAVI Web] Nuevo prospecto: ${formData.get("nombre")} - ${formData.get("tipo")}`);
         formData.append("from_name", "SAVI Construcciones Web");
+        // Web3Forms envía la auto-respuesta al remitente solo si detecta un
+        // campo llamado exactamente "email" (nuestro input se llama "correo"
+        // para el copy en español), así que lo duplicamos aquí.
+        formData.append("email", String(formData.get("correo") ?? ""));
+        formData.append("replyto", String(formData.get("correo") ?? ""));
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {

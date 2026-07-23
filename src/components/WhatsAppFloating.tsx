@@ -2,8 +2,19 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+
+const MESSAGES_BY_PATH: Record<string, string> = {
+    "/": "Hola, he visitado su sitio web y me interesa evaluar la viabilidad de un proyecto estratégico con SAVI.",
+    "/servicios": "Hola, vengo de la página de Servicios y me interesa cotizar un proyecto con SAVI.",
+    "/proyectos": "Hola, vi su portafolio de proyectos y quisiera platicar sobre uno similar para mi obra.",
+    "/nosotros": "Hola, conocí más sobre SAVI Construcciones y me gustaría agendar una evaluación de proyecto.",
+    "/recursos": "Hola, leí uno de los artículos de su sección de Recursos y tengo dudas sobre mi proyecto.",
+    "/contacto": "Hola, vengo de la página de Contacto y quisiera agendar mi evaluación técnica.",
+};
 
 export default function WhatsAppFloating() {
+    const pathname = usePathname();
     const [isVisible, setIsVisible] = useState(false);
 
     // Muestra el botón flotante después de que el usuario hace un poco de scroll
@@ -22,8 +33,11 @@ export default function WhatsAppFloating() {
 
     // Número de teléfono de SAVI (Reemplazar con el real)
     const phoneNumber = "5216682228008";
-    const defaultMessage = "Hola, he visitado su sitio web y me interesa evaluar la viabilidad de un proyecto estratégico con SAVI.";
-    const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+    const matchedPath = pathname && pathname !== "/" && pathname.startsWith("/recursos")
+        ? "/recursos"
+        : pathname;
+    const message = MESSAGES_BY_PATH[matchedPath ?? "/"] ?? MESSAGES_BY_PATH["/"];
+    const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     return (
         <AnimatePresence>
