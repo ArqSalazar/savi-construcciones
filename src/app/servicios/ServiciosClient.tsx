@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
 import Magnetic from "@/components/Magnetic";
 import DimensionDivider from "@/components/DimensionDivider";
+import ResponsabilidadUnicaDiagram from "@/components/ResponsabilidadUnicaDiagram";
 
 export default function Servicios() {
     return (
@@ -106,6 +107,21 @@ export default function Servicios() {
             </section>
 
             <DimensionDivider />
+
+            <section className="section-padding pb-0">
+                <div className="w-full max-w-[1400px] mx-auto">
+                    <ScrollReveal>
+                        <div className="text-center mb-6">
+                            <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 mb-3">Nuestro Modelo</div>
+                            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-ink">Responsabilidad Única</h2>
+                            <p className="max-w-xl mx-auto mt-3 text-gray-500 text-[15px] font-light leading-relaxed">
+                                Arquitectura, ingeniería y construcción bajo un solo equipo — sin fragmentar la responsabilidad entre contratistas distintos.
+                            </p>
+                        </div>
+                        <ResponsabilidadUnicaDiagram />
+                    </ScrollReveal>
+                </div>
+            </section>
 
             <section className="flex items-center section-padding min-h-[60vh]">
                 <div className="w-full">

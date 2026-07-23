@@ -3,6 +3,10 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Magnetic from "@/components/Magnetic";
+import ScrollReveal from "@/components/ScrollReveal";
+import DimensionDivider from "@/components/DimensionDivider";
+import CompanyTimeline from "@/components/CompanyTimeline";
+import CoverageMap from "@/components/CoverageMap";
 
 export default function Nosotros() {
     return (
@@ -150,22 +154,58 @@ export default function Nosotros() {
                             </motion.div>
                         </div>
 
-                        <motion.div
-                            variants={{
-                                hidden: { opacity: 0, y: 20 },
-                                visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.4 } }
-                            }}
-                            className="mt-16 flex flex-wrap items-center gap-5 relative z-20"
-                        >
-                            <Magnetic>
-                                <Link href="/contacto" className="btn-apple">
-                                    Agendar Evaluación de Proyecto
-                                </Link>
-                            </Magnetic>
-                            <Link href="/proyectos" className="btn-ghost">
-                                Ver Casos de Éxito
+                    </motion.div>
+                </div>
+            </section>
+
+            <DimensionDivider />
+
+            <section className="section-padding">
+                <div className="w-full max-w-[1400px] mx-auto">
+                    <ScrollReveal>
+                        <div className="text-center mb-4">
+                            <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 mb-3">Nuestra Historia</div>
+                            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-ink">De 2001 a Hoy</h2>
+                        </div>
+                        <CompanyTimeline />
+                    </ScrollReveal>
+                </div>
+            </section>
+
+            <section className="section-padding pt-0">
+                <div className="w-full max-w-[1400px] mx-auto">
+                    <ScrollReveal>
+                        <div className="glass p-10 md:p-14 border border-black/5">
+                            <div className="text-center mb-8">
+                                <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 mb-3">Presencia Real</div>
+                                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-ink">Cobertura Operativa</h2>
+                                <p className="max-w-xl mx-auto mt-3 text-gray-500 text-[15px] font-light leading-relaxed">
+                                    No prometemos presencia nacional genérica — operamos desde dos sedes reales en el Noroeste de México.
+                                </p>
+                            </div>
+                            <CoverageMap />
+                        </div>
+                    </ScrollReveal>
+                </div>
+            </section>
+
+            <section className="section-padding pt-0 pb-24">
+                <div className="w-full max-w-[1400px] mx-auto">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-10% 0px" }}
+                        transition={{ duration: 0.8 }}
+                        className="flex flex-wrap items-center justify-center gap-5"
+                    >
+                        <Magnetic>
+                            <Link href="/contacto" className="btn-apple">
+                                Agendar Evaluación de Proyecto
                             </Link>
-                        </motion.div>
+                        </Magnetic>
+                        <Link href="/proyectos" className="btn-ghost">
+                            Ver Casos de Éxito
+                        </Link>
                     </motion.div>
                 </div>
             </section>
