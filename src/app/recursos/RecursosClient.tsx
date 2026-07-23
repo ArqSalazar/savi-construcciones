@@ -159,7 +159,7 @@ export default function Guia() {
                                 SAVI <span className="text-accent">CONSTRUCCIONES.</span> <span className="opacity-50 text-sm uppercase tracking-[0.3em] font-bold ml-2">Cultura de Ingeniería</span>
                             </h3>
                             <p className="text-[16px] text-gray-600 font-light leading-relaxed">
-                                Nuestra sección de recursos no es solo un blog; es un compromiso con la transparencia. Creemos que un cliente informado es un aliado estratégico. Aquí compartiremos nuestra experiencia acumulada en más de 20 años de obra con SAVI Construcciones, desde la optimización de procesos hasta la prevención de riesgos patrimoniales.
+                                Nuestra sección de recursos no es solo un blog; es un compromiso con la transparencia. Creemos que un cliente informado es un aliado estratégico. Aquí compartiremos nuestra experiencia acumulada en más de 25 años de obra con SAVI Construcciones, desde la optimización de procesos hasta la prevención de riesgos patrimoniales.
                             </p>
                         </div>
                     </div>

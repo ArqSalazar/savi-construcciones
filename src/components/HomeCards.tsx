@@ -44,7 +44,7 @@ export default function HomeCards() {
                                 Transparencia Operativa
                             </h3>
                             <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65] mt-auto">
-                                Paz mental absoluta. Mantienes el control financiero mediante un <strong className="font-medium text-ink">sistema de reporte cerrado</strong> que audita cada peso de avance y suministro.
+                                Sin sorpresas de última hora. Mantienes el control financiero mediante un <strong className="font-medium text-ink">sistema de reporte cerrado</strong> que audita cada peso de avance y suministro.
                             </p>
                         </SpotlightCard>
                     </div>
@@ -72,7 +72,7 @@ export default function HomeCards() {
                                 Comercial & Industrial
                             </h2>
                             <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65] mt-auto">
-                                Minimiza tu costo de oportunidad. Cerramos ciclos constructivos con una <strong className="font-medium text-ink">logística acelerada</strong> orientada a detonar la apertura e inicio de facturación de tu empresa sin demoras.
+                                Minimiza tu costo de oportunidad. Coordinamos cada frente de obra para que tu negocio <strong className="font-medium text-ink">abra sus puertas y empiece a facturar</strong> en la fecha pactada, sin demoras que no viste venir.
                             </p>
                         </SpotlightCard>
 
@@ -85,7 +85,7 @@ export default function HomeCards() {
                                 Infraestructura Técnica
                             </h2>
                             <p className="mt-4 text-gray-500 text-[15px] font-light leading-[1.65] mt-auto">
-                                Dominio normativo total. Aseguramos el cumplimiento innegociable de regulaciones en proyectos de riesgo como <strong className="font-semibold text-ink">Estaciones de Servicio</strong>, protegiendo tus licencias y concesiones mercantiles.
+                                Cero atajos regulatorios. Aseguramos el cumplimiento innegociable de regulaciones en proyectos de riesgo como <strong className="font-semibold text-ink">Estaciones de Servicio</strong>, protegiendo tus licencias y concesiones mercantiles.
                             </p>
                         </SpotlightCard>
                     </div>

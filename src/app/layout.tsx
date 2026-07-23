@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     default: "SAVI. Construcciones",
     template: "%s | SAVI Construcciones",
   },
-  description: "Más de 20 años construyendo con honestidad y rigor técnico. Especialistas en residencias premium e infraestructura industrial que protege tu patrimonio y asegura tu inversión.",
+  description: "Más de 25 años construyendo con honestidad y rigor técnico. Especialistas en residencias premium e infraestructura industrial que protege tu patrimonio y asegura tu inversión.",
   keywords: ["constructora sinaloa", "arquitectura integral sonora", "casas premium", "naves industriales", "estaciones de servicio noroeste", "seguridad patrimonial", "legado familiar", "savi construcciones"],
   robots: "index,follow,max-image-preview:large",
   alternates: {

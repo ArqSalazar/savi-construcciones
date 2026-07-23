@@ -62,7 +62,7 @@ const PROJECTS = [
         id: "04",
         category: "Misión Crítica · Energía",
         title: "Estación Flagship",
-        description: "Certeza normativa absoluta. Cumplimiento estricto para almacenamiento y manejo de fluidos peligrosos.",
+        description: "Cumplimiento normativo sin atajos. Almacenamiento y manejo de fluidos peligrosos bajo estándar ASEA/CRE.",
         span: "lg:col-span-2",
         placeholderPath: "/projects/mision-critica/estacion-flagship.webp"
     },

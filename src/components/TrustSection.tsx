@@ -5,7 +5,7 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 import BlueprintSketch from "@/components/BlueprintSketch";
 
 const STATS = [
-    { value: "23+", label: "Años de Trayectoria" },
+    { value: "25+", label: "Años de Trayectoria" },
     { value: "45+", label: "Proyectos Críticos" },
     { value: "2", label: "Centros Operativos" },
     { value: "100%", label: "Certeza Contractual" },

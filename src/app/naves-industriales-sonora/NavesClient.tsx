@@ -114,7 +114,7 @@ export default function NavesClient() {
                     <ScrollReveal>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 glass px-8 py-10 md:px-12 border border-black/5">
                             {[
-                                { value: "23+", label: "Años de Experiencia" },
+                                { value: "25+", label: "Años de Experiencia" },
                                 { value: "45+", label: "Proyectos Críticos" },
                                 { value: "2", label: "Sedes: Navojoa y Los Mochis" },
                                 { value: "100%", label: "Certeza Contractual" },

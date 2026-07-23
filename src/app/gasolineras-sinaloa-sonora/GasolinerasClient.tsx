@@ -79,7 +79,7 @@ export default function GasolinerasClient() {
                             Certeza normativa en infraestructura de alto riesgo
                         </h2>
                         <p className="max-w-2xl text-gray-500 text-[17px] font-light leading-relaxed mb-12">
-                            El manejo de fluidos peligrosos exige cumplimiento absoluto — protegemos tu licencia y tu concesión mercantil desde el primer trazo.
+                            El manejo de fluidos peligrosos no admite margen de error — protegemos tu licencia y tu concesión mercantil desde el primer trazo.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

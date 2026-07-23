@@ -3,7 +3,7 @@ import LosMochisClient from "./LosMochisClient";
 
 const URL = "https://www.saviconstrucciones.com/constructora-los-mochis";
 const TITLE = "Constructora en Los Mochis, Sinaloa";
-const DESCRIPTION = "SAVI Construcciones: constructora con matriz en Los Mochis, Sinaloa. Más de 23 años en residencias, naves industriales, comercial y estaciones de servicio en la región.";
+const DESCRIPTION = "SAVI Construcciones: constructora con matriz en Los Mochis, Sinaloa. Más de 25 años en residencias, naves industriales, comercial y estaciones de servicio en la región.";
 
 export const metadata: Metadata = {
     title: TITLE,

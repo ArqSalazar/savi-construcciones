@@ -50,7 +50,7 @@ export default function LosMochisClient() {
                             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } } }}
                             className="mt-2 max-w-2xl text-gray-700/80 text-[18px] md:text-[21px] font-light leading-[1.65]"
                         >
-                            Más de 23 años construyendo en Sinaloa desde nuestra matriz en Los Mochis. Conocemos el suelo, el clima y los tiempos reales de la región — no llegamos a improvisar.
+                            Más de 25 años construyendo en Sinaloa desde nuestra matriz en Los Mochis. Conocemos el suelo, el clima y los tiempos reales de la región — no llegamos a improvisar.
                         </motion.p>
 
                         <motion.div
@@ -77,7 +77,7 @@ export default function LosMochisClient() {
                     <ScrollReveal>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 glass px-8 py-10 md:px-12 border border-black/5">
                             {[
-                                { value: "23+", label: "Años en Sinaloa" },
+                                { value: "25+", label: "Años en Sinaloa" },
                                 { value: "45+", label: "Proyectos Ejecutados" },
                                 { value: "2", label: "Sedes: Los Mochis y Navojoa" },
                                 { value: "100%", label: "Gestión Documentada" },

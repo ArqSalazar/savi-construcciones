@@ -131,7 +131,7 @@ export default function Contacto() {
                             }}
                             className="mt-2 max-w-2xl text-gray-700/80 text-[18px] md:text-[21px] font-light leading-[1.65] tracking-[-0.01em]"
                         >
-                            Inicia con la seguridad de un equipo que cuida tu patrimonio. Platícanos tu visión y estructuraremos una ruta técnica que garantice la certeza absoluta de tu inversión.
+                            Inicia con la seguridad de un equipo que cuida tu patrimonio. Platícanos tu visión y estructuraremos una ruta técnica que respalde el futuro de tu inversión.
                         </motion.p>
                     </motion.div>
 
@@ -147,7 +147,7 @@ export default function Contacto() {
                                         </div>
                                         <h2 className="text-xl md:text-2xl font-bold text-ink mb-4 tracking-tight">Análisis de Viabilidad & Confidencialidad</h2>
                                         <p className="text-[15px] md:text-[16px] text-gray-600 font-light leading-relaxed">
-                                            Analizamos cada solicitud con <strong className="font-semibold text-ink">absoluta confidencialidad</strong>. Si tu proyecto es viable y entra en nuestro rango de especialidad, agendaremos una <strong className="text-accent underline decoration-accent/20">videollamada técnica de 20 minutos</strong> con nuestra Dirección de Obra para aislar riesgos operativos y delinear los siguientes pasos firmes.
+                                            Analizamos cada solicitud con <strong className="font-semibold text-ink">estricta confidencialidad</strong>. Si tu proyecto es viable y entra en nuestro rango de especialidad, agendaremos una <strong className="text-accent underline decoration-accent/20">videollamada técnica de 20 minutos</strong> con nuestra Dirección de Obra para identificar riesgos operativos y delinear los siguientes pasos firmes.
                                         </p>
                                     </div>
                                     <div className="hidden lg:flex flex-col items-center justify-center p-6 border-l border-black/5 min-w-[180px]">

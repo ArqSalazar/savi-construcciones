@@ -53,7 +53,7 @@ export default function Servicios() {
                             }}
                             className="mt-4 max-w-2xl text-gray-700/80 text-[18px] md:text-[21px] font-light leading-[1.65] tracking-[-0.01em]"
                         >
-                            Desde el diseño de tu próximo hogar hasta el desarrollo de infraestructura técnica compleja. Acompañamos cada etapa de tu proyecto con una visión humana y el rigor técnico de la ingeniería, garantizando transparencia absoluta y honestidad en cada proceso.
+                            Desde el diseño de tu próximo hogar hasta el desarrollo de infraestructura técnica compleja. Acompañamos cada etapa de tu proyecto con una visión humana y el rigor técnico de la ingeniería, con procesos claros y honestos de principio a fin.
                         </motion.p>
                     </motion.div>
 
@@ -260,7 +260,7 @@ export default function Servicios() {
                                 <div className="space-y-8">
                                     <div>
                                         <h4 className="font-bold text-[16px] text-ink mb-2">¿SAVI CONSTRUCCIONES ejecuta Estaciones de Servicio en todo el país?</h4>
-                                        <p className="text-[14px] text-gray-500 font-light leading-relaxed">Sí. Contamos con absoluta movilidad nacional para ejecutar proyectos llave en mano (Turnkey), desde la gestión normativa ante ASEA/CRE hasta la ingeniería civil y mecánica en cualquier punto de la República.</p>
+                                        <p className="text-[14px] text-gray-500 font-light leading-relaxed">Sí. Nos movemos a cualquier punto de la República para ejecutar proyectos llave en mano (Turnkey), desde la gestión normativa ante ASEA/CRE hasta la ingeniería civil y mecánica.</p>
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-[16px] text-ink mb-2">¿Cómo integran la arquitectura y la ingeniería en sus proyectos?</h4>

@@ -11,7 +11,7 @@ const MILESTONES = [
     { year: "", title: "Expansión Industrial", desc: "Incorporamos naves industriales y obra civil de gran escala." },
     { year: "", title: "Apertura Navojoa", desc: "Consolidamos presencia en Sonora con una sucursal estratégica." },
     { year: "", title: "Infraestructura Crítica", desc: "Especialización en estaciones de servicio, esquema Llave en Mano." },
-    { year: "Hoy", title: "23+ Años", desc: "45+ proyectos ejecutados en el Noroeste de México." },
+    { year: "Hoy", title: "25+ Años", desc: "45+ proyectos ejecutados en el Noroeste de México." },
 ];
 
 export default function CompanyTimeline() {
