@@ -44,13 +44,15 @@ export default function SpotlightCard({
             onMouseMove={handleMove}
             onMouseLeave={handleLeave}
             style={{ ...vars, transition: "transform 0.5s cubic-bezier(0.16,1,0.3,1)", willChange: "transform" }}
-            className={`relative overflow-hidden ${className}`}
+            className={`relative ${className}`}
         >
+            {/* borderRadius: inherit clips the gradient to the card's rounded corners without needing overflow-hidden (which would also clip the outer box-shadow) */}
             <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-300"
                 style={{
                     opacity: "var(--spot-opacity, 0)",
+                    borderRadius: "inherit",
                     background:
                         "radial-gradient(280px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(29,78,216,0.14), transparent 70%)",
                 }}
