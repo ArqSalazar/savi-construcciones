@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import Magnetic from "@/components/Magnetic";
 
 const NAV_LINKS = [
+    { name: "Inicio", href: "/" },
     { name: "Servicios", href: "/servicios" },
     { name: "Proyectos", href: "/proyectos" },
     { name: "Nosotros", href: "/nosotros" },
