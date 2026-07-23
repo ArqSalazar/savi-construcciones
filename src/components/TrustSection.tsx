@@ -13,7 +13,7 @@ const STATS = [
 
 export default function TrustSection() {
     return (
-        <section className="section-padding pt-20 md:pt-28 pb-4">
+        <section className="section-padding pt-10 md:pt-14 pb-4">
             <div className="w-full max-w-[1400px] mx-auto">
                 <ScrollReveal variant="cut">
                     <div className="glass px-8 py-10 md:px-12 md:py-12 border border-black/5 relative">

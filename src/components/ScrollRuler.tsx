@@ -1,17 +1,40 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function ScrollRuler() {
-    const [progress, setProgress] = useState(0);
+    const fillRef = useRef<HTMLDivElement>(null);
+    const labelRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const onScroll = () => {
+        let ticking = false;
+
+        // Direct DOM writes driven by rAF: skips React re-renders entirely on
+        // scroll and uses a GPU-composited transform instead of animating
+        // height (which forces layout), so this tracks scroll 1:1 with no jank.
+        const update = () => {
             const scrollTop = window.scrollY;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            setProgress(docHeight > 0 ? Math.min(1, Math.max(0, scrollTop / docHeight)) : 0);
+            const progress = docHeight > 0 ? Math.min(1, Math.max(0, scrollTop / docHeight)) : 0;
+
+            if (fillRef.current) {
+                fillRef.current.style.transform = `scaleY(${progress})`;
+            }
+            if (labelRef.current) {
+                labelRef.current.style.top = `${progress * 100}%`;
+                labelRef.current.textContent = `${Math.round(progress * 100)}%`;
+            }
+            ticking = false;
         };
-        onScroll();
+
+        const onScroll = () => {
+            if (!ticking) {
+                requestAnimationFrame(update);
+                ticking = true;
+            }
+        };
+
+        update();
         window.addEventListener("scroll", onScroll, { passive: true });
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
@@ -30,14 +53,15 @@ export default function ScrollRuler() {
                     />
                 ))}
                 <div
-                    className="absolute top-0 left-0 w-[2px] -translate-x-px bg-accent shadow-[0_0_8px_rgba(29,78,216,0.5)] transition-[height] duration-150 ease-out"
-                    style={{ height: `${progress * 100}%` }}
+                    ref={fillRef}
+                    className="absolute top-0 left-0 h-full w-[2px] -translate-x-px origin-top bg-accent shadow-[0_0_8px_rgba(29,78,216,0.5)]"
+                    style={{ transform: "scaleY(0)" }}
                 />
                 <div
-                    className="absolute left-2.5 -translate-y-1/2 text-[9px] font-mono font-bold text-accent tabular-nums transition-[top] duration-150 ease-out"
-                    style={{ top: `${progress * 100}%` }}
+                    ref={labelRef}
+                    className="absolute left-2.5 -translate-y-1/2 text-[9px] font-mono font-bold text-accent tabular-nums"
                 >
-                    {Math.round(progress * 100)}%
+                    0%
                 </div>
             </div>
         </div>
