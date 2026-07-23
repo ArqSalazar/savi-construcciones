@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
+import Magnetic from "@/components/Magnetic";
 
 export default function Servicios() {
     return (
@@ -63,9 +64,11 @@ export default function Servicios() {
                         }}
                         className="mt-12 flex flex-wrap items-center gap-5 relative z-20"
                     >
-                        <Link href="/contacto" className="btn-apple">
-                            Evaluar Proyecto
-                        </Link>
+                        <Magnetic>
+                            <Link href="/contacto" className="btn-apple">
+                                Evaluar Proyecto
+                            </Link>
+                        </Magnetic>
                         <Link href="/proyectos" className="btn-ghost">
                             Ver Portafolio
                         </Link>

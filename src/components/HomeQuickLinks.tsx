@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import Magnetic from "@/components/Magnetic";
 
 export default function HomeQuickLinks() {
     return (
@@ -21,9 +22,11 @@ export default function HomeQuickLinks() {
                             </p>
                         </div>
                         <div className="flex w-full md:w-auto mt-6 md:mt-0">
-                            <Link href="/contacto" className="btn-apple w-full md:w-auto text-center py-[1.15rem] px-8">
-                                Solicitar Diagnóstico de Viabilidad
-                            </Link>
+                            <Magnetic strength={0.2} className="w-full md:w-auto">
+                                <Link href="/contacto" className="btn-apple w-full md:w-auto text-center py-[1.15rem] px-8">
+                                    Solicitar Diagnóstico de Viabilidad
+                                </Link>
+                            </Magnetic>
                         </div>
                     </div>
                 </ScrollReveal>

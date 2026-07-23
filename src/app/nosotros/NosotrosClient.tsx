@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Magnetic from "@/components/Magnetic";
 
 export default function Nosotros() {
     return (
@@ -156,9 +157,11 @@ export default function Nosotros() {
                             }}
                             className="mt-16 flex flex-wrap items-center gap-5 relative z-20"
                         >
-                            <Link href="/contacto" className="btn-apple">
-                                Agendar Evaluación de Proyecto
-                            </Link>
+                            <Magnetic>
+                                <Link href="/contacto" className="btn-apple">
+                                    Agendar Evaluación de Proyecto
+                                </Link>
+                            </Magnetic>
                             <Link href="/proyectos" className="btn-ghost">
                                 Ver Casos de Éxito
                             </Link>

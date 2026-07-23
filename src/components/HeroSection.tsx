@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Magnetic from "@/components/Magnetic";
 
 export default function HeroSection() {
     return (
@@ -37,16 +38,28 @@ export default function HeroSection() {
                         Construcciones de Precisión · Est. 2001
                     </motion.span>
 
-                    <motion.h1
-                        variants={{
-                            hidden: { opacity: 0, y: 30 },
-                            visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } }
-                        }}
-                        className="text-[clamp(3rem,6.5vw,6rem)] font-black leading-[0.85] tracking-[-0.04em] text-ink uppercase"
-                    >
-                        Creamos espacios.<br />
-                        <span className="opacity-90">Construimos</span> <span className="opacity-40 italic">Certeza.</span>
-                    </motion.h1>
+                    <h1 className="text-[clamp(3rem,6.5vw,6rem)] font-black tracking-[-0.04em] text-ink uppercase">
+                        <span className="block overflow-hidden pt-[0.15em] pb-[0.2em]">
+                            <motion.span
+                                initial={{ y: "110%" }}
+                                animate={{ y: "0%" }}
+                                transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.08 }}
+                                className="block leading-[0.85]"
+                            >
+                                Creamos espacios.
+                            </motion.span>
+                        </span>
+                        <span className="block overflow-hidden pt-[0.15em] pb-[0.2em]">
+                            <motion.span
+                                initial={{ y: "110%" }}
+                                animate={{ y: "0%" }}
+                                transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+                                className="block leading-[0.85]"
+                            >
+                                <span className="opacity-90">Construimos</span> <span className="opacity-40 italic">Certeza.</span>
+                            </motion.span>
+                        </span>
+                    </h1>
 
                     <motion.p
                         variants={{
@@ -79,9 +92,11 @@ export default function HeroSection() {
                         }}
                         className="mt-8 flex flex-wrap items-center gap-5 relative z-20"
                     >
-                        <Link href="/contacto" className="btn-apple">
-                            Solicitar Evaluación Técnica
-                        </Link>
+                        <Magnetic>
+                            <Link href="/contacto" className="btn-apple">
+                                Solicitar Evaluación Técnica
+                            </Link>
+                        </Magnetic>
                         <Link href="/proyectos" className="btn-ghost text-gray-500 hover:text-ink">
                             Conocer nuestro trabajo
                         </Link>

@@ -8,6 +8,7 @@ import BlueprintBackground from "@/components/BlueprintBackground";
 import Preloader from "@/components/Preloader";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
 import BackToTop from "@/components/BackToTop";
+import NoiseOverlay from "@/components/NoiseOverlay";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -89,6 +90,7 @@ export default function RootLayout({
         <Preloader />
         <LenisProvider>
           <BlueprintBackground />
+          <NoiseOverlay />
           <Navbar />
           <main className="flex-1 flex flex-col pt-24 z-10 w-full relative">
             {children}

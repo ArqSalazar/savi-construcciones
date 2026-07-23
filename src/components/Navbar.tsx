@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Magnetic from "@/components/Magnetic";
 
 const NAV_LINKS = [
     { name: "Servicios", href: "/servicios" },
@@ -81,9 +82,11 @@ export default function Navbar() {
                     </div>
 
                     <div className="flex items-center gap-2 md:gap-3 shrink-0">
-                        <Link href="/contacto" className="btn-apple hidden sm:inline-flex text-[9px] md:text-[10px] uppercase tracking-widest px-5 py-2.5 shadow-md shadow-accent/20">
-                            Evaluar Proyecto
-                        </Link>
+                        <Magnetic strength={0.25} className="hidden sm:inline-block">
+                            <Link href="/contacto" className="btn-apple text-[9px] md:text-[10px] uppercase tracking-widest px-5 py-2.5 shadow-md shadow-accent/20">
+                                Evaluar Proyecto
+                            </Link>
+                        </Magnetic>
 
                         {/* Hamburger Button */}
                         <button

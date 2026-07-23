@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import { Building2, Home, Factory, Fuel, ArrowUpRight } from "lucide-react";
+import SpotlightCard from "@/components/SpotlightCard";
+import Magnetic from "@/components/Magnetic";
 
 const CATEGORY_STYLE: Record<string, { icon: typeof Building2; gradient: string; tint: string }> = {
     "Comercial": { icon: Building2, gradient: "from-blue-50 to-slate-50", tint: "text-blue-900/10" },
@@ -153,10 +155,10 @@ export default function Proyectos() {
                             const Icon = style.icon;
 
                             return (
-                                <motion.div
-                                    key={project.id}
-                                    variants={itemVariants}
-                                    className={`glass p-8 group cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:bg-white/80 border border-black/5 hover:border-black/10 flex flex-col justify-between ${project.span}`}
+                                <motion.div key={project.id} variants={itemVariants} className={project.span}>
+                                <SpotlightCard
+                                    tiltStrength={4}
+                                    className="glass p-8 group cursor-pointer transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:bg-white/80 border border-black/5 hover:border-black/10 flex flex-col justify-between h-full"
                                 >
                                     <div>
                                         <div className="text-[10px] uppercase font-bold tracking-[0.35em] text-gray-400 group-hover:text-accent transition-colors duration-300 flex justify-between items-center">
@@ -195,6 +197,7 @@ export default function Proyectos() {
                                             </div>
                                         </div>
                                     </div>
+                                </SpotlightCard>
                                 </motion.div>
                             );
                         })}
@@ -214,9 +217,11 @@ export default function Proyectos() {
                         <p className="text-gray-500 font-light max-w-xl mx-auto mb-8">
                             Aplica nuestro mismo rigor técnico a tu inversión. Habla con un especialista y asegura el destino de tu capital.
                         </p>
-                        <Link href="/contacto" className="btn-apple">
-                            Evaluar Viabilidad de Proyecto
-                        </Link>
+                        <Magnetic>
+                            <Link href="/contacto" className="btn-apple">
+                                Evaluar Viabilidad de Proyecto
+                            </Link>
+                        </Magnetic>
                     </motion.div>
                 </div>
             </section>
