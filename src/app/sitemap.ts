@@ -41,6 +41,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.6,
         },
         {
+            url: `${BASE_URL}/constructora-los-mochis`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.85,
+        },
+        {
+            url: `${BASE_URL}/naves-industriales-sonora`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.85,
+        },
+        {
+            url: `${BASE_URL}/gasolineras-sinaloa-sonora`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.85,
+        },
+        {
             url: `${BASE_URL}/recursos/pasos-criticos-construccion-residencial`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
@@ -54,6 +72,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         {
             url: `${BASE_URL}/recursos/valor-ingenieria-oculta-obras`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.5,
+        },
+        {
+            url: `${BASE_URL}/recursos/etapas-de-una-obra-de-principio-a-fin`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.5,
+        },
+        {
+            url: `${BASE_URL}/recursos/concreto-aparente-ventajas-y-limitaciones`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.5,
+        },
+        {
+            url: `${BASE_URL}/recursos/bim-tecnologia-que-reduce-errores-en-construccion`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.5,
+        },
+        {
+            url: `${BASE_URL}/recursos/decisiones-invisibles-exito-de-un-proyecto`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.5,

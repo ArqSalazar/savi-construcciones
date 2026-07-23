@@ -147,7 +147,7 @@ export default function Servicios() {
 
                             <article className="glass p-9 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:bg-white/80 border border-black/5 hover:border-black/10">
                                 <h3 className="text-2xl font-black tracking-tight text-ink">Industrial & Infraestructura</h3>
-                                <p className="mt-4 text-[15px] font-light text-gray-500 leading-relaxed">Experiencia en proyectos de gran escala: desde naves logísticas y urbanización hasta soporte técnico para el sector minero. Maximizamos la eficiencia mediante planificación predictiva y control riguroso en sitio.</p>
+                                <p className="mt-4 text-[15px] font-light text-gray-500 leading-relaxed">Experiencia en proyectos de gran escala: desde naves logísticas y urbanización hasta soporte técnico para el sector minero. Maximizamos la eficiencia mediante planificación predictiva y control riguroso en sitio. Conoce más sobre nuestra <Link href="/naves-industriales-sonora" className="text-accent underline decoration-accent/20 hover:decoration-accent/60 transition-colors">construcción de naves industriales en Sonora</Link>.</p>
                                 <ul className="mt-6 text-[14px] font-medium text-gray-700 leading-relaxed list-none space-y-2">
                                     <li className="flex items-center gap-2"><span className="text-accent">✓</span> Terracerías y Urbanización Mayor</li>
                                     <li className="flex items-center gap-2"><span className="text-accent">✓</span> Obra Civil y Soporte al Sector Minero</li>
@@ -179,6 +179,9 @@ export default function Servicios() {
                                     <p className="mt-6 text-[14px] text-gray-500 font-light leading-relaxed italic">
                                         Desde el dictamen técnico y permisos ASEA/CRE, hasta la entrega documental as-built.
                                     </p>
+                                    <Link href="/gasolineras-sinaloa-sonora" className="mt-4 inline-block text-[13px] font-semibold text-accent underline decoration-accent/20 hover:decoration-accent/60 transition-colors">
+                                        Ver detalle: gasolineras en Sinaloa y Sonora →
+                                    </Link>
                                     <div className="mt-8 flex flex-wrap gap-2 text-[10px] uppercase font-bold tracking-widest text-accent/80">
                                         <span className="px-3 py-1.5 rounded-full border border-black/5 bg-white/90 shadow-sm">Construcción Total</span>
                                         <span className="px-3 py-1.5 rounded-full border border-black/5 bg-white/90 shadow-sm">Cambio de Imagen</span>
@@ -214,10 +217,10 @@ export default function Servicios() {
                                     Lideramos desde el <strong className="font-medium text-ink">Noroeste de México</strong> con una infraestructura fija robusta, manteniendo la agilidad logística y operativa para ejecutar proyectos de alta complejidad en <strong className="text-ink">cualquier punto de la República</strong>.
                                 </p>
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div className="glass p-5 border-l-4 border-accent">
+                                    <Link href="/constructora-los-mochis" className="glass p-5 border-l-4 border-accent hover:bg-white/80 transition-colors">
                                         <div className="font-bold text-ink text-sm md:text-base">Sede Central: Los Mochis</div>
                                         <div className="text-xs opacity-60 italic mt-1">Sinaloa · Matriz Corporativa</div>
-                                    </div>
+                                    </Link>
                                     <div className="glass p-5 border-l-4 border-accent">
                                         <div className="font-bold text-ink text-sm md:text-base">Centro Sonorense: Navojoa</div>
                                         <div className="text-xs opacity-60 italic mt-1">Sonora · Sucursal Estratégica</div>

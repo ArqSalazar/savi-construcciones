@@ -28,6 +28,38 @@ const ARTICLES = [
         date: "Enero 2026",
         readTime: "3 min",
         slug: "valor-ingenieria-oculta-obras",
+    },
+    {
+        title: "Etapas de una obra: de la excavación a la entrega",
+        description: "Guía completa de las fases de una construcción profesional: preliminares, cimentación, estructura, instalaciones y entrega documentada.",
+        category: "Proceso Constructivo",
+        date: "Julio 2026",
+        readTime: "5 min",
+        slug: "etapas-de-una-obra-de-principio-a-fin",
+    },
+    {
+        title: "Concreto aparente: ventajas reales y sus límites",
+        description: "Qué gana tu proyecto con concreto aparente frente a un acabado tradicional, y qué exige en ejecución técnica.",
+        category: "Materiales",
+        date: "Julio 2026",
+        readTime: "4 min",
+        slug: "concreto-aparente-ventajas-y-limitaciones",
+    },
+    {
+        title: "BIM: la tecnología que reduce errores en construcción",
+        description: "Cómo la coordinación digital entre arquitectura e ingeniería blinda el presupuesto y los tiempos de un proyecto.",
+        category: "Tecnología",
+        date: "Julio 2026",
+        readTime: "4 min",
+        slug: "bim-tecnologia-que-reduce-errores-en-construccion",
+    },
+    {
+        title: "Las decisiones invisibles del éxito de un proyecto",
+        description: "Por qué el estudio de suelo, la coordinación entre disciplinas y la documentación técnica definen una obra exitosa.",
+        category: "Filosofía de Obra",
+        date: "Julio 2026",
+        readTime: "3 min",
+        slug: "decisiones-invisibles-exito-de-un-proyecto",
     }
 ];
 
