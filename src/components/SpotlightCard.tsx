@@ -46,7 +46,7 @@ export default function SpotlightCard({
             style={{ ...vars, transition: "transform 0.5s cubic-bezier(0.16,1,0.3,1)", willChange: "transform" }}
             className={`relative ${className}`}
         >
-            {/* borderRadius: inherit clips the gradient to the card's rounded corners without needing overflow-hidden (which would also clip the outer box-shadow) */}
+            {/* borderRadius: inherit clips the effect to the card's rounded corners without needing overflow-hidden (which would also clip the outer box-shadow) */}
             <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-300"
@@ -54,7 +54,23 @@ export default function SpotlightCard({
                     opacity: "var(--spot-opacity, 0)",
                     borderRadius: "inherit",
                     background:
-                        "radial-gradient(280px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(29,78,216,0.14), transparent 70%)",
+                        "radial-gradient(320px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(29,78,216,0.08), transparent 70%)",
+                }}
+            />
+            {/* Wireframe reveal: a fine grid that only becomes visible near the cursor, echoing the blueprint background */}
+            <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-300"
+                style={{
+                    opacity: "var(--spot-opacity, 0)",
+                    borderRadius: "inherit",
+                    backgroundImage:
+                        "linear-gradient(rgba(29,78,216,0.55) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.55) 1px, transparent 1px)",
+                    backgroundSize: "22px 22px",
+                    maskImage:
+                        "radial-gradient(200px circle at var(--spot-x, 50%) var(--spot-y, 50%), black, transparent 75%)",
+                    WebkitMaskImage:
+                        "radial-gradient(200px circle at var(--spot-x, 50%) var(--spot-y, 50%), black, transparent 75%)",
                 }}
             />
             <div className="relative z-10 h-full">{children}</div>
